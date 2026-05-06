@@ -1,80 +1,95 @@
 ---
 title: "Quickstart"
-description: "Start building awesome documentation in minutes"
+description: "Create your first Custory journey in a few practical steps."
 ---
 
-## Get started in three steps
+Use this guide when you are new to Custory and want a simple first setup.
 
-Get your documentation site running locally and make your first customization.
+## 1. Create your workspace
 
-### Step 1: Set up your local environment
+Open [Custory](https://app.usecustory.com) and create a workspace for your company, product, or project.
 
-<AccordionGroup>
-  <Accordion icon="copy" title="Clone your docs locally">
-    During the onboarding process, you created a GitHub repository with your docs content if you didn't already have one. You can find a link to this repository in your [dashboard](https://dashboard.mintlify.com).
-    
-    To clone the repository locally so that you can make and preview changes to your docs, follow the [Cloning a repository](https://docs.github.com/en/repositories/creating-and-managing-repositories/cloning-a-repository) guide in the GitHub docs.
-  </Accordion>
-  <Accordion icon="rectangle-terminal" title="Start the preview server">
-    1. Install the Mintlify CLI: `npm i -g mint`
-    2. Navigate to your docs directory and run: `mint dev`
-    3. Open `http://localhost:3000` to see your docs live!
-    
-    <Tip>Your preview updates automatically as you edit files.</Tip>
-  </Accordion>
-</AccordionGroup>
+A workspace is where your team keeps journeys, personas, customer signals, and product decisions together.
 
-### Step 2: Deploy your changes
+<Tip>
+  If you work alone, use one workspace for your product. If you manage several products, create one workspace per product.
+</Tip>
 
-<AccordionGroup>
-  <Accordion icon="github" title="Install our GitHub app">
-    Install the Mintlify GitHub app from your [dashboard](https://dashboard.mintlify.com/settings/organization/github-app).
-    
-    Our GitHub app automatically deploys your changes to your docs site, so you don't need to manage deployments yourself.
-</Accordion>
-<Accordion icon="palette" title="Update your site name and colors">
-    For a first change, let's update the name and colors of your docs site.
+## 2. Create a journey
 
-    1. Open `docs.json` in your editor.
-    2. Change the `"name"` field to your project name.
-    3. Update the `"colors"` to match your brand.
-    4. Save and see your changes instantly at `http://localhost:3000`.
+Create a journey for one important customer path.
 
-    <Tip>Try changing the primary color to see an immediate difference!</Tip>
-  </Accordion>
-</AccordionGroup>
+Good first journeys are:
 
-### Step 3: Go live
+- New user onboarding
+- Trial to paid conversion
+- First purchase
+- Support handoff
+- Renewal or expansion
 
-<Accordion icon="rocket" title="Publish your docs">
-  1. Commit and push your changes.
-  2. Your docs will update and be live in moments!
-</Accordion>
+Keep the first version simple. You can improve it later.
 
-## Next steps
+## 3. Add stages
 
-Now that you have your docs running, explore these key features:
+Stages are the big parts of the customer path.
+
+For example, an onboarding journey could use:
+
+1. Sign up
+2. Setup
+3. First value
+4. Team invite
+5. Upgrade
+
+Use words your team already uses. Avoid internal labels that customers would not understand.
+
+## 4. Add steps
+
+Steps are the moments inside a stage.
+
+Examples:
+
+- Customer lands on the pricing page
+- Customer creates an account
+- Customer imports their first data
+- Customer asks support for help
+- Customer invites a teammate
+
+Each step can hold notes, evidence, pain points, ideas, owners, and metrics.
+
+## 5. Add what you already know
+
+Start with a few useful items:
+
+- An insight from a customer call
+- A repeated support question
+- A metric that shows drop-off
+- An opportunity you want to explore
+- A solution idea your team has discussed
+
+Do not try to make the journey perfect on day one. Add enough context to make the next team discussion better.
+
+## 6. Invite the right people
+
+Invite people who can add useful customer context:
+
+- Product
+- Support
+- Customer success
+- Design
+- Founders
+- Sales, if they hear repeated objections
+
+Custory works best when the journey stays current, not when one person maintains it alone.
+
+## What to do next
 
 <CardGroup cols={2}>
+  <Card title="Learn the main terms" icon="book-open" href="/core-concepts">
+    Understand workspaces, journeys, stages, steps, items, and personas.
+  </Card>
 
-<Card title="Write Content" icon="pen-to-square" href="/essentials/markdown">
-  Learn MDX syntax and start writing your documentation.
-</Card>
-
-<Card title="Customize style" icon="palette" href="/essentials/settings">
-  Make your docs match your brand perfectly.
-</Card>
-
-<Card title="Add code examples" icon="square-code" href="/essentials/code">
-  Include syntax-highlighted code blocks.
-</Card>
-
-<Card title="API documentation" icon="code" href="/api-reference/introduction">
-  Auto-generate API docs from OpenAPI specs.
-</Card>
-
+  <Card title="Build your journey" icon="map" href="/journeys">
+    Learn how to shape a useful customer journey without overcomplicating it.
+  </Card>
 </CardGroup>
-
-<Note>
-  **Need help?** See our [full documentation](https://mintlify.com/docs) or join our [community](https://mintlify.com/community).
-</Note>
