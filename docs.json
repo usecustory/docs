@@ -3,9 +3,9 @@
   "theme": "mint",
   "name": "Custory Docs",
   "colors": {
-    "primary": "#111111",
-    "light": "#3F3F3F",
-    "dark": "#F5F5F5"
+    "primary": "#0E8D00",
+    "light": "#15D90B",
+    "dark": "#171717"
   },
   "favicon": "/favicon.svg",
   "logo": {
@@ -50,20 +50,32 @@
     "global": {
       "anchors": [
         {
-          "anchor": "App",
-          "href": "https://app.usecustory.com",
-          "icon": "arrow-up-right"
-        },
-        {
           "anchor": "Website",
           "href": "https://usecustory.com",
-          "icon": "globe"
+          "icon": "globe",
+          "color": {
+            "light": "#EBEBEB",
+            "dark": "#1D1D1D"
+          }
+        },
+        {
+          "anchor": "Discord",
+          "href": "https://discord.gg/B9pA8YuVf6",
+          "icon": "discord",
+          "color": {
+            "light": "#0E8D00",
+            "dark": "#15D90B"
+          }
         }
       ]
     }
   },
   "navbar": {
     "links": [
+      {
+        "type": "discord",
+        "href": "https://discord.gg/B9pA8YuVf6"
+      },
       {
         "label": "Support",
         "href": "mailto:support@usecustory.com"
@@ -89,8 +101,9 @@
   "footer": {
     "socials": {
       "x": "https://x.com/usecustory",
+      "discord": "https://discord.gg/B9pA8YuVf6",
       "linkedin": "https://www.linkedin.com/company/usecustory",
-      "github": "https://github.com/flpsnd/docs"
+      "github": "https://github.com/usecustory/docs"
     }
   }
 }

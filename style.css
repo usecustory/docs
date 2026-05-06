@@ -1,0 +1,69 @@
+:root {
+  --custory-background: #ffffff;
+  --custory-foreground: #171717;
+  --custory-muted: #f7f7f7;
+  --custory-sidebar: #fafafa;
+  --custory-sidebar-hover: #ebebeb;
+  --custory-sidebar-active: rgba(14, 141, 0, 0.17);
+  --custory-sidebar-active-text: #084d00;
+  --custory-border: #e5e5e5;
+  --custory-radius: 10px;
+}
+
+.dark {
+  --custory-background: #2b2b2b;
+  --custory-foreground: #f5f5f5;
+  --custory-muted: #272727;
+  --custory-sidebar: #272727;
+  --custory-sidebar-hover: #1d1d1d;
+  --custory-sidebar-active: rgba(14, 141, 0, 0.1);
+  --custory-sidebar-active-text: #15d90b;
+  --custory-border: #444444;
+}
+
+#navbar a[href="https://app.usecustory.com"] {
+  border-color: var(--custory-foreground) !important;
+  background: var(--custory-foreground) !important;
+  color: var(--custory-background) !important;
+}
+
+#navbar a[href="https://app.usecustory.com"]:hover {
+  opacity: 0.88;
+}
+
+aside,
+[id*="sidebar"],
+[class*="sidebar"] {
+  border-color: var(--custory-border);
+}
+
+aside a,
+[id*="sidebar"] a,
+[class*="sidebar"] a {
+  border-radius: var(--custory-radius);
+  transition:
+    background-color 150ms ease,
+    color 150ms ease,
+    border-color 150ms ease;
+}
+
+aside a:hover,
+[id*="sidebar"] a:hover,
+[class*="sidebar"] a:hover {
+  background: var(--custory-sidebar-hover);
+}
+
+aside a[aria-current="page"],
+aside a[data-active="true"],
+[id*="sidebar"] a[aria-current="page"],
+[id*="sidebar"] a[data-active="true"],
+[class*="sidebar"] a[aria-current="page"],
+[class*="sidebar"] a[data-active="true"] {
+  background: var(--custory-sidebar-active) !important;
+  color: var(--custory-sidebar-active-text) !important;
+}
+
+button,
+a[role="button"] {
+  border-radius: var(--custory-radius);
+}
