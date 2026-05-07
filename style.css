@@ -1,6 +1,8 @@
 :root {
+  --sidebar: oklch(0.985 0 0);
   --sidebar-accent: oklch(0.95 0 0);
   --sidebar-accent-foreground: oklch(0.205 0 0);
+  --custory-primary: #0e8d00;
 }
 
 .dark {
@@ -36,6 +38,11 @@
   color: var(--sidebar-accent-foreground) !important;
 }
 
+#sidebar,
+#sidebar-content {
+  background: var(--sidebar) !important;
+}
+
 #sidebar a.nav-anchor {
   border-radius: 0.75rem !important;
   color: inherit !important;
@@ -60,6 +67,11 @@
 }
 
 .dark #sidebar a.nav-anchor img {
+  filter: brightness(0) invert(1) !important;
+}
+
+.dark #navbar a[href="https://discord.gg/B9pA8YuVf6"] img,
+.dark #navbar a[href="https://discord.gg/B9pA8YuVf6"] svg {
   filter: brightness(0) invert(1) !important;
 }
 
@@ -100,18 +112,6 @@
   margin: 0;
 }
 
-.custory-resource-view-all {
-  border-bottom: 2px solid #ff6a1a;
-  color: color-mix(in srgb, currentColor 78%, transparent);
-  font-size: 1rem;
-  font-weight: 500;
-  text-decoration: none;
-}
-
-.custory-resource-view-all:hover {
-  color: currentColor;
-}
-
 .custory-resource-grid {
   display: grid;
   gap: 1.5rem;
@@ -142,7 +142,7 @@
 }
 
 .custory-resource-symbol {
-  color: #ff6a1a;
+  color: var(--custory-primary);
   font-size: 1.75rem;
   font-weight: 700;
   line-height: 1;
