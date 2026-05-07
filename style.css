@@ -1,40 +1,48 @@
 :root {
-  --custory-background: oklch(1 0 0);
-  --custory-foreground: oklch(0.145 0 0);
+  --custory-background: #ffffff;
+  --custory-foreground: #171717;
   --custory-primary: #0e8d00;
-  --custory-primary-foreground: oklch(0.985 0 0);
-  --custory-sidebar: oklch(0.985 0 0);
-  --custory-sidebar-foreground: oklch(0.145 0 0);
+  --custory-primary-foreground: #fafafa;
+  --custory-sidebar: #fafafa;
+  --custory-sidebar-foreground: #171717;
   --custory-sidebar-accent: #ebebeb;
-  --custory-sidebar-accent-foreground: oklch(0.205 0 0);
+  --custory-sidebar-accent-foreground: #343434;
   --custory-sidebar-active: rgb(14 141 0 / 17%);
   --custory-sidebar-active-text: #084d00;
-  --custory-sidebar-border: oklch(0.922 0 0);
-  --custory-ring: oklch(0.708 0 0);
+  --custory-sidebar-border: #e5e5e5;
+  --custory-ring: #a3a3a3;
   --custory-radius: 0.75rem;
 }
 
 .dark {
-  --custory-background: oklch(0.17 0 0);
-  --custory-foreground: oklch(0.985 0 0);
+  --custory-background: #2b2b2b;
+  --custory-foreground: #fafafa;
   --custory-primary: #0e8d00;
-  --custory-primary-foreground: oklch(0.985 0 0);
-  --custory-sidebar: oklch(0.155 0 0);
-  --custory-sidebar-foreground: oklch(0.985 0 0);
+  --custory-primary-foreground: #fafafa;
+  --custory-sidebar: #272727;
+  --custory-sidebar-foreground: #fafafa;
   --custory-sidebar-accent: #1d1d1d;
-  --custory-sidebar-accent-foreground: oklch(0.985 0 0);
+  --custory-sidebar-accent-foreground: #fafafa;
   --custory-sidebar-active: rgb(14 141 0 / 10%);
   --custory-sidebar-active-text: #15d90b;
-  --custory-sidebar-border: oklch(0.269 0 0);
-  --custory-ring: oklch(0.439 0 0);
+  --custory-sidebar-border: #444444;
+  --custory-ring: #5f5f5f;
 }
 
-#navbar a[href="https://app.usecustory.com"] {
-  border-color: var(--custory-primary) !important;
-  background: var(--custory-primary) !important;
-  color: var(--custory-primary-foreground) !important;
+body {
+  background: var(--custory-background);
+  color: var(--custory-foreground);
+}
+
+#navbar,
+header {
+  background: color-mix(in srgb, var(--custory-background) 92%, transparent) !important;
+  border-color: var(--custory-sidebar-border) !important;
+}
+
+#navbar a,
+header a {
   border-radius: var(--custory-radius) !important;
-  font-weight: 500 !important;
   transition:
     background-color 200ms ease,
     border-color 200ms ease,
@@ -42,38 +50,92 @@
     opacity 200ms ease !important;
 }
 
-#navbar a[href="https://app.usecustory.com"]:hover {
-  background: color-mix(in srgb, var(--custory-primary) 90%, transparent) !important;
-  border-color: color-mix(in srgb, var(--custory-primary) 90%, transparent) !important;
+#navbar a[href="https://discord.gg/B9pA8YuVf6"],
+header a[href="https://discord.gg/B9pA8YuVf6"] {
+  min-height: 2.25rem !important;
+  padding: 0.5rem 0.75rem !important;
+  gap: 0.5rem !important;
+  background: var(--custory-sidebar-accent) !important;
+  color: var(--custory-sidebar-accent-foreground) !important;
+  border: 1px solid transparent !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+}
+
+#navbar a[href="https://discord.gg/B9pA8YuVf6"]:hover,
+header a[href="https://discord.gg/B9pA8YuVf6"]:hover {
+  background: color-mix(in srgb, var(--custory-sidebar-accent) 85%, transparent) !important;
+}
+
+#navbar a[href="https://app.usecustory.com"],
+header a[href="https://app.usecustory.com"] {
+  min-height: 2.25rem !important;
+  padding: 0.5rem 1rem !important;
+  gap: 0.5rem !important;
+  border: 1px solid var(--custory-primary) !important;
+  background: var(--custory-primary) !important;
+  color: var(--custory-primary-foreground) !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  line-height: 1.25rem !important;
+  box-shadow: none !important;
+}
+
+#navbar a[href="https://app.usecustory.com"]:hover,
+header a[href="https://app.usecustory.com"]:hover {
+  background: color-mix(in srgb, var(--custory-primary) 90%, black) !important;
+  border-color: color-mix(in srgb, var(--custory-primary) 90%, black) !important;
 }
 
 aside,
-[id*="sidebar"],
-[class*="sidebar"] {
-  background: var(--custory-sidebar);
-  color: var(--custory-sidebar-foreground);
-  border-color: var(--custory-sidebar-border);
+nav[aria-label*="sidebar" i],
+div[id*="sidebar" i],
+div[class*="sidebar" i] {
+  background: var(--custory-sidebar) !important;
+  color: var(--custory-sidebar-foreground) !important;
+  border-color: var(--custory-sidebar-border) !important;
+}
+
+aside ul,
+nav[aria-label*="sidebar" i] ul,
+div[id*="sidebar" i] ul,
+div[class*="sidebar" i] ul {
+  gap: 0.25rem !important;
 }
 
 aside a,
-[id*="sidebar"] button,
-[id*="sidebar"] a,
-[class*="sidebar"] button,
-[class*="sidebar"] a {
+aside button,
+nav[aria-label*="sidebar" i] a,
+nav[aria-label*="sidebar" i] button,
+div[id*="sidebar" i] a,
+div[id*="sidebar" i] button,
+div[class*="sidebar" i] a,
+div[class*="sidebar" i] button {
+  min-height: 2rem !important;
+  padding: 0.375rem 0.75rem !important;
+  gap: 0.25rem !important;
   border-radius: var(--custory-radius) !important;
+  border: 1px solid transparent !important;
+  color: var(--custory-sidebar-foreground) !important;
+  font-size: 0.875rem !important;
+  line-height: 1.25rem !important;
+  text-align: left !important;
+  box-shadow: none !important;
   transition:
     background-color 150ms ease,
     color 150ms ease,
     border-color 150ms ease,
-    box-shadow 150ms ease;
+    box-shadow 150ms ease !important;
 }
 
 aside a:hover,
 aside button:hover,
-[id*="sidebar"] button:hover,
-[id*="sidebar"] a:hover,
-[class*="sidebar"] button:hover,
-[class*="sidebar"] a:hover {
+nav[aria-label*="sidebar" i] a:hover,
+nav[aria-label*="sidebar" i] button:hover,
+div[id*="sidebar" i] a:hover,
+div[id*="sidebar" i] button:hover,
+div[class*="sidebar" i] a:hover,
+div[class*="sidebar" i] button:hover {
   background: var(--custory-sidebar-accent) !important;
   color: var(--custory-sidebar-accent-foreground) !important;
 }
@@ -81,14 +143,47 @@ aside button:hover,
 aside a[aria-current="page"],
 aside a[data-active="true"],
 aside button[data-active="true"],
-[id*="sidebar"] a[aria-current="page"],
-[id*="sidebar"] a[data-active="true"],
-[id*="sidebar"] button[data-active="true"],
-[class*="sidebar"] a[aria-current="page"],
-[class*="sidebar"] a[data-active="true"],
-[class*="sidebar"] button[data-active="true"] {
+nav[aria-label*="sidebar" i] a[aria-current="page"],
+nav[aria-label*="sidebar" i] a[data-active="true"],
+nav[aria-label*="sidebar" i] button[data-active="true"],
+div[id*="sidebar" i] a[aria-current="page"],
+div[id*="sidebar" i] a[data-active="true"],
+div[id*="sidebar" i] button[data-active="true"],
+div[class*="sidebar" i] a[aria-current="page"],
+div[class*="sidebar" i] a[data-active="true"],
+div[class*="sidebar" i] button[data-active="true"] {
   background: var(--custory-sidebar-active) !important;
   color: var(--custory-sidebar-active-text) !important;
+  border-color: transparent !important;
+}
+
+aside [role="heading"],
+nav[aria-label*="sidebar" i] [role="heading"],
+div[id*="sidebar" i] [role="heading"],
+div[class*="sidebar" i] [role="heading"] {
+  color: color-mix(in srgb, var(--custory-sidebar-foreground) 70%, transparent) !important;
+  font-size: 0.75rem !important;
+  font-weight: 500 !important;
+}
+
+aside a[href="https://usecustory.com"],
+aside a[href="https://discord.gg/B9pA8YuVf6"],
+nav[aria-label*="sidebar" i] a[href="https://usecustory.com"],
+nav[aria-label*="sidebar" i] a[href="https://discord.gg/B9pA8YuVf6"],
+div[id*="sidebar" i] a[href="https://usecustory.com"],
+div[id*="sidebar" i] a[href="https://discord.gg/B9pA8YuVf6"],
+div[class*="sidebar" i] a[href="https://usecustory.com"],
+div[class*="sidebar" i] a[href="https://discord.gg/B9pA8YuVf6"] {
+  min-height: 2.25rem !important;
+  padding: 0.5rem 0.75rem !important;
+}
+
+a[href="https://discord.gg/B9pA8YuVf6"] [class*="online" i],
+a[href="https://discord.gg/B9pA8YuVf6"] [class*="count" i],
+a[href="https://discord.gg/B9pA8YuVf6"] [aria-label*="online" i],
+[class*="discord" i] [class*="online" i],
+[class*="discord" i] [class*="count" i] {
+  display: none !important;
 }
 
 button,
@@ -99,13 +194,7 @@ a[class*="button"],
 }
 
 button:focus-visible,
-a[role="button"]:focus-visible,
-aside a:focus-visible,
-aside button:focus-visible,
-[id*="sidebar"] a:focus-visible,
-[id*="sidebar"] button:focus-visible,
-[class*="sidebar"] a:focus-visible,
-[class*="sidebar"] button:focus-visible {
-  outline: 2px solid var(--custory-ring);
-  outline-offset: 2px;
+a:focus-visible {
+  outline: 2px solid var(--custory-ring) !important;
+  outline-offset: 2px !important;
 }

@@ -4,8 +4,17 @@
   "name": "Custory Docs",
   "colors": {
     "primary": "#0E8D00",
-    "light": "#15D90B",
-    "dark": "#171717"
+    "light": "#0E8D00",
+    "dark": "#15D90B"
+  },
+  "appearance": {
+    "default": "system"
+  },
+  "background": {
+    "color": {
+      "light": "#FFFFFF",
+      "dark": "#2B2B2B"
+    }
   },
   "favicon": "/favicon.svg",
   "logo": {
@@ -52,7 +61,7 @@
         {
           "anchor": "Website",
           "href": "https://usecustory.com",
-          "icon": "globe",
+          "icon": "/icons/website.svg",
           "color": {
             "light": "#EBEBEB",
             "dark": "#1D1D1D"
@@ -61,7 +70,7 @@
         {
           "anchor": "Discord",
           "href": "https://discord.gg/B9pA8YuVf6",
-          "icon": "discord",
+          "icon": "/icons/discord.svg",
           "color": {
             "light": "#0E8D00",
             "dark": "#15D90B"
@@ -74,11 +83,8 @@
     "links": [
       {
         "type": "discord",
+        "icon": "/icons/discord.svg",
         "href": "https://discord.gg/B9pA8YuVf6"
-      },
-      {
-        "label": "Support",
-        "href": "mailto:support@usecustory.com"
       }
     ],
     "primary": {
