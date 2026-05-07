@@ -59,9 +59,124 @@
   color: inherit !important;
 }
 
+.dark #sidebar a.nav-anchor img {
+  filter: brightness(0) invert(1) !important;
+}
+
 #sidebar a[href="https://discord.gg/B9pA8YuVf6"] [class*="online" i],
 #sidebar a[href="https://discord.gg/B9pA8YuVf6"] [class*="count" i],
 #navbar a[href="https://discord.gg/B9pA8YuVf6"] [class*="online" i],
 #navbar a[href="https://discord.gg/B9pA8YuVf6"] [class*="count" i] {
   display: none !important;
+}
+
+.custory-resource-footer {
+  border-top: 1px solid color-mix(in srgb, currentColor 10%, transparent);
+  margin-top: 4rem;
+  padding-top: 3rem;
+}
+
+.custory-resource-heading {
+  align-items: center;
+  display: flex;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.custory-resource-heading h2 {
+  font-size: 1.875rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.custory-resource-view-all {
+  border-bottom: 2px solid #ff6a1a;
+  color: color-mix(in srgb, currentColor 78%, transparent);
+  font-size: 1rem;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.custory-resource-view-all:hover {
+  color: currentColor;
+}
+
+.custory-resource-grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.custory-resource-card {
+  border: 1px solid color-mix(in srgb, currentColor 13%, transparent);
+  border-radius: 1.5rem;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  min-height: 15rem;
+  padding: 2rem;
+  position: relative;
+  text-decoration: none;
+  transition:
+    border-color 200ms,
+    background-color 200ms,
+    transform 200ms;
+}
+
+.custory-resource-card:hover {
+  background: color-mix(in srgb, currentColor 3%, transparent);
+  border-color: color-mix(in srgb, currentColor 24%, transparent);
+  color: inherit;
+  transform: translateY(-1px);
+}
+
+.custory-resource-symbol {
+  color: #ff6a1a;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1;
+  margin-bottom: 2.5rem;
+}
+
+.custory-resource-arrow {
+  color: color-mix(in srgb, currentColor 45%, transparent);
+  font-size: 1.75rem;
+  line-height: 1;
+  position: absolute;
+  right: 2rem;
+  top: 2rem;
+}
+
+.custory-resource-card h3 {
+  font-size: 1.45rem;
+  font-weight: 650;
+  letter-spacing: 0;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+.custory-resource-card p {
+  color: color-mix(in srgb, currentColor 68%, transparent);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .custory-resource-heading {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .custory-resource-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .custory-resource-card {
+    min-height: 12rem;
+    padding: 1.5rem;
+  }
 }
