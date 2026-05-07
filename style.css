@@ -38,10 +38,6 @@
   color: var(--sidebar-accent-foreground) !important;
 }
 
-#sidebar,
-#sidebar-content {
-  background: var(--sidebar) !important;
-}
 
 #sidebar a.nav-anchor {
   border-radius: 0.75rem !important;
