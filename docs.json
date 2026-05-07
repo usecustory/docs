@@ -18,7 +18,7 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Journey editor",
         "groups": [
           {
             "group": "Start here",
@@ -42,15 +42,30 @@
               "impact-vs-effort-view",
               "collaboration-and-history"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "AI & automations",
+        "groups": [
           {
-            "group": "AI and integrations",
+            "group": "AI workflows",
             "pages": [
               "ai-and-automations",
               "automations",
-              "integrations",
-              "mcp-server",
               "notifications"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "groups": [
+          {
+            "group": "Connected tools",
+            "pages": [
+              "integrations",
+              "mcp-server"
             ]
           },
           {
