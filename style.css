@@ -1,69 +1,111 @@
 :root {
-  --custory-background: #ffffff;
-  --custory-foreground: #171717;
-  --custory-muted: #f7f7f7;
-  --custory-sidebar: #fafafa;
-  --custory-sidebar-hover: #ebebeb;
-  --custory-sidebar-active: rgba(14, 141, 0, 0.17);
+  --custory-background: oklch(1 0 0);
+  --custory-foreground: oklch(0.145 0 0);
+  --custory-primary: #0e8d00;
+  --custory-primary-foreground: oklch(0.985 0 0);
+  --custory-sidebar: oklch(0.985 0 0);
+  --custory-sidebar-foreground: oklch(0.145 0 0);
+  --custory-sidebar-accent: #ebebeb;
+  --custory-sidebar-accent-foreground: oklch(0.205 0 0);
+  --custory-sidebar-active: rgb(14 141 0 / 17%);
   --custory-sidebar-active-text: #084d00;
-  --custory-border: #e5e5e5;
-  --custory-radius: 10px;
+  --custory-sidebar-border: oklch(0.922 0 0);
+  --custory-ring: oklch(0.708 0 0);
+  --custory-radius: 0.75rem;
 }
 
 .dark {
-  --custory-background: #2b2b2b;
-  --custory-foreground: #f5f5f5;
-  --custory-muted: #272727;
-  --custory-sidebar: #272727;
-  --custory-sidebar-hover: #1d1d1d;
-  --custory-sidebar-active: rgba(14, 141, 0, 0.1);
+  --custory-background: oklch(0.17 0 0);
+  --custory-foreground: oklch(0.985 0 0);
+  --custory-primary: #0e8d00;
+  --custory-primary-foreground: oklch(0.985 0 0);
+  --custory-sidebar: oklch(0.155 0 0);
+  --custory-sidebar-foreground: oklch(0.985 0 0);
+  --custory-sidebar-accent: #1d1d1d;
+  --custory-sidebar-accent-foreground: oklch(0.985 0 0);
+  --custory-sidebar-active: rgb(14 141 0 / 10%);
   --custory-sidebar-active-text: #15d90b;
-  --custory-border: #444444;
+  --custory-sidebar-border: oklch(0.269 0 0);
+  --custory-ring: oklch(0.439 0 0);
 }
 
 #navbar a[href="https://app.usecustory.com"] {
-  border-color: var(--custory-foreground) !important;
-  background: var(--custory-foreground) !important;
-  color: var(--custory-background) !important;
+  border-color: var(--custory-primary) !important;
+  background: var(--custory-primary) !important;
+  color: var(--custory-primary-foreground) !important;
+  border-radius: var(--custory-radius) !important;
+  font-weight: 500 !important;
+  transition:
+    background-color 200ms ease,
+    border-color 200ms ease,
+    color 200ms ease,
+    opacity 200ms ease !important;
 }
 
 #navbar a[href="https://app.usecustory.com"]:hover {
-  opacity: 0.88;
+  background: color-mix(in srgb, var(--custory-primary) 90%, transparent) !important;
+  border-color: color-mix(in srgb, var(--custory-primary) 90%, transparent) !important;
 }
 
 aside,
 [id*="sidebar"],
 [class*="sidebar"] {
-  border-color: var(--custory-border);
+  background: var(--custory-sidebar);
+  color: var(--custory-sidebar-foreground);
+  border-color: var(--custory-sidebar-border);
 }
 
 aside a,
+[id*="sidebar"] button,
 [id*="sidebar"] a,
+[class*="sidebar"] button,
 [class*="sidebar"] a {
-  border-radius: var(--custory-radius);
+  border-radius: var(--custory-radius) !important;
   transition:
     background-color 150ms ease,
     color 150ms ease,
-    border-color 150ms ease;
+    border-color 150ms ease,
+    box-shadow 150ms ease;
 }
 
 aside a:hover,
+aside button:hover,
+[id*="sidebar"] button:hover,
 [id*="sidebar"] a:hover,
+[class*="sidebar"] button:hover,
 [class*="sidebar"] a:hover {
-  background: var(--custory-sidebar-hover);
+  background: var(--custory-sidebar-accent) !important;
+  color: var(--custory-sidebar-accent-foreground) !important;
 }
 
 aside a[aria-current="page"],
 aside a[data-active="true"],
+aside button[data-active="true"],
 [id*="sidebar"] a[aria-current="page"],
 [id*="sidebar"] a[data-active="true"],
+[id*="sidebar"] button[data-active="true"],
 [class*="sidebar"] a[aria-current="page"],
-[class*="sidebar"] a[data-active="true"] {
+[class*="sidebar"] a[data-active="true"],
+[class*="sidebar"] button[data-active="true"] {
   background: var(--custory-sidebar-active) !important;
   color: var(--custory-sidebar-active-text) !important;
 }
 
 button,
-a[role="button"] {
-  border-radius: var(--custory-radius);
+a[role="button"],
+a[class*="button"],
+[data-variant="button"] {
+  border-radius: var(--custory-radius) !important;
+}
+
+button:focus-visible,
+a[role="button"]:focus-visible,
+aside a:focus-visible,
+aside button:focus-visible,
+[id*="sidebar"] a:focus-visible,
+[id*="sidebar"] button:focus-visible,
+[class*="sidebar"] a:focus-visible,
+[class*="sidebar"] button:focus-visible {
+  outline: 2px solid var(--custory-ring);
+  outline-offset: 2px;
 }
