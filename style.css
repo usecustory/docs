@@ -1,0 +1,122 @@
+:root {
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.95 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+  --sidebar-active: #0e8d00;
+}
+
+.dark {
+  --sidebar: oklch(0.155 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.22 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+  --sidebar-active: #15d90b;
+}
+
+#sidebar,
+#sidebar-content {
+  color: var(--sidebar-foreground);
+}
+
+#sidebar a {
+  align-items: center !important;
+  border-radius: 0.75rem !important;
+  color: var(--sidebar-foreground) !important;
+  display: flex !important;
+  font-size: 0.875rem !important;
+  gap: 0.25rem !important;
+  outline: 2px solid transparent !important;
+  outline-offset: 2px !important;
+  overflow: hidden !important;
+  padding: 1.25rem 0.75rem !important;
+  text-align: left !important;
+  transition-duration: 200ms !important;
+  transition-property: width, height, padding, background-color, color !important;
+  width: 100% !important;
+}
+
+#sidebar a:hover,
+#sidebar a:active,
+#sidebar a[data-state="open"] {
+  background: var(--sidebar-accent) !important;
+  color: var(--sidebar-accent-foreground) !important;
+}
+
+#sidebar a:focus-visible {
+  outline: none !important;
+  box-shadow: 0 0 0 2px var(--sidebar-ring) !important;
+}
+
+#sidebar a[aria-current="page"],
+#sidebar a[data-active="true"],
+#sidebar a[class*="active"] {
+  background: color-mix(in srgb, #0e8d00 17%, transparent) !important;
+  color: #084d00 !important;
+}
+
+.dark #sidebar a[aria-current="page"],
+.dark #sidebar a[data-active="true"],
+.dark #sidebar a[class*="active"] {
+  background: color-mix(in srgb, #0e8d00 10%, transparent) !important;
+  color: var(--sidebar-active) !important;
+}
+
+#sidebar a > span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+#sidebar a svg {
+  flex-shrink: 0;
+  height: 1rem;
+  width: 1rem;
+}
+
+#topbar-cta-button a[href="https://app.usecustory.com"],
+#navbar a[href="https://app.usecustory.com"] {
+  align-items: center !important;
+  background: #0e8d00 !important;
+  border: 0 !important;
+  border-radius: 0.75rem !important;
+  box-shadow: none !important;
+  color: #ffffff !important;
+  cursor: pointer !important;
+  display: inline-flex !important;
+  flex-shrink: 0 !important;
+  font-size: 0.875rem !important;
+  font-weight: 500 !important;
+  gap: 0.5rem !important;
+  justify-content: center !important;
+  outline: none !important;
+  padding: 0.5rem 1rem !important;
+  transition: all 200ms !important;
+  white-space: nowrap !important;
+}
+
+#topbar-cta-button a[href="https://app.usecustory.com"]:hover,
+#navbar a[href="https://app.usecustory.com"]:hover {
+  background: color-mix(in srgb, #0e8d00 90%, transparent) !important;
+  color: #ffffff !important;
+}
+
+#topbar-cta-button a[href="https://app.usecustory.com"] span,
+#navbar a[href="https://app.usecustory.com"] span,
+#topbar-cta-button a[href="https://app.usecustory.com"] svg,
+#navbar a[href="https://app.usecustory.com"] svg {
+  color: #ffffff !important;
+}
+
+#topbar-cta-button a[href="https://app.usecustory.com"]:focus-visible,
+#navbar a[href="https://app.usecustory.com"]:focus-visible {
+  box-shadow: 0 0 0 2px var(--sidebar-ring) !important;
+}
