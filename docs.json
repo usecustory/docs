@@ -99,7 +99,7 @@
           }
         },
         {
-          "anchor": "Discord",
+          "anchor": "Discord Community",
           "href": "https://discord.gg/B9pA8YuVf6",
           "icon": "/icons/discord.svg",
           "color": {
@@ -113,14 +113,14 @@
   "navbar": {
     "links": [
       {
-        "label": "Community & Support",
+        "label": "Support",
         "icon": "/icons/discord.svg",
         "href": "https://discord.gg/B9pA8YuVf6"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Open Custory",
+      "label": "Dashboard",
       "href": "https://app.usecustory.com"
     }
   },
