@@ -18,7 +18,8 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Journey editor",
+        "tab": "Guides",
+        "icon": "book-open",
         "groups": [
           {
             "group": "Start here",
@@ -29,6 +30,19 @@
               "workspace"
             ]
           },
+          {
+            "group": "Reference",
+            "pages": [
+              "faq",
+              "glossary"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Journey editor",
+        "icon": "route",
+        "groups": [
           {
             "group": "Journeys and context",
             "pages": [
@@ -47,6 +61,7 @@
       },
       {
         "tab": "AI & automations",
+        "icon": "sparkles",
         "groups": [
           {
             "group": "AI workflows",
@@ -60,19 +75,13 @@
       },
       {
         "tab": "Integrations",
+        "icon": "plug",
         "groups": [
           {
             "group": "Connected tools",
             "pages": [
               "integrations",
               "mcp-server"
-            ]
-          },
-          {
-            "group": "Reference",
-            "pages": [
-              "faq",
-              "glossary"
             ]
           }
         ]
