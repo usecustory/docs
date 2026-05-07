@@ -3,18 +3,12 @@
   "theme": "mint",
   "name": "Custory Docs",
   "colors": {
-    "primary": "#0E8D00",
-    "light": "#0E8D00",
-    "dark": "#15D90B"
+    "primary": "#0e8d00",
+    "light": "#0e8d00",
+    "dark": "#0e8d00"
   },
   "appearance": {
     "default": "system"
-  },
-  "background": {
-    "color": {
-      "light": "#FFFFFF",
-      "dark": "#252525"
-    }
   },
   "favicon": "/favicon.svg",
   "logo": {
