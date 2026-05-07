@@ -1,90 +1,106 @@
 ---
 title: "Integrations"
-description: "Connect Custory with the tools where customer signals and product work already live."
+description: "Connect communication, delivery, knowledge, analytics, and AI tooling to keep Custory connected to the rest of your workflow."
 icon: "plug"
 ---
 
-Integrations help Custory keep customer context connected.
+Custory integrations are designed to keep customer context connected to the places where your team already talks, builds, measures, and decides.
 
-They reduce copy-pasting and make it easier to see why product work matters.
+## Supported integration groups
 
-## Common integration types
+Custory currently supports these groups:
 
-### Team conversations
+- Product management: Jira, Linear
+- Knowledge base: Notion, Google Drive
+- Analytics and revenue: PostHog, Stripe
+- Communication: Slack, Discord
+- Developer tools: GitHub, MCP server
+- Customer feedback: Intercom
+- Collaborative editors: Figma, Miro
 
-Connect tools where customer problems are discussed.
+## Communication
 
-Examples:
+### Slack
 
-- Slack
-- Discord
+Use Slack to:
 
-Use these to turn team discussions into durable insights or follow-up work.
+- Send journey updates to channels
+- Deliver team-facing automation messages
+- Link personal Slack accounts for direct message notifications
+- Use Slack as an AI collaboration surface in relevant workflows
 
-### Product work
+### Discord
 
-Connect tools where the team plans and ships.
+Use Discord to:
 
-Examples:
+- Share updates to channels and threads
+- Deliver automation messages
+- Link personal Discord accounts for direct message notifications
+- Work from community and feedback-heavy conversations
+- Use Discord threads with Custory AI
 
-- Linear
-- Jira
-- GitHub
+## Delivery and product work
 
-Use these to keep issues and tasks linked back to the customer journey.
+### GitHub
 
-### Customer and product signals
+Use GitHub to:
 
-Connect tools that show what customers are doing or saying.
+- Link issues and pull requests back to journey context
+- Keep implementation progress visible inside Custory
+- Trigger automations from PR events
+- Feed AI and MCP workflows with real delivery context
 
-Examples:
+### Jira and Linear
 
-- PostHog
-- Stripe
-- Intercom
+Use Jira and Linear to:
 
-Use these to understand behavior, revenue signals, support pressure, and churn risk.
+- Create follow-up work directly from Custory
+- Keep task status and titles in sync
+- Preserve the customer reason behind each task
 
-### Knowledge and design
+## Knowledge and design
 
-Connect tools where research, notes, and designs live.
+### Notion and Google Drive
 
-Examples:
+Use these integrations when research, notes, or documentation already exist elsewhere and should inform journey work or AI prompts.
 
-- Notion
-- Figma
-- Miro
-- Google Drive
+### Figma and Miro
 
-Use these to keep supporting context close to the journey.
+Use these integrations when visual product context, flows, or collaborative boards should stay connected to the journey.
 
-## Before connecting a tool
+## Product and revenue signals
 
-Ask:
+### PostHog
 
-- What useful signal lives there?
-- Which journey should it support?
-- Who should see or own the follow-up?
-- What should happen when new context appears?
+Use PostHog in automations to pull product usage snapshots such as event movement and top events.
 
-This helps integrations stay useful instead of becoming noise.
+### Stripe
 
-<section className="custory-resource-footer">
-  <div className="custory-resource-heading">
-    <h2>Resources</h2>
-  </div>
-  <div className="custory-resource-grid">
-    <a className="custory-resource-card" href="https://usecustory.com/changelog">
-      <span className="custory-resource-symbol">&#10022;</span>
-      <span className="custory-resource-arrow">&#8599;</span>
-      <h3>Changelog</h3>
-      <p>See what is new in Custory and what changed recently.</p>
-    </a>
-    <a className="custory-resource-card" href="https://usecustory.com/blog">
-      <span className="custory-resource-symbol">&#9776;</span>
-      <span className="custory-resource-arrow">&#8599;</span>
-      <h3>Blog</h3>
-      <p>Read practical ideas on customer journeys, product context, and better decisions.</p>
-    </a>
-  </div>
-</section>
+Use Stripe in automations to pull subscription, payment failure, and refund signals that can reveal churn or billing friction.
+
+## Customer feedback
+
+### Intercom
+
+Use Intercom when support and customer conversation history should stay connected to journey context for faster triage and pattern detection.
+
+## Integration management
+
+Open **Manage Integrations** inside a workspace to:
+
+- Connect or disconnect tools
+- Reauthorize expired integrations
+- Review integration health
+- Add manual credentials where required
+- Request an integration that is not yet supported
+
+## How to choose what to connect first
+
+Start with the smallest set that closes your biggest context gaps.
+
+For many teams that means:
+
+1. Slack or Discord
+2. GitHub, Jira, or Linear
+3. Notion or Google Drive
+4. PostHog or Stripe

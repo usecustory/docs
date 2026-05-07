@@ -1,115 +1,108 @@
 ---
 title: "Items"
-description: "Use items to keep customer context attached to the right journey step."
+description: "Use items to capture touchpoints, evidence, problems, ideas, metrics, and the real working context behind each journey."
 icon: "list-check"
 ---
 
-Items are the pieces of information that make a journey useful.
+Items are the operational layer of a journey.
 
-They help your team understand what is happening at a step, why it matters, and what to do next.
+They hold the customer signal, the team discussion, and the follow-up context that turns a map into something your team can act on.
 
-## Common item types
+## Item groups
 
-### Touchpoint
+Custory supports five main item groups.
 
-A touchpoint is something the customer interacts with.
+### Touchpoints
+
+Use touchpoints for customer-facing moments, surfaces, or interactions.
 
 Examples:
 
 - Pricing page
 - Signup form
-- Onboarding email
 - Support chat
 - Billing page
 
-### Insight
+### Insights
 
-An insight is something you learned.
-
-Examples:
-
-- Users understand the value, but do not know how to start
-- Teams invite colleagues only after seeing a useful result
-- Customers mention the same setup problem in calls
-
-### Opportunity
-
-An opportunity is a problem worth improving.
+Use insights for things your team learned.
 
 Examples:
 
-- Make setup easier for non-technical users
-- Reduce confusion before checkout
-- Help teams understand what to do after signup
+- Users understand the value but not the setup
+- Teams invite others only after first value
+- Customers keep asking the same billing question
 
-### Solution
+### Opportunities
 
-A solution is a possible fix or planned improvement.
+Use opportunities for problems or improvement areas worth acting on.
 
 Examples:
 
-- Add a setup checklist
+- Reduce setup friction for non-technical users
+- Improve trial conversion before checkout
+- Shorten time to first useful result
+
+### Solutions
+
+Use solutions for candidate fixes or committed improvements.
+
+Examples:
+
+- Add a guided setup flow
 - Rewrite the empty state
-- Create a guided import flow
-- Send a reminder when setup is incomplete
+- Change the billing copy
 
-### Metric
+### Metrics
 
-A metric is a number that helps you see what is changing.
+Use metrics for numbers you need to watch over time.
 
 Examples:
 
-- Signup conversion
 - Activation rate
-- Trial to paid conversion
+- Trial-to-paid conversion
+- Refund volume
 - Time to first value
-- Support tickets about setup
 
-### Evidence
+## Item details
 
-Evidence is proof that supports an insight or opportunity.
+Open an item to work with richer context.
 
-Examples:
+Item details support:
 
-- Customer quote
-- Support ticket
-- Sales note
-- Analytics link
-- Session recording
-- Screenshot
+- Files and attachments
+- Screenshots and image galleries
+- External links with titles and descriptions
+- Comments and discussion
+- Linked items
+- Linked external tasks
+- Item history
+- Pending AI-related activity where relevant
 
-## Add enough context
+## Item properties
 
-Good items usually answer three questions:
+Depending on the item type, you can use properties such as:
 
-- What happened?
-- Why does it matter?
-- Where did we learn this?
+- Status
+- Owners
+- Priority
+- Impact
+- Effort
+- Confidence
+- Severity
+- Target date
+- Metric direction and values
 
-You do not need a long write-up. A short note with a link is often enough.
+These properties are what make filtering, prioritization, automations, and notifications useful later.
 
-## Link work back to the journey
+## Linked tasks and sync
 
-When an opportunity becomes real work, keep it connected.
+Items can stay connected to work in external tools such as GitHub, Jira, Linear, and Notion.
 
-For example, link a Linear issue, Jira ticket, GitHub issue, or design file to the item. That way, the team can still see the customer reason behind the work.
+Custory keeps cached task titles and statuses more current so implementation progress stays visible in the journey after the task is created.
 
-<section className="custory-resource-footer">
-  <div className="custory-resource-heading">
-    <h2>Resources</h2>
-  </div>
-  <div className="custory-resource-grid">
-    <a className="custory-resource-card" href="https://usecustory.com/changelog">
-      <span className="custory-resource-symbol">&#10022;</span>
-      <span className="custory-resource-arrow">&#8599;</span>
-      <h3>Changelog</h3>
-      <p>See what is new in Custory and what changed recently.</p>
-    </a>
-    <a className="custory-resource-card" href="https://usecustory.com/blog">
-      <span className="custory-resource-symbol">&#9776;</span>
-      <span className="custory-resource-arrow">&#8599;</span>
-      <h3>Blog</h3>
-      <p>Read practical ideas on customer journeys, product context, and better decisions.</p>
-    </a>
-  </div>
-</section>
+## Comments and collaboration
+
+Use comments when the team needs to ask questions, clarify assumptions, or record why something changed.
+
+Keeping comments on the item prevents the reasoning from disappearing into chat.

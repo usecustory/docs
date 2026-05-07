@@ -1,107 +1,95 @@
 ---
 title: "Core concepts"
-description: "The basic words you will see in Custory."
+description: "Learn the core objects in Custory and how journeys, items, personas, AI, and integrations work together."
 icon: "book-open"
 ---
 
-Custory uses a few simple building blocks. Once you know these, the product is much easier to use.
+Custory works best when your team shares the same model of how customer context is stored and moved forward.
 
 ## Workspace
 
-A workspace is the home for one team, company, or product.
+A workspace is the shared home for one team or product area.
 
-It contains your journeys, personas, integrations, team members, and shared settings.
+It holds:
+
+- Members and roles
+- Journeys
+- Personas
+- Integrations
+- Notification preferences
+- Automations
+- AI and MCP access scoped to that workspace
 
 ## Journey
 
-A journey is a map of what customers go through.
+A journey is the main map of a customer flow.
 
-It can show a full experience, like "from signup to paid customer", or a smaller flow, like "getting help from support".
+It captures the experience in sequence, from one stage to the next, and gives your team a place to connect evidence, decisions, and follow-up work.
 
 ## Stage
 
-A stage is a larger part of the journey.
+A stage is a major phase in the journey.
 
-Examples:
-
-- Discover
-- Sign up
-- Activate
-- Use product
-- Get help
-- Renew
-
-Stages help your team talk about the customer experience in order.
+Examples include discovery, signup, onboarding, activation, support, renewal, or expansion.
 
 ## Step
 
 A step is a specific customer moment inside a stage.
 
-Examples:
-
-- Reads the homepage
-- Starts a trial
-- Connects an integration
-- Hits a billing issue
-- Asks support a question
-
-Steps are where most useful context lives.
+Steps are where teams usually attach the most useful working context.
 
 ## Item
 
-An item is a piece of context attached to a step.
+An item is a structured piece of context attached to the journey.
 
-Common item types include:
+Custory supports five main item groups:
 
-- Touchpoint: something the customer does or sees
-- Insight: something you learned
-- Opportunity: a problem worth improving
-- Solution: an idea or planned fix
-- Metric: a number you want to watch
-- Evidence: proof, such as a quote, link, ticket, or analytics signal
+- Touchpoints
+- Insights
+- Opportunities
+- Solutions
+- Metrics
+
+Items can also carry properties such as status, priority, impact, effort, owners, comments, links, files, and history.
 
 ## Persona
 
-A persona is a simple profile of an important customer type.
+A persona is a reusable customer profile for the workspace.
 
-Use personas to remember who a journey or problem affects.
+You can link personas to one or more journeys so the team can keep the right customer lens attached to the work.
 
 ## Integration
 
-An integration connects Custory with another tool.
+An integration connects Custory to another system.
 
-For example, you can connect customer conversations, analytics, tasks, design work, or issue trackers so your journey has better context.
+That can mean:
+
+- Sending updates to Slack or Discord
+- Creating work in GitHub, Jira, or Linear
+- Pulling context from Notion, Google Drive, Figma, or Miro
+- Using PostHog and Stripe inside automations
+- Exposing Custory to external AI tools through MCP
 
 ## Automation
 
-An automation is a repeatable action Custory can run for you.
+An automation is a workflow that runs on a schedule or in response to an event.
 
-For example, Custory can help update journey context, create follow-up work, or send updates when something changes.
+It can fetch signals, update journeys, create tasks, and send messages across connected tools.
 
-## The simple model
+## AI assistant
 
-Think of Custory like this:
+Custory AI is a workspace participant, not just a detached prompt box.
+
+You can use it inside journeys, personas, and automations. It can work with connected integrations, retrieve workspace memory, and post auditable results back into the product.
+
+## MCP server
+
+The MCP server lets external AI clients connect to Custory with workspace-scoped API keys.
+
+That gives tools such as Cursor or Claude a direct way to read and update workspace context without broad account-level access.
+
+## The working model
 
 <Info>
-  A workspace contains journeys. A journey contains stages. A stage contains steps. Steps hold the context your team needs to understand and improve the customer experience.
+  A workspace contains journeys, personas, integrations, automations, and members. Journeys hold stages and steps. Steps and stages hold items. AI, notifications, and integrations help the team act on what the journey reveals.
 </Info>
-
-<section className="custory-resource-footer">
-  <div className="custory-resource-heading">
-    <h2>Resources</h2>
-  </div>
-  <div className="custory-resource-grid">
-    <a className="custory-resource-card" href="https://usecustory.com/changelog">
-      <span className="custory-resource-symbol">&#10022;</span>
-      <span className="custory-resource-arrow">&#8599;</span>
-      <h3>Changelog</h3>
-      <p>See what is new in Custory and what changed recently.</p>
-    </a>
-    <a className="custory-resource-card" href="https://usecustory.com/blog">
-      <span className="custory-resource-symbol">&#9776;</span>
-      <span className="custory-resource-arrow">&#8599;</span>
-      <h3>Blog</h3>
-      <p>Read practical ideas on customer journeys, product context, and better decisions.</p>
-    </a>
-  </div>
-</section>

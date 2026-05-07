@@ -1,0 +1,93 @@
+---
+title: "Automations"
+description: "Build scheduled and event-based workflows that update journeys, create tasks, fetch signals, and notify your team."
+icon: "bolt"
+---
+
+Automations help your team turn fresh journey context into action without repeating the same manual steps.
+
+## Trigger types
+
+Custory supports both time-based and event-based triggers.
+
+### Scheduled triggers
+
+Use scheduled triggers for recurring workflows:
+
+- Hourly
+- Daily
+- Weekly
+
+These work well for recurring reviews, summaries, and hygiene workflows.
+
+### Event-based triggers
+
+Use event-based triggers when the workflow should run as soon as something changes.
+
+Supported event types include:
+
+- Item created
+- Item updated
+- Item status changed
+- Impact threshold crossed
+- Effort threshold crossed
+- Priority threshold crossed
+- GitHub pull request opened
+- GitHub pull request merged
+
+## Filters and scope
+
+Keep automations focused with filters such as:
+
+- Journey
+- Item group
+- Status
+- Impact
+- Effort
+- Changed fields
+- GitHub repository
+- Base branch
+
+You can also scope an automation to one or more journeys.
+
+## Actions
+
+Automations can chain up to multiple actions in one workflow. Common actions include:
+
+- Update the journey with AI instructions
+- Create a GitHub issue
+- Create a Jira issue
+- Create a Linear issue
+- Send a Slack message
+- Send a Discord message
+- Pull analytics from PostHog or Stripe
+- Fetch GitHub PR context
+
+## AI-drafted actions
+
+For messages and task creation, Custory can use AI to draft titles, descriptions, and summaries from journey context.
+
+That keeps handoff quality high without making every workflow depend on static templates.
+
+## Common automation patterns
+
+Teams often start with:
+
+- Weekly journey pulse to Slack or Discord
+- Daily focus check for high-priority items
+- PostHog event drift detection that updates the journey and notifies the team
+- Stripe failure or refund monitoring
+- GitHub PR merged workflows that refresh the journey and ask for validation
+
+## Validation and run control
+
+Custory lets you review validation issues before an automation runs.
+
+You can also:
+
+- Inspect run history
+- Run scheduled automations manually
+- Pause a workflow without deleting it
+- Reactivate it later
+
+This is useful when a workflow is correct in principle but not ready to run all the time.

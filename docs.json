@@ -25,24 +25,35 @@
             "pages": [
               "index",
               "quickstart",
-              "core-concepts"
+              "core-concepts",
+              "workspace"
             ]
           },
           {
-            "group": "Use Custory",
+            "group": "Journeys and context",
             "pages": [
               "journeys",
+              "journey-editor",
               "items",
               "personas",
               "views-and-priorities",
-              "ai-and-automations",
-              "integrations"
+              "collaboration-and-history",
+              "feedback-board"
             ]
           },
           {
-            "group": "Team basics",
+            "group": "AI and integrations",
             "pages": [
-              "workspace",
+              "ai-and-automations",
+              "automations",
+              "integrations",
+              "mcp-server",
+              "notifications"
+            ]
+          },
+          {
+            "group": "Reference",
+            "pages": [
               "faq",
               "glossary"
             ]

@@ -1,0 +1,46 @@
+---
+title: "MCP server"
+description: "Connect Custory to external AI clients with workspace-scoped MCP keys and ready-to-use setup details."
+icon: "terminal"
+---
+
+Custory includes an MCP server so external AI clients can work with workspace context directly.
+
+## What MCP access is for
+
+Use MCP when you want tools such as Cursor, Claude, or other compatible agents to:
+
+- Read workspace context
+- Work with journeys and related data
+- Participate in broader product or engineering workflows without leaving the AI client
+
+## Workspace-scoped keys
+
+MCP access uses workspace-scoped API keys.
+
+That matters because access stays tied to the right workspace instead of using a broad credential with unclear scope.
+
+From **Manage Integrations**, you can:
+
+- Create a new MCP key
+- Set an expiry window
+- Copy setup snippets
+- Revoke old keys
+
+You can only view the full token at creation time, so treat it like a secret.
+
+## Connection details
+
+Custory provides setup guidance directly in the product, including ready-to-paste configuration for common clients and a quick test request.
+
+The MCP endpoint is exposed as a dedicated route and expects authenticated access using the workspace-scoped token.
+
+## Operational behavior
+
+Custory tracks MCP connections and logs MCP tool usage so teams have a record of how external AI clients are interacting with the workspace.
+
+## When to use MCP instead of in-product AI
+
+Use in-product AI when the work belongs naturally inside Custory and benefits from the product UI.
+
+Use MCP when the team already works from an external AI client and wants Custory to participate directly in that broader workflow.
