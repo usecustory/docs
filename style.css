@@ -5,6 +5,11 @@
   --custory-primary: #0e8d00;
 }
 
+* {
+  scrollbar-width: thin;
+  scrollbar-color: gray transparent;
+}
+
 .dark {
   --sidebar: oklch(0.155 0 0);
   --sidebar-foreground: oklch(0.985 0 0);
