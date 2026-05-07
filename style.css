@@ -17,6 +17,7 @@
 
 #sidebar a:hover,
 #sidebar button:hover,
+#sidebar a.nav-anchor:hover,
 #sidebar a[aria-current="page"],
 #sidebar a[data-active="true"],
 #sidebar button[data-active="true"],
@@ -27,9 +28,40 @@
 
 #sidebar a:hover *,
 #sidebar button:hover *,
+#sidebar a.nav-anchor:hover *,
 #sidebar a[aria-current="page"] *,
 #sidebar a[data-active="true"] *,
 #sidebar button[data-active="true"] *,
 #sidebar a[class*="active"] * {
   color: var(--sidebar-accent-foreground) !important;
+}
+
+#sidebar a.nav-anchor {
+  border-radius: 0.75rem !important;
+  color: inherit !important;
+  margin-bottom: 0.25rem !important;
+  margin-left: 0 !important;
+  padding: 0.5rem 0.75rem !important;
+  width: 100% !important;
+}
+
+#sidebar a.nav-anchor > div {
+  background: transparent !important;
+  border-radius: 0.375rem !important;
+  box-shadow: none !important;
+  color: inherit !important;
+  margin-right: 0.75rem !important;
+  padding: 0 !important;
+}
+
+#sidebar a.nav-anchor img {
+  background: transparent !important;
+  color: inherit !important;
+}
+
+#sidebar a[href="https://discord.gg/B9pA8YuVf6"] [class*="online" i],
+#sidebar a[href="https://discord.gg/B9pA8YuVf6"] [class*="count" i],
+#navbar a[href="https://discord.gg/B9pA8YuVf6"] [class*="online" i],
+#navbar a[href="https://discord.gg/B9pA8YuVf6"] [class*="count" i] {
+  display: none !important;
 }

@@ -76,7 +76,7 @@
   "navbar": {
     "links": [
       {
-        "type": "discord",
+        "label": "Community & Support",
         "icon": "/icons/discord.svg",
         "href": "https://discord.gg/B9pA8YuVf6"
       }
