@@ -1,0 +1,182 @@
+---
+title: "Notification delivery setup"
+description: "Set up Slack, Discord, and email notification delivery so each workspace member gets the right updates in the channel they actually pay attention to."
+icon: "mail"
+---
+
+Notification delivery setup in Custory happens per workspace and per person.
+
+That distinction matters:
+
+- Workspace integrations connect shared systems like Slack or Discord
+- Personal linking connects your individual Slack or Discord identity for direct messages
+
+## Where to configure notification delivery
+
+Open **Settings -> Notifications** while inside the workspace you want to configure.
+
+Notification delivery is workspace-specific, not a single global preference across every workspace.
+
+## Notification groups
+
+Custory currently lets you choose channels per notification group:
+
+- Mentions
+- Item updates
+- System
+
+Each group can route to one or more of:
+
+- In-app
+- Email
+- Slack DM
+- Discord DM
+
+## Email notifications
+
+Email delivery goes to your Custory account email.
+
+Email setup is the simplest delivery option because it does not require an extra personal link step.
+
+Use email when:
+
+- You want durable catch-up
+- The update matters, but does not require an instant response
+- You want a second channel for system alerts
+
+## Slack DM setup
+
+Slack direct-message delivery requires two things:
+
+1. An active Slack workspace integration for the current workspace
+2. Your Slack account linked to your Custory account
+
+If the workspace Slack integration is not active, Slack DM delivery will not be available operationally.
+
+### How Slack linking works
+
+From **Settings -> Notifications**:
+
+1. Generate a Slack link code
+2. Open the Custory app in Slack
+3. Send the generated code, or `link CODE`, in the Messages tab
+
+The code is short-lived and one-time use.
+
+## Discord DM setup
+
+Discord direct-message delivery also requires two things:
+
+1. An active Discord workspace integration
+2. Your Discord identity linked to your Custory account
+
+### How Discord linking works
+
+From **Settings -> Notifications**:
+
+1. Generate a Discord link code
+2. Open a DM with the Custory bot in Discord
+3. Run `/link CODE`
+
+As with Slack, the code is short-lived and one-time use.
+
+## Link code behavior
+
+Custory link codes are intentionally temporary.
+
+Current behavior:
+
+- Codes expire after 15 minutes
+- A code can only be used once
+- You can regenerate a code
+- You can clear an unused code
+- You can unlink an already linked Slack or Discord account
+
+This gives the team a lightweight but controlled way to connect personal chat identities.
+
+## What the settings page shows
+
+For Slack and Discord account linking, Custory can show:
+
+- Whether the workspace has an active integration
+- Whether your personal account is linked
+- Your linked external display name where available
+- The active link code, if one exists
+
+This is useful when troubleshooting why DM delivery is or is not available.
+
+## Channel availability logic
+
+Slack DM and Discord DM are not just preference toggles. They depend on setup state.
+
+For each person:
+
+- If the workspace integration is missing, the channel is not operational
+- If the workspace integration exists but the personal link is missing, the channel still is not ready
+- Once both are present, the DM channel becomes a real delivery target
+
+## Recommended channel setup for small teams
+
+### Founder or product owner
+
+Good default:
+
+- Mentions: in-app + Slack or Discord DM
+- Item updates: in-app
+- System: in-app + email
+
+### Support or ops owner
+
+Good default:
+
+- Mentions: in-app + Slack or Discord DM
+- Item updates: in-app + optional email
+- System: in-app + Slack or Discord DM + email
+
+### Wider team members
+
+Good default:
+
+- Mentions: in-app
+- Item updates: in-app
+- System: in-app
+
+Then add direct-message delivery only where the person is expected to respond quickly.
+
+## When to regenerate, clear, or unlink
+
+### Regenerate code
+
+Use this when the previous code expired or was copied incorrectly.
+
+### Clear code
+
+Use this when you created a code but no longer want that pending link flow active.
+
+### Unlink account
+
+Use this when:
+
+- You linked the wrong Slack or Discord account
+- You changed identity or server access
+- You want to stop DM delivery to that account
+
+## Common mistakes
+
+### Enabling Slack DM before personal linking is complete
+
+The preference may exist, but the delivery path is not ready until the account is linked.
+
+### Assuming workspace Slack setup automatically links personal identities
+
+It does not. Shared integration and personal linking are separate layers on purpose.
+
+### Sending every notification group to direct messages
+
+DM delivery should be reserved for the updates someone truly needs to notice quickly.
+
+## Related guides
+
+- [Notifications](/notifications)
+- [Integrations](/integrations)
+- [Slack and Discord AI threads](/slack-discord-ai-threads)

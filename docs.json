@@ -97,8 +97,13 @@
               "ai-workspace-member",
               "workspace-memory",
               "automations",
+              "automation-triggers",
+              "automation-filters",
+              "automation-actions",
+              "build-automations-with-ai",
               "automation-templates",
-              "notifications"
+              "notifications",
+              "notification-delivery-setup"
             ]
           }
         ]
@@ -111,6 +116,8 @@
             "group": "Connected tools",
             "pages": [
               "integrations",
+              "github-integration",
+              "posthog-and-stripe",
               "external-tasks",
               "slack-discord-ai-threads",
               "mcp-server"

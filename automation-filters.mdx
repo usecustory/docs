@@ -1,0 +1,218 @@
+---
+title: "Automation filters"
+description: "Use automation scope and filters to keep workflows focused on the exact journeys, item types, fields, and repositories that matter."
+icon: "filter"
+---
+
+Filters are what turn an automation from "technically correct" into "actually useful."
+
+Without filters, automations tend to overfire. For smaller teams, that quickly creates mistrust. The team stops reading the updates, and the workflow becomes background noise.
+
+## Scope first, filters second
+
+Custory automations use two layers of focus:
+
+- Automation scope
+- Trigger-level filters
+
+### Automation scope
+
+Automation scope defines which journey the automation belongs to operationally.
+
+In practice, Custory expects a saved automation to be scoped to one journey when you want it to activate cleanly, especially for workflows that update the journey itself.
+
+Use scope to answer:
+
+- Which journey owns this workflow?
+- Which part of the product or customer experience should this automation maintain?
+
+### Trigger-level filters
+
+Trigger filters narrow which events inside that scope should actually fire the automation.
+
+Use filters to answer:
+
+- Which item groups matter?
+- Which statuses matter?
+- Which changes should count as important?
+
+## Filters for Custory item triggers
+
+Custory item triggers can be filtered by:
+
+- Journey
+- Item group
+- Status
+- Impact
+- Effort
+- Changed fields
+
+## Journey filter
+
+Use this when one trigger definition may technically apply across several journeys, but you only want it to run for a specific one.
+
+For lean teams, it is usually best to keep each automation attached to one clear journey rather than trying to make one giant cross-workspace workflow do everything.
+
+## Item group filter
+
+Supported groups:
+
+- Insights
+- Opportunities
+- Solutions
+- Metrics
+- Touchpoints
+
+Use group filtering when the workflow is meant for one type of work only.
+
+Examples:
+
+- Only create tasks from `Opportunities` and `Solutions`
+- Only monitor `Metrics` for operational drift
+- Only alert on new `Insights`
+
+## Status filter
+
+Use status filtering when the trigger should only respond to items in specific lifecycle states.
+
+Examples:
+
+- Run only for `Prioritized` opportunities
+- React only to `Shipped` solutions
+- Watch only `Broken` metrics
+
+## Impact filter
+
+Use impact filtering when the automation should focus on higher-upside items.
+
+The current filter supports impact greater than or equal to a threshold.
+
+Example:
+
+- Only run when impact is `4` or higher
+
+This is useful when a small team wants automation to care only about the most meaningful opportunities.
+
+## Effort filter
+
+Use effort filtering when delivery cost matters to the workflow.
+
+The current filter supports effort less than or equal to a threshold.
+
+Example:
+
+- Only run when effort is `2` or lower
+
+This is ideal for quick-win workflows.
+
+## Changed fields filter
+
+Changed fields are one of the highest-leverage filter tools in Custory.
+
+Use them with `item updated` or related triggers when you care about certain edits but not every edit.
+
+Supported changed fields include:
+
+- Title
+- Description
+- Status
+- Owner
+- Enabled fields
+- Channel
+- Actor
+- Insight type
+- Affected segment
+- Confidence
+- Severity
+- Priority
+- Impact
+- Effort
+- Solution type
+- Target date
+- Metric type
+- Unit
+- Baseline
+- Current
+- Target
+- Direction
+
+## When changed fields matter most
+
+Good use cases:
+
+- Notify the team only when `priority` changes
+- Run a workflow when `status` changes
+- Refresh a review loop only when `impact` or `effort` changes
+- Respond when a metric's `current value` changes
+
+This is how you avoid "edited description typo" from triggering the same workflow as "priority changed to high."
+
+## GitHub filtering and scoping
+
+GitHub-based workflows use repository and branch scoping instead of Custory item filters.
+
+Relevant controls include:
+
+- Selected repositories
+- Base branches
+- PR state for PR-fetch actions
+- Time window for PR-fetch actions
+
+Use repository scoping to answer:
+
+- Which codebases should influence this journey?
+
+Use base branches to answer:
+
+- Which PR destinations count as meaningful enough for the workflow?
+
+## Filter design patterns
+
+### High-priority escalation
+
+Use:
+
+- Group: `Opportunities`, `Solutions`
+- Priority threshold: `High`
+
+This keeps the workflow focused on the moments the team explicitly marked as important.
+
+### Quick-win routing
+
+Use:
+
+- Group: `Opportunities`, `Solutions`
+- Impact >= `4`
+- Effort <= `2`
+
+This is one of the strongest patterns for lean teams that want obvious wins to move fast.
+
+### Status-based customer validation
+
+Use:
+
+- Group: `Solutions`
+- Status changed
+- Status filter aligned to `Shipped`
+
+This is a good way to prompt the team to validate customer impact after release.
+
+## Common mistakes
+
+### Over-filtering early
+
+If a team is just learning the workflow, too many conditions can make the automation feel broken. Start simple, then tighten.
+
+### Under-filtering mature workflows
+
+Once the journey has real scale, broad triggers tend to become noisy quickly. Add enough structure to preserve trust.
+
+### Mixing review logic with escalation logic
+
+If the workflow is for weekly review, use a scheduled trigger. If the workflow is for immediate escalation, use event filters. Do not force one automation to serve both jobs.
+
+## Related guides
+
+- [Automation triggers](/automation-triggers)
+- [Automation actions](/automation-actions)
+- [Automations](/automations)

@@ -1,0 +1,174 @@
+---
+title: "PostHog and Stripe"
+description: "Connect product usage and revenue signals to Custory so automations can respond to customer-experience changes while there is still time to act."
+icon: "bar-chart-3"
+---
+
+PostHog and Stripe help Custory work from live signal instead of static reporting.
+
+They are best used when the team wants product and revenue movement to influence:
+
+- Journey maintenance
+- Team awareness
+- Prioritization
+- Follow-up creation
+
+## What these integrations are for
+
+Use **PostHog** when customer behavior inside the product should shape the journey.
+
+Use **Stripe** when billing and commercial signals reveal customer friction, churn risk, or value breakdown.
+
+For many founder-led teams, these two systems are where the earliest hard evidence shows up after the team ships something.
+
+## How setup differs from other integrations
+
+PostHog and Stripe are manual-credential integrations rather than the same style of OAuth connection used by tools like Slack, Linear, or GitHub.
+
+That means setup is intentionally direct:
+
+- Connect the account with the required credentials
+- Confirm the target project or account
+- Use the integration inside automations
+
+## PostHog setup context
+
+Custory stores PostHog connection details such as:
+
+- Base URL
+- Project ID
+- Project name
+- API key prefix
+
+This keeps the integration tied to the right product analytics project.
+
+## Stripe setup context
+
+Custory stores Stripe connection details such as:
+
+- Account ID
+- Account name
+- Livemode state
+- Key prefix
+
+That distinction matters because teams often need to know whether a signal came from live or test data.
+
+## Where PostHog and Stripe are used
+
+These integrations are currently most important inside automations.
+
+Custory can fetch structured analytics snapshots and then use them in downstream actions such as:
+
+- Update journey
+- Send Slack or Discord message
+- Create GitHub, Jira, or Linear follow-up
+
+## PostHog presets
+
+Custory currently supports these PostHog automation presets:
+
+- Event volume change
+- Top events
+
+### Event volume change
+
+Use this when one event is strategically important and the team wants to know when its movement suggests friction or progress.
+
+Required:
+
+- Event name
+- Window between 1 and 90 days
+
+Good examples:
+
+- Activation event volume drops
+- First integration success moves sharply
+- Invite completion changes after a release
+
+### Top events
+
+Use this when the team wants broader discovery signal from product behavior.
+
+Configuration includes:
+
+- Window between 1 and 90 days
+- Top events limit
+
+This is useful for spotting:
+
+- Surprising behavior patterns
+- Missing touchpoints
+- Journey steps that may no longer reflect real product usage
+
+## Stripe presets
+
+Custory currently supports these Stripe automation presets:
+
+- Subscription activity
+- Payment failures
+- Refund activity
+
+### Subscription activity
+
+Use this when the team wants recurring revenue movement to feed journey awareness and product decision-making.
+
+### Payment failures
+
+Use this when billing recovery problems may reflect onboarding, trust, or payment UX issues.
+
+### Refund activity
+
+Use this when refunds may reveal a deeper mismatch between promise and experienced value.
+
+## Structured analytics output
+
+Custory does not return only raw numbers from these actions.
+
+The analytics step produces a structured summary designed for downstream use, including information such as:
+
+- What changed
+- Comparison window
+- Severity
+- A recommended follow-up framing
+
+That is why these actions work well before journey updates or team notifications. They help the next step operate from interpreted signal rather than isolated metrics.
+
+## Recommended workflows
+
+### Product usage drift
+
+- Get PostHog analytics
+- Update journey
+- Send Slack summary
+
+### Billing risk detection
+
+- Get Stripe payment failures
+- Send Discord or Slack alert
+- Create follow-up task if needed
+
+### Discovery refresh
+
+- Get PostHog top events
+- Update journey
+- Ask the team to review whether stage and step mapping still matches behavior
+
+## Common mistakes
+
+### Using analytics with no follow-up plan
+
+If the signal never feeds a journey update, notification, or task, it stays passive reporting.
+
+### Tracking too much too early
+
+Start with one high-value PostHog event or one Stripe workflow the team would genuinely act on.
+
+### Confusing signal with explanation
+
+PostHog and Stripe reveal movement. The team still needs to interpret why it changed and what to do next.
+
+## Related guides
+
+- [Automations](/automations)
+- [Automation actions](/automation-actions)
+- [Automation templates](/automation-templates)

@@ -1,61 +1,163 @@
 ---
 title: "Notifications"
-description: "Use the in-app notification center and delivery preferences to route important updates to the right place."
+description: "Use the in-app notification center to review important activity, route it by channel, and keep high-signal updates visible without turning every change into noise."
 icon: "bell"
 ---
 
-Custory includes an in-app notification center plus channel-based delivery preferences.
+Custory notifications are designed to keep the right people aware of the right change at the right time.
 
-## Notification center
+For smaller teams, the challenge is not usually a lack of updates. It is deciding which updates deserve:
 
-Open the notification bell to review updates in one place.
-
-The notification center supports:
-
-- Inbox and archive views
-- Mark as read and unread
-- Archive and restore
-- Open the related work directly from the notification
-
-## Delivery channels
-
-Custory supports these notification channels:
-
-- In-app
+- In-app visibility
 - Email
-- Slack direct message
-- Discord direct message
+- Slack DM
+- Discord DM
 
-Use in-app for the default stream. Add direct channels for the updates that need faster attention.
+## The notification center
 
-## Notification groups
+Custory includes an in-app notification center accessible from the notification bell.
 
-Custory groups notification preferences into:
+The notification center is the default review surface for workspace activity.
 
-- **Mentions**
-- **Item updates**
-- **System**
+## Inbox and archive
 
-System includes things like workspace access events, automation problems, integration health, and external task sync updates.
+The notification center is split into:
 
-## Event coverage
+- Inbox
+- Archive
 
-Notifications can cover events such as:
+Use **Inbox** for active notifications that still may require attention.
 
-- Comment mentions
-- Item comments
+Use **Archive** for notifications you want to keep out of the active stream without deleting the record from your personal history.
+
+## What you can do in the notification center
+
+From the notification center, you can:
+
+- Open the related work directly
+- Mark notifications as read
+- Mark notifications as unread
+- Mark all inbox items as read
+- Archive items
+- Move archived items back to inbox
+- Load more older notifications
+
+This is useful when Custory is part of a real operating rhythm instead of a tool you remember to check only occasionally.
+
+## Notification categories
+
+Custory groups notification preferences into three main categories:
+
+- Mentions
+- Item updates
+- System
+
+### Mentions
+
+Notifications when someone mentions you in a comment.
+
+### Item updates
+
+Notifications for changes on items you are assigned to, including:
+
+- Comments
 - Assignment changes
-- Item status changes
-- Invitation and join request updates
+- Status changes
+
+### System
+
+Notifications for operational events such as:
+
+- Invitation updates
+- Join request updates
 - Automation failures
 - Invalid automations
 - Integration errors or expiry
 - External task title or status changes
 
-## Slack and Discord account linking
+## Supported event coverage
 
-You can link your personal Slack or Discord identity to your Custory account.
+Current notification event coverage includes:
 
-This is separate from workspace-level channel integrations. It lets Custory deliver direct messages to you as an individual, not only to a shared team channel.
+- Comment mention
+- Item comment
+- Assignment added
+- Assignment removed
+- Item status changed
+- Invitation accepted
+- Invitation declined
+- Join request created
+- Join request approved
+- Join request rejected
+- Automation run failed
+- Automation invalid
+- Integration error
+- Integration expired
+- Integration restored
+- External task status changed
+- External task title changed
 
-Use this for high-signal updates such as mentions, assignments, automation failures, and integration issues.
+## Delivery channels
+
+Custory supports these delivery channels:
+
+- In-app
+- Email
+- Slack DM
+- Discord DM
+
+In-app is the default baseline. The other channels should be added intentionally for the updates that deserve faster attention.
+
+## How to think about channel routing
+
+Recommended pattern for lean teams:
+
+- Keep most updates in-app
+- Add email for durable catch-up
+- Add Slack or Discord DM only for high-signal, time-sensitive updates
+
+Examples:
+
+- Mentions: in-app plus Slack or Discord DM
+- Item updates: usually in-app only
+- System: in-app plus email, and possibly Slack or Discord DM for high-responsibility roles
+
+## Open related work directly
+
+Notifications are most useful when they reduce navigation cost.
+
+Custory notifications are designed to open the related work directly, so the person receiving the alert can move from signal to context quickly instead of hunting through the workspace.
+
+## Best practices
+
+### Use the notification center as your catch-up layer
+
+If your team lives in Slack or Discord, it is still useful to keep the in-app bell as the durable summary of what changed.
+
+### Keep direct-message channels high-signal
+
+If Slack DM or Discord DM becomes noisy, the team will stop trusting it. Route only the updates that deserve interruption.
+
+### Review system notifications seriously
+
+Integration expiry, automation failures, and external task drift often signal operational decay before product teams notice it elsewhere.
+
+## Common mistakes
+
+### Sending everything everywhere
+
+This usually creates fatigue rather than clarity.
+
+### Using email for urgent operational updates only
+
+Email is durable, but not always the fastest path. Use Slack or Discord DM when speed matters.
+
+### Ignoring archive as a workflow tool
+
+Archive is useful for clearing the active stream without losing the record of what happened.
+
+## Related guides
+
+- [Notification delivery setup](/notification-delivery-setup)
+- [Slack and Discord AI threads](/slack-discord-ai-threads)
+- [External tasks and issues](/external-tasks)

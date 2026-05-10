@@ -1,0 +1,230 @@
+---
+title: "Automation triggers"
+description: "Choose the right automation trigger so Custory reacts to the signals that actually matter instead of creating noisy, low-value workflows."
+icon: "play"
+---
+
+Triggers decide when an automation wakes up.
+
+That sounds simple, but it is where automation quality is won or lost. A strong trigger makes the workflow feel like leverage. A weak trigger creates noise, confusion, or false urgency.
+
+## Trigger categories
+
+Custory supports two broad trigger families:
+
+- Scheduled triggers
+- Event-based triggers
+
+Use scheduled triggers when the job is review, reporting, or upkeep. Use event-based triggers when the job should happen the moment something important changes.
+
+## Scheduled triggers
+
+Scheduled triggers run on a cadence in a selected timezone.
+
+Custory currently supports:
+
+- Hourly
+- Daily
+- Weekly
+
+All scheduled triggers use a lookback model based on the time since the last successful run.
+
+### Hourly
+
+Use hourly when the workflow is time-sensitive enough to benefit from frequent checks, but not so urgent that it should run on every single change.
+
+Good use cases:
+
+- Short-latency support or ops loops
+- Frequent analytics drift checks
+- High-signal team monitoring
+
+### Daily
+
+Use daily for operating rhythms that should happen once per workday.
+
+Good use cases:
+
+- Morning team summaries
+- Daily focus selection
+- Daily billing or product-signal checks
+
+### Weekly
+
+Use weekly when the goal is structured review rather than immediate response.
+
+Good use cases:
+
+- Weekly journey pulse
+- Weekly opportunity cleanup
+- Weekly metrics review
+
+Weekly triggers require at least one weekday selection.
+
+## Scheduled trigger setup
+
+Scheduled triggers require:
+
+- A valid timezone
+- The appropriate time fields for the trigger type
+
+For smaller teams, timezone matters more than it first appears. If the workflow lands outside your real working hours, the team starts ignoring it.
+
+## Event-based triggers
+
+Event-based triggers run when a defined change happens in Custory or GitHub.
+
+Custory currently supports these event triggers:
+
+- Item created
+- Item updated
+- Item status changed
+- Impact threshold crossed
+- Effort threshold crossed
+- Priority threshold crossed
+- GitHub PR opened
+- GitHub PR merged
+
+## Custory item events
+
+### Item created
+
+Runs when a new item is created.
+
+Use it when the team wants immediate follow-up on new signal entering the journey.
+
+Good use cases:
+
+- Turn high-signal items into delivery tasks
+- Notify the team when a new opportunity appears
+- Start an AI-based triage workflow
+
+### Item updated
+
+Runs when an existing item changes.
+
+Use it when maintenance or escalation should happen after meaningful edits rather than only on creation.
+
+This trigger is usually most useful when combined with filters, especially changed fields.
+
+### Item status changed
+
+Runs when an item changes status.
+
+Use it when the workflow depends on progression through a lifecycle, such as:
+
+- A solution moving to `Shipped`
+- An insight moving to `Validated`
+- An opportunity moving to `Prioritized`
+
+## Threshold triggers
+
+Threshold triggers react when a scoring field crosses a defined threshold.
+
+### Impact threshold crossed
+
+Runs when impact reaches the configured threshold or higher.
+
+Example:
+
+- Threshold `4`
+- Trigger fires when an item becomes impact `4` or `5`
+
+Use this when you want strong upside to trigger immediate attention.
+
+### Effort threshold crossed
+
+Runs when effort drops to the configured threshold or lower.
+
+Example:
+
+- Threshold `2`
+- Trigger fires when an item becomes effort `2` or `1`
+
+Use this for quick-win workflows where low delivery cost matters.
+
+### Priority threshold crossed
+
+Runs when an item reaches the configured priority.
+
+Use this when the team's explicit prioritization decision should trigger downstream action.
+
+Good use cases:
+
+- Create a Jira or Linear issue when an item becomes `High`
+- Notify Slack when a solution is promoted into active focus
+
+## GitHub triggers
+
+GitHub event triggers let delivery activity drive follow-up in Custory.
+
+Supported GitHub triggers:
+
+- PR opened
+- PR merged
+
+These triggers require:
+
+- A GitHub integration
+- At least one selected repository
+
+Optional:
+
+- Base branches
+
+Use base branches when the workflow should only react to PRs targeting important branches such as `main` or `release`.
+
+### GitHub PR opened
+
+Use this when you want early visibility into incoming delivery work.
+
+Good use cases:
+
+- Ask Custory to fetch PR context
+- Notify product or support that a customer-facing fix is under review
+- Start a validation-prep workflow before merge
+
+### GitHub PR merged
+
+Use this when the workflow should react to shipped code rather than just active work.
+
+Good use cases:
+
+- Update the journey after a relevant merge
+- Prompt the team to validate customer impact
+- Post a shipped update to Slack or Discord
+
+## How to choose the right trigger
+
+Ask one question first:
+
+What moment should cause the team to care?
+
+Choose:
+
+- `Scheduled` when the answer is "at a regular review rhythm"
+- `Item created` when the answer is "when new signal enters the system"
+- `Item updated` when the answer is "when important context changes"
+- `Status changed` when the answer is "when work moves stages"
+- `Threshold crossed` when the answer is "when the item becomes important enough"
+- `GitHub PR opened or merged` when the answer is "when delivery activity changes the state of the work"
+
+## Common mistakes
+
+### Triggering on every update when only some updates matter
+
+If the real concern is status, ownership, or scoring changes, use filters and changed fields instead of a broad `item updated` workflow.
+
+### Using scheduled triggers for urgent work
+
+If the team needs to respond immediately, a daily or weekly cadence is the wrong tool.
+
+### Using event triggers for low-signal activity
+
+Not every item change deserves automation. Trigger only on changes the team would genuinely care about if they saw them live.
+
+## Related guides
+
+- [Automation filters](/automation-filters)
+- [Automation actions](/automation-actions)
+- [Build automations with AI chat](/build-automations-with-ai)

@@ -1,0 +1,132 @@
+---
+title: "Build automations with AI chat"
+description: "Use Custory AI in automation mode to refine triggers, actions, and integration-backed setup without building every workflow manually from scratch."
+icon: "sparkles"
+---
+
+Custory AI can help you build and refine automations directly from the automation editor.
+
+This is useful when you know the outcome you want, but do not want to manually configure every trigger, action, and integration detail from a blank screen.
+
+## What automation AI mode can do
+
+In automation mode, Custory AI can help edit:
+
+- Trigger choice
+- Action choice
+- Integration-backed properties
+- Message and issue-writing instructions
+- Overall automation structure
+
+The automation chat is not a separate brainstorming tool. It is tied to the actual automation you are editing.
+
+## Save first, then edit with AI
+
+Custory requires the automation to be saved before AI can edit it in place.
+
+That matters because AI needs a real automation record to work against. If the automation is not saved yet, the editor will ask you to save it first before opening automation chat.
+
+## How to open automation chat
+
+Open the automation in the editor, then use the Custory AI entry point from the workflow header.
+
+Custory saves the current draft first, then opens AI in automation mode with the current:
+
+- Workspace
+- Journey context where relevant
+- Automation ID
+
+## What AI has access to
+
+In automation mode, AI can work from:
+
+- The current automation structure
+- Connected integrations
+- Workspace context
+- Journey context where relevant
+
+If required integrations are missing, the chat can point you toward connecting them first.
+
+## Best use cases
+
+### Start from the goal
+
+Example prompts:
+
+- `I want a weekly Slack summary of the most important changes in this journey.`
+- `When a high-priority opportunity appears, create a Linear issue and tell the team in Slack.`
+- `When a GitHub PR merges, update this journey only if the change affects customer experience.`
+
+This is the highest-leverage way to use automation chat because the AI can choose and refine the structure around a clear operational outcome.
+
+### Refine an existing automation
+
+Good examples:
+
+- `Switch this trigger to something better for the goal.`
+- `Refine this automation so it is less noisy.`
+- `Update this to create Jira issues instead of Slack messages.`
+
+### Improve AI instructions
+
+Good examples:
+
+- `Make the Slack update more concise and decision-oriented.`
+- `Rewrite the issue instructions so engineers get clearer customer context.`
+
+## Suggested automation chat prompts
+
+Custory surfaces automation-oriented suggestions such as:
+
+- Add Slack action
+- Switch trigger
+- Add Jira action
+- Add Linear action
+- Refine this automation
+
+These are useful shortcuts when the team wants to make an existing automation better instead of starting from zero.
+
+## What AI is best at here
+
+Automation AI is strongest when the job is:
+
+- Translating intent into workflow structure
+- Tightening message or issue-writing instructions
+- Converting a manual habit into a repeatable flow
+
+It is less useful when the team has not yet decided what the workflow should accomplish.
+
+## Recommended workflow
+
+1. Start with the smallest useful automation
+2. Save it
+3. Open automation chat
+4. Ask AI to improve one part at a time
+5. Review the result before activating
+
+That sequence is usually better than asking AI to invent a large multi-step workflow all at once.
+
+## Common mistakes
+
+### Asking AI for automation before the goal is clear
+
+If the team cannot explain what the workflow should accomplish, AI usually produces something technically plausible but operationally weak.
+
+### Skipping the review step
+
+AI can help configure the workflow, but the team should still confirm:
+
+- Trigger sensitivity
+- Integration routing
+- Target journey or step
+- Message quality
+
+### Using AI to compensate for stale data
+
+If the journey structure, statuses, or priorities are weak, AI will have less to work from. Clean the context before trying to automate it.
+
+## Related guides
+
+- [Automations](/automations)
+- [Automation triggers](/automation-triggers)
+- [Automation actions](/automation-actions)

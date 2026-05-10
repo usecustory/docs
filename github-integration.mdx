@@ -1,0 +1,150 @@
+---
+title: "GitHub integration"
+description: "Connect GitHub repositories, issues, and pull requests to Custory so delivery work stays tied to the customer context that created it."
+icon: "github"
+---
+
+GitHub is where customer-context work often either stays connected to delivery or falls apart.
+
+Custory’s GitHub integration is designed to preserve that connection. It keeps the line visible from:
+
+- Customer problem
+- Journey item
+- Delivery task
+- Pull request
+- Shipped change
+
+## What the GitHub integration supports
+
+Custory’s GitHub integration is not only for issue creation. It supports a broader delivery loop:
+
+- Repository-aware setup
+- Linked GitHub issues
+- Pull request visibility
+- GitHub-triggered automations
+- GitHub PR fetch actions
+
+## Connect GitHub at the workspace level
+
+Connect GitHub from **Manage Integrations**.
+
+Once connected, Custory can work from your selected repositories instead of treating GitHub as an abstract issue target.
+
+That matters because smaller teams usually do not want to type owner and repo details repeatedly or guess where journey-linked work should land.
+
+## Repository-aware setup
+
+Custory works with repository context so GitHub-backed workflows can stay grounded in the actual codebase.
+
+This shows up in several places:
+
+- Journey-level GitHub defaults
+- GitHub issue creation from items
+- GitHub PR triggers in automations
+- GitHub PR fetch actions in automations
+
+## Create linked GitHub issues from items
+
+You can create GitHub issues directly from journey items.
+
+This is useful when an opportunity or solution needs engineering follow-through and the customer reason should remain attached to the issue.
+
+A linked GitHub issue helps preserve:
+
+- Why the work exists
+- Which item it came from
+- Which journey step it affects
+
+See [External tasks and issues](/external-tasks).
+
+## Journey defaults for GitHub
+
+Custory supports per-journey GitHub defaults so a journey can remember the repo it most often works with.
+
+That reduces routing friction and helps teams keep issue creation consistent.
+
+See [Journey settings](/journey-settings).
+
+## Pull request visibility
+
+Custory also treats pull requests as useful workflow context.
+
+That means delivery progress can stay visible to product and support without forcing everyone to monitor GitHub manually all day.
+
+This is especially valuable when the team wants to know:
+
+- What is actively under review
+- What merged recently
+- Which customer-facing changes likely need validation
+
+## GitHub in automations
+
+GitHub supports automation in two main ways.
+
+### GitHub-triggered automations
+
+Use GitHub PR events as triggers:
+
+- PR opened
+- PR merged
+
+These require:
+
+- A GitHub integration
+- At least one repository
+
+Optional:
+
+- Base branches
+
+This is useful for workflows like:
+
+- Notify the team when a customer-facing fix is under review
+- Refresh the journey when a PR merges
+- Prompt product validation after delivery activity
+
+### GitHub PR fetch actions
+
+Automations can also fetch PR context as an action.
+
+Use this when the workflow needs pull request context before deciding what to do next.
+
+Example:
+
+- Get GitHub PRs
+- Update journey
+- Send Slack summary
+
+## Best founder-led use cases
+
+### Keep engineering handoff tied to customer signal
+
+Create GitHub issues directly from opportunities and solutions so the reasoning does not disappear at the delivery boundary.
+
+### Close the loop after merge
+
+Use PR merged triggers to refresh the journey and prompt the team to validate whether the customer experience actually improved.
+
+### Make shipped work visible outside engineering
+
+Use PR fetch or PR-triggered automations to summarize delivery movement for product, support, or founders.
+
+## Common mistakes
+
+### Treating GitHub as only an issue sink
+
+The integration is more valuable when the team also uses PR visibility and automation, not just issue creation.
+
+### Linking issues with weak item context
+
+A thin item becomes a thin GitHub issue. Add the customer context first.
+
+### Triggering on every repository
+
+Only selected repositories should influence a journey. Over-broad repo scope usually creates noise.
+
+## Related guides
+
+- [External tasks and issues](/external-tasks)
+- [Automation triggers](/automation-triggers)
+- [Automation actions](/automation-actions)

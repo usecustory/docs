@@ -1,46 +1,185 @@
 ---
 title: "MCP server"
-description: "Connect Custory to external AI clients with workspace-scoped MCP keys and ready-to-use setup details."
+description: "Connect external AI clients to Custory with workspace-scoped MCP keys, ready-made config templates, and auditable key management."
 icon: "terminal"
 ---
 
-Custory includes an MCP server so external AI clients can work with workspace context directly.
+Custory includes an MCP server so external AI clients can work directly with workspace context.
+
+This is the right tool when your team already works from Cursor, Claude, or another MCP-compatible environment and wants Custory to become part of that workflow instead of staying isolated inside the app.
 
 ## What MCP access is for
 
-Use MCP when you want tools such as Cursor, Claude, or other compatible agents to:
+Use MCP when you want an external AI client to:
 
 - Read workspace context
 - Work with journeys and related data
-- Participate in broader product or engineering workflows without leaving the AI client
+- Use Custory as part of a broader product or engineering workflow
 
-## Workspace-scoped keys
+Use in-product AI when the work belongs naturally inside Custory’s own UI. Use MCP when the team’s main AI surface lives elsewhere.
 
-MCP access uses workspace-scoped API keys.
+## Workspace-scoped MCP keys
 
-That matters because access stays tied to the right workspace instead of using a broad credential with unclear scope.
+Custory MCP access uses workspace-scoped API keys.
 
-From **Manage Integrations**, you can:
+That is an important constraint:
 
-- Create a new MCP key
-- Set an expiry window
-- Copy setup snippets
-- Revoke old keys
+- Access is tied to one workspace
+- The credential is not a broad global token
+- Revoking the key shuts off that client immediately
 
-You can only view the full token at creation time, so treat it like a secret.
+## Create an MCP key
 
-## Connection details
+From **Manage Integrations**, open the MCP server setup and create a key.
 
-Custory provides setup guidance directly in the product, including ready-to-paste configuration for common clients and a quick test request.
+During creation, you set:
 
-The MCP endpoint is exposed as a dedicated route and expects authenticated access using the workspace-scoped token.
+- A key name
+- An expiry policy
 
-## Operational behavior
+Good key names describe the client and machine clearly:
 
-Custory tracks MCP connections and logs MCP tool usage so teams have a record of how external AI clients are interacting with the workspace.
+- `Cursor on MacBook`
+- `Claude Code on CI VM`
+- `Agent for support triage`
 
-## When to use MCP instead of in-product AI
+## Expiry options
 
-Use in-product AI when the work belongs naturally inside Custory and benefits from the product UI.
+Custory currently supports these expiry choices:
 
-Use MCP when the team already works from an external AI client and wants Custory to participate directly in that broader workflow.
+- 30 days
+- 90 days
+- Never
+
+Recommended usage:
+
+- `30 days` for experiments or short-lived setups
+- `90 days` for personal day-to-day use
+- `Never` only when the team has a clear operational reason and a revocation habit
+
+For small teams, `90 days` is usually the best default because it balances convenience with basic credential hygiene.
+
+## Copy-once token behavior
+
+When a key is created, Custory shows the full token only once.
+
+After that, Custory stores a prefix for identification, but not the full secret for later viewing in the UI.
+
+This means:
+
+- Copy the token immediately
+- Store it in the target client securely
+- Treat it like any other sensitive API credential
+
+If you lose it, create a new key rather than expecting to reveal the old one again.
+
+## MCP connection URL
+
+Custory provides a dedicated MCP endpoint URL in the setup panel.
+
+The endpoint expects:
+
+- HTTP transport
+- Authorization header using `Bearer <token>`
+
+## Ready-made setup templates
+
+Custory provides copyable setup snippets directly in the MCP panel.
+
+Available templates include:
+
+- Install prompt
+- Cursor config template
+- Claude / generic MCP template
+- Test curl command
+
+## Install prompt
+
+The install prompt is useful when you want another AI client to configure the MCP server for you from a plain-language instruction.
+
+This is especially convenient for teams who do not want to manually edit config files.
+
+## Cursor template
+
+Custory provides a ready-to-paste Cursor MCP config snippet with:
+
+- Server name
+- HTTP transport
+- MCP URL
+- Authorization header
+
+Use this when Cursor is your main working environment and you want the fastest clean setup.
+
+## Claude / generic template
+
+Custory also provides a more generic MCP configuration block that works well for Claude or other compatible clients.
+
+Use this when your chosen AI tool expects a simpler named MCP server definition instead of the Cursor-specific structure.
+
+## Test with curl
+
+Custory includes a copyable curl command so you can verify the connection before relying on it in a real agent workflow.
+
+The quick test calls `tools/list` against the MCP endpoint using your bearer token.
+
+This is the fastest way to confirm:
+
+- The URL is correct
+- The token works
+- The external client should be able to connect
+
+## Key list and last-used tracking
+
+The MCP panel shows your keys with operational metadata such as:
+
+- Key name
+- Token prefix
+- Created date
+- Last used timestamp
+- Expiry date where relevant
+- Current status
+
+The `Last used` field is especially useful when the team wants to know whether an old client is still actively using a credential before revoking it.
+
+## Revoke a key
+
+You can revoke an active MCP key from the MCP panel.
+
+Revocation takes effect immediately for connected AI agents using that key.
+
+Use revocation when:
+
+- A machine is no longer trusted
+- A setup was temporary
+- A token may have been exposed
+- You want to rotate credentials cleanly
+
+## Recommended setup pattern
+
+For most founder-led teams:
+
+1. Create one named key per client or machine
+2. Use `90 days` by default
+3. Copy the token once into the target client
+4. Run the curl test
+5. Revoke old or unclear keys instead of reusing them indefinitely
+
+## Common mistakes
+
+### Reusing one token everywhere
+
+Per-client keys are easier to audit and safer to revoke.
+
+### Choosing `Never` without a revocation habit
+
+Long-lived secrets are fine only if the team actually reviews and cleans them up.
+
+### Forgetting the copy-once rule
+
+If the token is not stored when created, the practical recovery path is to create a new key.
+
+## Related guides
+
+- [AI assistant](/ai-and-automations)
+- [GitHub integration](/github-integration)
+- [Integrations](/integrations)
