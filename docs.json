@@ -2,6 +2,7 @@
   "$schema": "https://mintlify.com/docs.json",
   "theme": "mint",
   "name": "Custory Docs",
+  "description": "Documentation for Custory, the operating system for customer journeys.",
   "colors": {
     "primary": "#0e8d00",
     "light": "#0e8d00",
@@ -15,6 +16,13 @@
     "light": "/logo/light.svg",
     "dark": "/logo/dark.svg"
   },
+  "seo": {
+    "indexing": "navigable",
+    "metatags": {
+      "og:image": "/logo/ogimage.jpg",
+      "twitter:image": "/logo/ogimage.jpg"
+    }
+  },
   "navigation": {
     "tabs": [
       {
@@ -26,8 +34,10 @@
             "pages": [
               "index",
               "quickstart",
-              "core-concepts",
-              "workspace"
+              "workspace",
+              "team-management",
+              "billing-and-usage",
+              "core-concepts"
             ]
           },
           {
@@ -47,13 +57,19 @@
             "group": "Journeys and context",
             "pages": [
               "journeys",
+              "journey-templates",
+              "ai-journey-imports",
+              "nested-journeys",
               "journey-editor",
+              "editor-controls",
+              "journey-settings",
               "items",
               "personas",
               "views-and-priorities",
               "journey-view",
               "table-view",
               "impact-vs-effort-view",
+              "version-history",
               "collaboration-and-history"
             ]
           }

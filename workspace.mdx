@@ -1,72 +1,175 @@
 ---
-title: "Workspace and access"
-description: "Manage members, roles, invitations, join requests, notifications, integrations, billing, and workspace-level AI access."
+title: "Workspaces"
+description: "Create, switch, and manage workspaces without fragmenting the customer context your team needs to share."
 icon: "building"
 ---
 
-A workspace is the shared operating layer for one team or product area in Custory.
+A workspace is the top-level operating space for one team, one product, or one product area in Custory.
 
-## Members and roles
+For smaller founder-led teams, the workspace decision matters because it controls:
 
-Use workspace roles to control who can edit and who can observe.
+- Who can see the work
+- Which journeys live together
+- Which integrations are shared
+- Which billing and usage settings apply
+- Which AI memory and MCP access stay scoped together
 
-In practice:
+## What belongs in one workspace
 
-- **Owners** manage the workspace, billing, and team structure
-- **Editors** maintain journeys and operational context
-- **Viewers** can follow the work without changing it
+Keep work in the same workspace when the same team needs shared context.
 
-## Invitations and join flows
+Good reasons to stay in one workspace:
 
-Custory supports:
+- The same people work across the same customer flows
+- The journeys feed the same product decisions
+- The integrations should be reused across the same work
+- You want AI to work from one shared context pool
 
-- Direct invitations
-- Invitation acceptance and decline
-- Domain-based workspace discovery
-- Join requests when someone needs access to an existing workspace
+Create a separate workspace when you need clean separation:
 
-These flows reduce the setup friction that usually slows down collaborative tools early.
+- A different product
+- A different client
+- A different business unit
+- A different access boundary
+- A different billing owner
 
-## Workspace settings
+Do not create a new workspace just because you want a new journey. Use multiple journeys inside the same workspace first.
 
-Workspace settings are where you manage:
+## Create a workspace
 
-- Name and slug
-- Member roles
-- Invitations and pending access
-- Notification-related linking where relevant
-- Integrations
-- Billing and plan changes
+You can create a workspace from the workspace switcher.
 
-## Billing
+When you create it, set:
 
-Workspace billing is managed at the workspace level.
+- A clear name
+- A clean slug
+- An optional logo
 
-The product supports:
+Use a name that matches how your team already talks about the product or area.
 
-- Plan selection
-- Seat-aware billing
-- Usage-based pricing controls where enabled
-- Subscription management
+Good examples:
 
-Billing matters operationally because some capabilities, such as additional editors or usage-heavy workflows, may depend on plan configuration.
+- `Core product`
+- `Self-serve onboarding`
+- `Growth`
+- `Support experience`
 
-## Workspace-scoped AI and MCP access
+Avoid vague names such as:
 
-AI memory and MCP access are scoped to the workspace, not to a global account context.
+- `Main`
+- `New workspace`
+- `Customer journey work`
 
-That means:
+## Switch between workspaces
 
-- AI can retrieve workspace-relevant context
-- MCP keys can be created for a specific workspace
-- Access can be revoked without broad account changes
+Use the workspace switcher in the sidebar to move between workspaces.
+
+When you switch:
+
+- Custory takes you into the selected workspace
+- It tries to keep you near the same area of the product when that still makes sense
+- It does not carry over journey-specific pages that belong to a different workspace
+
+That behavior is useful for small teams that move between product areas during the day without wanting to manually rebuild context every time.
+
+## Manage workspace details
+
+Open **Workspace settings** to manage the workspace itself.
+
+From there, owners can update:
+
+- Workspace name
+- Workspace logo
+- Workspace slug
+- Billing settings
+- Usage settings
+- Member access
+
+### Name
+
+Keep the name stable enough that the team can recognize it quickly in the switcher.
+
+### Logo
+
+Upload a logo if you manage more than one workspace and want faster visual recognition.
+
+### Slug
+
+The slug controls the workspace URL.
+
+Use a slug that is:
+
+- Short
+- Stable
+- Easy to type
+- Aligned with the product or area name
+
+Changing the slug changes the workspace URL. Do it carefully if the team already shares direct links often.
+
+## Suggested setup for founder-led teams
+
+Most smaller teams do best with one of these patterns:
+
+### One workspace for the whole product
+
+Use this when:
+
+- One team works across onboarding, activation, support, and retention
+- The same people need to see all of the context
+- You want one shared AI memory layer
+
+### One workspace per product line
+
+Use this when:
+
+- You run multiple distinct products
+- The customer journeys and owners are meaningfully different
+- Shared context would create noise instead of leverage
+
+### One workspace per client only when access requires it
+
+Use this for agency or consultancy work only when client separation actually matters. If the same internal team is managing the same product motion, a single workspace is usually easier to maintain.
+
+## When to create another workspace
+
+Create another workspace when at least one of these is true:
+
+- The editor group should be different
+- The integrations should be different
+- The billing owner should be different
+- The customer context should not mix
+- AI memory should stay separate
+
+If none of those are true, another journey is usually a better answer than another workspace.
+
+## Leave or delete a workspace
+
+These actions are not the same.
+
+### Leave workspace
+
+Use this when you personally should no longer have access, but the workspace should continue for the rest of the team.
+
+Editors and viewers can leave a workspace from settings.
+
+### Delete workspace
+
+Use this only when the workspace and its associated data should be removed entirely.
+
+Deletion is destructive. Treat it as an administrative action, not a cleanup shortcut.
 
 ## Good workspace habits
 
 The healthiest workspaces usually have:
 
 - A clear owner
-- A regular review rhythm
-- A small set of maintained journeys
-- Integrations that match active workflows
-- Notification rules that route only high-signal updates
+- A small accountable editor group
+- A narrow set of active journeys
+- Only relevant integrations connected
+- A review rhythm that keeps the map current
+
+## Related guides
+
+- [Get started](/quickstart)
+- [Manage your team](/team-management)
+- [Billing and usage](/billing-and-usage)
