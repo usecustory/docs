@@ -17,10 +17,12 @@
     "dark": "/logo/dark.svg"
   },
   "seo": {
-    "indexing": "navigable",
+    "indexing": "all",
     "metatags": {
-      "og:image": "/logo/ogimage.jpg",
-      "twitter:image": "/logo/ogimage.jpg"
+      "robots": "index, follow",
+      "googlebot": "index, follow",
+      "og:image": "https://docs.usecustory.com/logo/ogimage.jpg",
+      "twitter:image": "https://docs.usecustory.com/logo/ogimage.jpg"
     }
   },
   "navigation": {
