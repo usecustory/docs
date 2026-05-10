@@ -1,30 +1,48 @@
 ---
 title: "Automations"
-description: "Build scheduled and event-based workflows that update journeys, create tasks, fetch signals, and notify your team."
+description: "Build scheduled and event-based workflows that turn journey changes, analytics movement, and shipping signals into action."
 icon: "bolt"
 ---
 
-Automations help your team turn fresh journey context into action without repeating the same manual steps.
+Automations help your team move from customer context to follow-through without recreating the same workflow by hand every time.
+
+They are especially useful for smaller teams because they reduce coordination overhead in the moments that happen constantly:
+
+- An item becomes important
+- A signal moves in analytics
+- A PR gets merged
+- The team needs a weekly summary
+
+## What automations can do
+
+Custory automations can:
+
+- Update journeys with AI instructions
+- Create GitHub issues
+- Create Jira issues
+- Create Linear issues
+- Send Slack messages
+- Send Discord messages
+- Pull analytics signals
+- Fetch GitHub PR context
 
 ## Trigger types
 
-Custory supports both time-based and event-based triggers.
+Custory supports both scheduled and event-based triggers.
 
 ### Scheduled triggers
 
-Use scheduled triggers for recurring workflows:
+Use scheduled triggers for recurring review and reporting rhythms:
 
 - Hourly
 - Daily
 - Weekly
 
-These work well for recurring reviews, summaries, and hygiene workflows.
-
 ### Event-based triggers
 
-Use event-based triggers when the workflow should run as soon as something changes.
+Use event-based triggers when the workflow should react the moment something important changes.
 
-Supported event types include:
+Supported examples include:
 
 - Item created
 - Item updated
@@ -32,12 +50,14 @@ Supported event types include:
 - Impact threshold crossed
 - Effort threshold crossed
 - Priority threshold crossed
-- GitHub pull request opened
-- GitHub pull request merged
+- GitHub PR opened
+- GitHub PR merged
 
 ## Filters and scope
 
-Keep automations focused with filters such as:
+Automations stay useful when they are scoped tightly.
+
+Common scope and filter controls include:
 
 - Journey
 - Item group
@@ -45,49 +65,77 @@ Keep automations focused with filters such as:
 - Impact
 - Effort
 - Changed fields
-- GitHub repository
+- Repository
 - Base branch
 
-You can also scope an automation to one or more journeys.
-
-## Actions
-
-Automations can chain up to multiple actions in one workflow. Common actions include:
-
-- Update the journey with AI instructions
-- Create a GitHub issue
-- Create a Jira issue
-- Create a Linear issue
-- Send a Slack message
-- Send a Discord message
-- Pull analytics from PostHog or Stripe
-- Fetch GitHub PR context
+This helps a small team avoid noisy workflows that generate more updates than value.
 
 ## AI-drafted actions
 
-For messages and task creation, Custory can use AI to draft titles, descriptions, and summaries from journey context.
+For messages, task creation, and some journey updates, Custory can use AI to generate a stronger output from the surrounding context.
 
-That keeps handoff quality high without making every workflow depend on static templates.
+That is useful when you want:
 
-## Common automation patterns
+- Better issue titles and descriptions
+- Clearer Slack or Discord summaries
+- Context-aware journey updates
 
-Teams often start with:
+## Automation lifecycle
 
-- Weekly journey pulse to Slack or Discord
-- Daily focus check for high-priority items
-- PostHog event drift detection that updates the journey and notifies the team
-- Stripe failure or refund monitoring
-- GitHub PR merged workflows that refresh the journey and ask for validation
+Automations move through statuses such as:
 
-## Validation and run control
+- Draft
+- Active
+- Paused
+- Invalid when setup requirements are not met
 
-Custory lets you review validation issues before an automation runs.
+That lifecycle is useful because it lets the team prepare a workflow before turning it on permanently.
 
-You can also:
+## Manual runs and control
 
-- Inspect run history
-- Run scheduled automations manually
-- Pause a workflow without deleting it
-- Reactivate it later
+Custory supports operational control such as:
 
-This is useful when a workflow is correct in principle but not ready to run all the time.
+- Reviewing validation issues before activation
+- Running scheduled automations manually
+- Inspecting run history
+- Pausing a workflow without deleting it
+- Reactivating it later
+
+This is important when the logic is sound, but the team wants to trial it carefully.
+
+## Best first automations for lean teams
+
+Most founder-led and product-led teams should start with one of these:
+
+- A weekly journey pulse to Slack or Discord
+- A priority-to-task handoff workflow
+- A GitHub merged PR journey refresh
+- A PostHog event drift workflow
+
+Each of those solves a concrete coordination problem without requiring a large automation program.
+
+## Start with templates
+
+Custory includes templates for common automation patterns so you do not need to build from zero every time.
+
+See [Automation templates](/automation-templates).
+
+## Common mistakes
+
+### Automating before the journey data is current
+
+Automations amplify the underlying data quality. If ownership, priority, or statuses are stale, the workflow will amplify stale context too.
+
+### Starting with too many workflows
+
+One reliable automation is better than six noisy ones the team ignores.
+
+### Using automation where a simple operating habit would be enough
+
+If the team only needs a weekly cleanup pass, build that habit first. Automate when repetition is real.
+
+## Related guides
+
+- [Automation templates](/automation-templates)
+- [AI assistant](/ai-and-automations)
+- [Integrations](/integrations)

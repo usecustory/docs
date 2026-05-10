@@ -1,0 +1,276 @@
+---
+title: "Item fields and properties"
+description: "Understand which fields exist for each item group, what they mean, and how to use them without turning the journey into admin overhead."
+icon: "sliders-horizontal"
+---
+
+Fields are how Custory turns a journey into something you can review, filter, prioritize, automate, and hand off.
+
+The goal is not to fill every property because the UI allows it. The goal is to make each item actionable enough that the team can trust it later.
+
+## How fields work in Custory
+
+Each item group has its own allowed field set.
+
+That matters because the right metadata for a touchpoint is not the same as the right metadata for a solution or a metric.
+
+Every group starts with a shared core:
+
+- Description
+- Status
+- Owners where supported
+
+Then each group adds the properties that make sense for that type of work.
+
+## Core fields
+
+### Description
+
+Use the description to capture the usable context, not just a longer title.
+
+Good description content:
+
+- What happened
+- Why it matters
+- What evidence supports it
+- What the team still does not know
+
+### Status
+
+Status is the quickest way to understand maturity.
+
+It should answer one question clearly: where is this item in its lifecycle right now?
+
+Each group has its own status set because "Validated" makes sense for an insight, while "Shipped" makes sense for a solution.
+
+### Owner
+
+Owner is supported where follow-through matters operationally.
+
+In practice, owners are most useful for:
+
+- Opportunities
+- Solutions
+- Metrics
+
+Use owners when someone should move the work forward, not just because a field is available.
+
+## Group-specific properties
+
+### Touchpoint properties
+
+### Channel
+
+Defines the surface or interaction channel.
+
+Available options:
+
+- Website
+- App
+- Email
+- Sales call
+- Support
+- Docs
+- Store
+- Other
+
+Use channel to answer where the experience is happening.
+
+### Actor
+
+Identifies the persona or personas involved in the touchpoint.
+
+Use this when different people experience the same step differently, such as a buyer, admin, and end user.
+
+### Insight properties
+
+### Type
+
+Available options:
+
+- Pain
+- Need
+- Gain
+
+Use:
+
+- `Pain` for friction, confusion, or failure
+- `Need` for requirements, expectations, or missing capability
+- `Gain` for positive value, delight, or a successful pattern worth understanding
+
+### Confidence
+
+Available options:
+
+- Low confidence
+- Medium confidence
+- High confidence
+
+Confidence is about how sure you are the learning is true, not how important it feels.
+
+### Severity
+
+Scale:
+
+- 1 to 5
+
+Use severity to describe how painful or consequential the issue is for the affected customer. Keep this separate from business priority.
+
+### Affected segment
+
+Use personas here when an insight affects a specific user type rather than everyone.
+
+### Opportunity properties
+
+### Impact
+
+Scale:
+
+- 1 to 5
+
+Impact estimates how much solving this problem could matter for the customer or the business.
+
+### Effort
+
+Scale:
+
+- 1 to 5
+
+Effort estimates the rough cost or complexity of acting on the opportunity.
+
+### Priority
+
+Available options:
+
+- High
+- Medium
+- Low
+
+Priority can be set directly, but it is most useful when it reflects real discussion rather than default enthusiasm.
+
+### Confidence
+
+Use confidence on opportunities when the problem framing is still developing and the team is not equally sure across the whole backlog.
+
+### Solution properties
+
+### Solution type
+
+Available options:
+
+- Idea
+- Experiment
+- Feature
+- Process
+- Content
+- Service
+
+Use this to distinguish what kind of response you are considering.
+
+### Impact
+
+Use impact on solutions to estimate likely upside if shipped successfully.
+
+### Effort
+
+Use effort on solutions to estimate delivery cost, complexity, or organizational burden.
+
+### Priority
+
+Use priority to decide sequencing among candidate solutions.
+
+### Target date
+
+Use target date when timing matters operationally. Do not add dates to every idea by default.
+
+### Metric properties
+
+### Metric type
+
+Available options:
+
+- Customer
+- Business
+- Operational
+
+Use these to distinguish outcome categories:
+
+- `Customer`: value experienced by the customer
+- `Business`: commercial or growth outcome
+- `Operational`: process or internal execution signal
+
+### Unit
+
+Available options:
+
+- %
+- Score
+- Count
+- Time
+- Currency
+- Other
+
+The unit keeps the metric readable without relying on teammates to guess.
+
+### Baseline
+
+The starting value before a change or before active tracking began.
+
+### Current
+
+The most recent known value.
+
+### Target
+
+The outcome you are trying to reach.
+
+### Direction
+
+Available options:
+
+- Higher is better
+- Lower is better
+
+This prevents common confusion around metrics like time-to-value, churn, refunds, or support volume.
+
+## Group-by-group field availability
+
+| Group | Core fields | Key additional properties |
+| --- | --- | --- |
+| Touchpoints | Description, Status | Channel, Actor |
+| Insights | Description, Status | Type, Confidence, Severity, Affected segment |
+| Opportunities | Description, Status, Owner | Impact, Effort, Priority, Confidence |
+| Solutions | Description, Status, Owner | Solution type, Impact, Effort, Priority, Target date |
+| Metrics | Description, Status, Owner | Metric type, Unit, Baseline, Current, Target, Direction |
+
+## Property visibility
+
+Custory lets you control which properties are visible in the editor.
+
+Use that intentionally:
+
+- Show fewer fields during collaborative mapping
+- Show more fields during prioritization and cleanup
+- Keep the visible properties aligned with the job of the current review
+
+This helps smaller teams avoid making the map feel heavier than it needs to be.
+
+## How to keep fields valuable
+
+### Use just enough structure
+
+If a property never affects a decision, it will decay. Keep fields that support prioritization, ownership, review, or automation.
+
+### Separate customer truth from team intent
+
+Insights describe what you learned. Opportunities describe what is worth doing. Solutions describe how you may respond. The fields are designed to preserve that distinction.
+
+### Review stale fields during weekly maintenance
+
+Properties become valuable only if they stay current. [Table view](/table-view) is the fastest place to maintain them in bulk.
+
+## Related guides
+
+- [Linking items](/item-linking)
+- [Table view](/table-view)
+- [Rich item details](/rich-item-details)

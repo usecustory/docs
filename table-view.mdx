@@ -1,55 +1,176 @@
 ---
 title: "Table view"
-description: "Use table view to audit, filter, sort, and maintain larger journeys without losing the link back to customer context."
+description: "Use table view to audit, sort, bulk edit, and maintain larger journeys without losing the connection back to customer context."
 icon: "table"
 ---
 
-Table view is the operational view for larger journeys.
+Table view is the maintenance surface for a mature journey.
 
-Use it when you need to inspect many items at once and work through the map systematically.
+Journey view is best for understanding the story. Table view is best for cleaning, reviewing, and operating on the dataset behind that story.
 
-## What table view is best for
+## When to use table view
 
 Use table view when you need to:
 
-- Sort by status, owner, priority, impact, or effort
-- Filter down to one type of work
-- Find stale or incomplete items
-- Audit missing properties
-- Clean up larger journeys
-- Review linked tasks and metadata in one pass
+- Audit many items quickly
+- Sort by owner, status, priority, impact, effort, or recency
+- Find stale or incomplete records
+- Review linked task metadata
+- Bulk-edit a focused set of items
+- Clean up a large journey before a review or planning session
 
-## How to use it well
+## What table view is optimized for
 
-Start by narrowing the surface.
+Table view works best when the team already knows what kind of review it is doing.
 
-1. Filter to the item group or status you care about
-2. Sort by the property that matches the review goal
-3. Look for missing owners, unclear status, or outdated titles
-4. Open rows that need deeper inspection
-5. Update items without losing their connection to the journey
+Examples:
 
-## Why table view matters
-
-As journeys grow, the problem stops being "we need more context" and becomes "we need to find and maintain the right context quickly."
-
-Table view solves that by making the journey easier to scan and manage in bulk.
-
-## Best use cases
-
-Table view works especially well for:
-
-- Pre-planning cleanup
-- Owner audits
-- Priority reviews
-- Status reviews
+- Owner audit
+- Priority cleanup
+- Assumption validation sweep
 - Metric maintenance
-- Linked task follow-up
+- Delivery follow-up
 
-## How it complements journey view
+The more specific the review goal, the more useful table view becomes.
 
-Journey view is better for understanding the story.
+## How table view works
 
-Table view is better for maintaining the quality of the dataset behind that story.
+Table view uses the same search and filter context as the rest of the journey editor, but presents items as structured rows instead of spatial cards.
 
-Teams usually get the most value when they review in journey view first, then switch to table view to clean up what the discussion exposed.
+That gives you three practical advantages:
+
+- Faster scanning across large item sets
+- Better sorting on operational fields
+- More efficient bulk maintenance
+
+See [Search and filters](/search-and-filters).
+
+## Sorting
+
+Table view can sort items by common operational fields such as:
+
+- Title
+- Stage
+- Step
+- Created date
+- Updated date
+- Owner
+- Status
+- Group-specific properties such as impact, effort, priority, type, or metric values
+
+Use sorting to answer one focused question at a time.
+
+Examples:
+
+- Sort by `Updated` to see what has gone stale
+- Sort by `Owner` to review accountability gaps
+- Sort by `Impact` or `Priority` to review what deserves attention first
+
+## Filtering and search in table workflows
+
+The highest-value pattern is usually:
+
+1. Filter to one item group
+2. Narrow to the statuses or owners that matter
+3. Search for the theme or product area you care about
+4. Sort by the field that matches the review goal
+
+This gives you a clean working slice instead of a long undifferentiated list.
+
+## Bulk editing
+
+Bulk editing is one of the main reasons to use table view.
+
+You can select multiple items and apply updates such as:
+
+- Status
+- Owner
+- Channel
+- Actor
+- Insight type
+- Affected segment
+- Confidence
+- Severity
+- Impact
+- Effort
+- Priority
+- Solution type
+- Metric type
+- Unit
+- Direction
+
+Bulk editing is most useful for cleanup and consistency work, not for avoiding judgment. Review the selection first, then apply the shared change.
+
+## Important bulk-edit constraint
+
+Bulk editing is designed for items from the same group.
+
+If the selected items span multiple groups, the edit options become more limited because the groups do not share the same field model.
+
+That is intentional. The product is protecting data quality by not pretending a metric and an insight should be edited with the same schema.
+
+## Bulk deletion
+
+Table view can also help with batch cleanup when items are clearly redundant, stale, or created accidentally.
+
+Use deletion carefully. If the item contains useful reasoning or history, consider archiving or updating it instead.
+
+## Columns and property visibility
+
+The columns you see are shaped by:
+
+- The item group you are working in
+- Which properties are enabled and visible
+- The order you prefer to work in
+
+This is useful because a metric review and an opportunity review should not look identical.
+
+## Best table-view workflows
+
+### Weekly operating review
+
+Filter to `Opportunities` or `Solutions`, sort by `Priority` or `Updated`, and review what is active, stale, or unowned.
+
+### Assumption cleanup
+
+Filter to `Insights`, narrow to `Assumption`, and sort by `Updated` to find learnings that need validation or retirement.
+
+### Metric hygiene
+
+Filter to `Metrics`, sort by `Status`, and check which metrics are still draft, broken, or missing current values.
+
+### Delivery alignment
+
+Filter to `Solutions`, search a product area, and review linked external tasks so the journey stays aligned with implementation reality.
+
+## How table view complements journey view
+
+Journey view helps you see the narrative and customer flow.
+
+Table view helps you maintain the data quality that makes that narrative trustworthy.
+
+Most teams get the best results when they use both:
+
+1. Discuss the journey visually
+2. Switch to table view to clean up what the discussion exposed
+
+## Common mistakes
+
+### Trying to do discovery work only in table view
+
+Table view is excellent for maintenance and audits, but weaker for seeing the whole customer story. Use the right surface for the job.
+
+### Bulk-editing items that do not really belong together
+
+Just because several rows are selected does not mean the same update should apply. Review the intent before applying a change across many items.
+
+### Letting property noise fill the table
+
+Visible properties should support the review. Hide fields that are not helping.
+
+## Related guides
+
+- [Search and filters](/search-and-filters)
+- [Items](/items)
+- [Item fields and properties](/item-fields)
+- [Views and priorities](/views-and-priorities)

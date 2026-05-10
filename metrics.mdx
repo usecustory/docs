@@ -1,0 +1,153 @@
+---
+title: "Metrics"
+description: "Track the numbers that tell you whether a problem matters, whether a solution worked, and whether the journey is actually improving."
+icon: "chart-column"
+---
+
+Metrics are the measurable signals that keep journey work grounded in outcomes.
+
+They help answer:
+
+- Is this problem real?
+- Is it getting better or worse?
+- Did the shipped solution change anything meaningful?
+
+## What belongs in a metric
+
+A strong metric should be understandable without opening another dashboard first.
+
+That means it should usually include:
+
+- What is being measured
+- The unit
+- The current value
+- The direction that indicates improvement
+
+## Metric fields
+
+Metrics support:
+
+- Description
+- Status
+- Owner
+- Metric type
+- Unit
+- Baseline
+- Current
+- Target
+- Direction
+
+### Metric type
+
+Available types:
+
+- Customer
+- Business
+- Operational
+
+Use:
+
+- `Customer` for experience outcomes such as activation rate or time to first value
+- `Business` for commercial outcomes such as trial-to-paid conversion or refunds
+- `Operational` for internal execution signals such as response time or backlog age
+
+### Unit
+
+Available units:
+
+- %
+- Score
+- Count
+- Time
+- Currency
+- Other
+
+### Baseline, current, and target
+
+These three fields give the metric shape:
+
+- `Baseline`: where you started
+- `Current`: where the metric stands now
+- `Target`: where you want it to go
+
+### Direction
+
+Choose:
+
+- Higher is better
+- Lower is better
+
+This matters because a low churn rate is good, but a low activation rate is not.
+
+## Metric statuses
+
+Metrics use these statuses:
+
+- Draft
+- Defined
+- Active
+- Broken
+- Deprecated
+
+Recommended interpretation:
+
+- `Draft`: the team knows this metric should exist, but it is not ready yet
+- `Defined`: the metric is framed clearly, even if tracking is not fully operational
+- `Active`: the metric is in use
+- `Broken`: the metric is unreliable, stale, or currently not usable
+- `Deprecated`: the metric no longer reflects how the team should measure this area
+
+## How metrics should connect
+
+Metrics can link to:
+
+- [Opportunities](/opportunities)
+- [Solutions](/solutions)
+
+That lets you track:
+
+- Whether the problem is significant enough to prioritize
+- Whether the chosen solution changed the outcome
+
+## Good metric examples
+
+- `Activation rate within 7 days`
+- `Median time to first integration`
+- `Trial-to-paid conversion`
+- `Weekly billing failure recovery rate`
+
+Weak metric examples:
+
+- `Growth`
+- `Revenue`
+- `Onboarding`
+
+Those are too broad without a defined measurement.
+
+## How to leverage metrics well
+
+### Use one metric to validate the problem, not just the solution
+
+Some metrics help prove that an opportunity deserves attention before work starts.
+
+### Pair outcome metrics with the relevant item chain
+
+When a metric is linked to the opportunity and the solution, the team can review the full reasoning path quickly.
+
+### Mark broken metrics honestly
+
+If a metric is stale, mislabeled, or no longer trustworthy, mark it. Bad metrics create false confidence.
+
+## Common mistakes
+
+### Tracking numbers with no decision role
+
+If the metric does not affect prioritization, validation, or follow-up, it may be dashboard noise rather than journey signal.
+
+### Confusing activity with outcome
+
+`Number of tickets created` may be useful operationally, but it is not always the best measure of customer improvement.
+
+### Leaving direction implicit
+
+Teams regularly misread metrics when the desired direction is not explicit. Always set it.

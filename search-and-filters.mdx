@@ -1,0 +1,178 @@
+---
+title: "Search and filters"
+description: "Use hybrid search and focused filters to find the right journey items quickly, even when the map has become large."
+icon: "search"
+---
+
+Search and filtering are what make a mature journey usable.
+
+Early on, teams can find what they need by memory. Later, that stops working. A founder remembers "the onboarding problem from that support thread," but not the exact item title. A PM remembers the idea, but not whether it lived under an insight or an opportunity. Custory is built for that stage.
+
+## What search does
+
+Custory uses a hybrid search model inside the journey editor and table view:
+
+- Exact-text search for fast matches
+- Semantic search for meaning-based matches
+
+That combination matters because teams rarely remember the exact wording of an item after a few weeks. They remember the problem, the customer, the friction, or the stage of the journey.
+
+## How hybrid search works
+
+When you type in the editor search box, Custory does two things:
+
+- It immediately looks for exact keyword matches in item titles, descriptions, statuses, properties, owners, stages, and steps
+- It also runs semantic search in the background so relevant items can still appear even when the wording is different
+
+That means a search like `setup friction` can still surface an item titled `Teams stall before first integration` if the meaning is close enough.
+
+## When to use search vs filters
+
+Use **search** when you know the signal you want, but not the exact location.
+
+Good search use cases:
+
+- You remember the customer problem, but not the item name
+- You want to find all references to a concept across the journey
+- You want to jump to a stage or step indirectly through item context
+
+Use **filters** when you want to narrow the working surface deliberately.
+
+Good filter use cases:
+
+- Show only opportunities owned by one person
+- Show only high-priority solutions
+- Show only stale assumptions that still need validation
+- Show only metrics that are broken or missing current values
+
+Use both together when the journey has real scale.
+
+## What search looks at
+
+Keyword search is broad on purpose. It can match against:
+
+- Item title
+- Item description
+- Item status
+- Item type or property values
+- Owner names
+- Stage name
+- Step name
+
+This is useful for founder-led teams because it mirrors how people actually think in review meetings. Someone remembers "that billing issue in checkout" or "the item Alice owns," not the exact label.
+
+## Filter behavior
+
+Filters are best understood as a working lens, not a reporting system.
+
+In the current editor flow, filters combine using **AND** logic. That means every active condition must be true for an item to appear.
+
+Example:
+
+- Group is `Opportunities`
+- Priority is `High`
+- Owner is `Founder`
+
+Only items that satisfy all three conditions remain visible.
+
+## Common filter dimensions
+
+Depending on the surface and item group, you can narrow by fields such as:
+
+- Group
+- Status
+- Owner
+- Type
+- Priority
+- Impact
+- Effort
+- Created date
+- Updated date
+
+The practical goal is not "filter everything." The goal is to get from a large map to one reviewable slice.
+
+## Recommended workflows
+
+### Weekly founder review
+
+Use:
+
+- Search for a theme such as `activation`, `pricing`, or `handoff`
+- Filter to `Opportunities`
+- Narrow to `High priority`
+
+This gives you a short list of the problems that most deserve attention right now.
+
+### Delivery follow-up
+
+Use:
+
+- Filter to `Solutions`
+- Narrow by owner
+- Sort by updated date in [Table view](/table-view)
+
+This is a fast way to see what is moving, what is stuck, and what no longer reflects the current delivery reality.
+
+### Validation sweep
+
+Use:
+
+- Filter to `Insights`
+- Narrow to `Assumption`
+- Search for a product area such as `onboarding` or `billing`
+
+This helps product-led teams separate "we think this is true" from "we have seen this happen."
+
+## Saved working state
+
+Custory remembers your filter setup for each journey so you do not have to rebuild the same working view every session.
+
+That is especially useful when different teammates use the same journey differently:
+
+- A founder may reopen the same priority review every Monday
+- A PM may repeatedly audit owner gaps
+- A support lead may keep one journey filtered to specific friction areas
+
+Custory also remembers visible properties, which helps reduce noise when you want to review a narrow slice of the journey.
+
+## Temporary group focus
+
+Some entry points open the editor already focused on one item group.
+
+That temporary focus is useful when you are entering the journey with a specific job, such as reviewing only metrics or only solutions. It does not need to replace your longer-term saved working setup.
+
+## How to get better results
+
+Search works best when item titles and descriptions are written in natural language instead of internal shorthand.
+
+Better:
+
+- `New admins do not understand what to connect first`
+- `Support requests spike after billing failure emails`
+
+Worse:
+
+- `Activation issue`
+- `Billing thing`
+
+The clearer the item language, the more useful both keyword and semantic search become.
+
+## Common mistakes
+
+### Using search when the problem is really workflow scope
+
+If everything feels hard to find, the issue may not be search. The issue may be that the team is reviewing the whole journey at once. Use filters to reduce the surface first.
+
+### Treating filters as permanent truth
+
+Filters are a temporary lens. If a teammate is looking at a narrowed view, they may not be seeing the full story. Be explicit in meetings when the map is filtered.
+
+### Searching for internal team labels instead of customer language
+
+Search is more useful when journeys are written from the customer's point of view. That improves recall, collaboration, and AI outputs too.
+
+## Related guides
+
+- [Items](/items)
+- [Item fields and properties](/item-fields)
+- [Table view](/table-view)

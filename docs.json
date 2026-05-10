@@ -63,8 +63,19 @@
               "journey-editor",
               "editor-controls",
               "journey-settings",
+              "search-and-filters",
               "items",
+              "item-fields",
+              "item-linking",
+              "touchpoints",
+              "insights",
+              "opportunities",
+              "solutions",
+              "metrics",
+              "rich-item-details",
               "personas",
+              "persona-detail-editing",
+              "persona-linking",
               "views-and-priorities",
               "journey-view",
               "table-view",
@@ -83,7 +94,10 @@
             "group": "AI workflows",
             "pages": [
               "ai-and-automations",
+              "ai-workspace-member",
+              "workspace-memory",
               "automations",
+              "automation-templates",
               "notifications"
             ]
           }
@@ -97,6 +111,8 @@
             "group": "Connected tools",
             "pages": [
               "integrations",
+              "external-tasks",
+              "slack-discord-ai-threads",
               "mcp-server"
             ]
           }

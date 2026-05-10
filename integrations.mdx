@@ -1,14 +1,16 @@
 ---
 title: "Integrations"
-description: "Connect communication, delivery, knowledge, analytics, and AI tooling to keep Custory connected to the rest of your workflow."
+description: "Connect the tools your team already uses so Custory can stay tied to delivery, communication, knowledge, and AI-assisted operating workflows."
 icon: "plug"
 ---
 
-Custory integrations are designed to keep customer context connected to the places where your team already talks, builds, measures, and decides.
+Custory integrations exist to reduce context drift.
 
-## Supported integration groups
+The goal is not to connect everything. The goal is to connect the systems that already hold meaningful work so your team can move between journey context and execution without rebuilding the same explanation in every tool.
 
-Custory currently supports these groups:
+## Integration categories
+
+Custory currently supports these broad groups:
 
 - Product management: Jira, Linear
 - Knowledge base: Notion, Google Drive
@@ -18,89 +20,116 @@ Custory currently supports these groups:
 - Customer feedback: Intercom
 - Collaborative editors: Figma, Miro
 
-## Communication
+## What to connect first
+
+For most founder-led and product-led teams, the best order is:
+
+1. One communication tool
+2. One delivery tool
+3. One knowledge or context source
+4. Analytics or revenue signals if they shape roadmap decisions often
+
+That usually means something like:
+
+- Slack or Discord
+- GitHub, Jira, or Linear
+- Notion or Figma
+- PostHog or Stripe
+
+## Communication integrations
 
 ### Slack
 
 Use Slack to:
 
-- Send journey updates to channels
-- Deliver team-facing automation messages
-- Link personal Slack accounts for direct message notifications
-- Use Slack as an AI collaboration surface in relevant workflows
+- Send automation updates to channels
+- Link personal identities for direct-message notifications
+- Work with Custory AI from collaboration threads
 
 ### Discord
 
 Use Discord to:
 
-- Share updates to channels and threads
-- Deliver automation messages
-- Link personal Discord accounts for direct message notifications
-- Work from community and feedback-heavy conversations
-- Use Discord threads with Custory AI
+- Send updates into channels and threads
+- Link personal identities for direct-message notifications
+- Work with Custory AI in conversation-heavy workflows
 
-## Delivery and product work
+See [Slack and Discord AI threads](/slack-discord-ai-threads).
+
+## Delivery integrations
 
 ### GitHub
 
-Use GitHub to:
-
-- Link issues and pull requests back to journey context
-- Keep implementation progress visible inside Custory
-- Trigger automations from PR events
-- Feed AI and MCP workflows with real delivery context
+Use GitHub when journey context should stay connected to issues, pull requests, and shipping activity.
 
 ### Jira and Linear
 
-Use Jira and Linear to:
+Use Jira or Linear when opportunities and solutions need structured execution follow-up in your team's delivery system.
 
-- Create follow-up work directly from Custory
-- Keep task status and titles in sync
-- Preserve the customer reason behind each task
+### Notion as linked work
 
-## Knowledge and design
+Notion can also support lighter-weight operational follow-up where a full engineering issue is not the right artifact.
+
+See [External tasks and issues](/external-tasks).
+
+## Knowledge and design integrations
 
 ### Notion and Google Drive
 
-Use these integrations when research, notes, or documentation already exist elsewhere and should inform journey work or AI prompts.
+Use these when research notes, docs, or structured background material should inform journey work or AI prompts.
 
 ### Figma and Miro
 
-Use these integrations when visual product context, flows, or collaborative boards should stay connected to the journey.
+Use these when visual flow context or collaborative board material should stay connected to the journey.
 
-## Product and revenue signals
+## Analytics and revenue integrations
 
 ### PostHog
 
-Use PostHog in automations to pull product usage snapshots such as event movement and top events.
+Use PostHog when product usage changes should influence journey updates, insights, or automations.
 
 ### Stripe
 
-Use Stripe in automations to pull subscription, payment failure, and refund signals that can reveal churn or billing friction.
+Use Stripe when billing, payment failure, churn, or refund signals are important to the journey and should feed team awareness or automation logic.
 
-## Customer feedback
+## AI-related workflows
 
-### Intercom
+Integrations matter to AI because they expand the context Custory can work from.
 
-Use Intercom when support and customer conversation history should stay connected to journey context for faster triage and pattern detection.
+That is useful when:
+
+- Building a journey from existing source material
+- Generating follow-up tasks from real workspace context
+- Running Slack or Discord collaboration threads
+- Using automation templates that rely on PostHog, GitHub, Jira, or Linear
 
 ## Integration management
 
-Open **Manage Integrations** inside a workspace to:
+Open **Manage Integrations** in a workspace to:
 
-- Connect or disconnect tools
-- Reauthorize expired integrations
-- Review integration health
+- Connect tools
+- Reconnect expired integrations
+- Review connection state
 - Add manual credentials where required
-- Request an integration that is not yet supported
+- Request unsupported integrations
 
-## How to choose what to connect first
+## Good integration hygiene
 
-Start with the smallest set that closes your biggest context gaps.
+### Connect only the tools that remove real friction
 
-For many teams that means:
+More integrations are not automatically better.
 
-1. Slack or Discord
-2. GitHub, Jira, or Linear
-3. Notion or Google Drive
-4. PostHog or Stripe
+### Set journey defaults where relevant
+
+If one journey always routes work to the same repo, team, or project, set that default once instead of relying on memory.
+
+### Keep delivery links close to item context
+
+The integration is most valuable when it keeps the reason for the work visible, not just the task itself.
+
+## Related guides
+
+- [External tasks and issues](/external-tasks)
+- [Slack and Discord AI threads](/slack-discord-ai-threads)
+- [AI assistant](/ai-and-automations)
+- [MCP server](/mcp-server)

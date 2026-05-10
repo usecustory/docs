@@ -1,108 +1,163 @@
 ---
 title: "Items"
-description: "Use items to capture touchpoints, evidence, problems, ideas, metrics, and the real working context behind each journey."
+description: "Use items to turn a journey from a visual map into an operating system for evidence, decisions, follow-up, and measurement."
 icon: "list-check"
 ---
 
-Items are the operational layer of a journey.
+Items are where the real work lives in Custory.
 
-They hold the customer signal, the team discussion, and the follow-up context that turns a map into something your team can act on.
+Stages and steps describe the journey structure. Items hold the context that makes that structure useful:
 
-## Item groups
+- Evidence
+- Customer learning
+- Problems worth solving
+- Candidate or shipped responses
+- Metrics that keep the work honest
 
-Custory supports five main item groups.
+## Why items matter
+
+A journey without items is usually just a diagram.
+
+A journey with strong items becomes a working system the team can use for:
+
+- Prioritization
+- Delivery handoff
+- Cross-functional review
+- AI-assisted workflows
+- Automation
+
+## The five item groups
+
+Custory supports five core item groups.
 
 ### Touchpoints
 
-Use touchpoints for customer-facing moments, surfaces, or interactions.
+Customer-facing moments, surfaces, or interactions.
+
+Use them to describe where the experience happens.
 
 Examples:
 
 - Pricing page
 - Signup form
+- Invite email
 - Support chat
-- Billing page
+
+See [Touchpoints](/touchpoints).
 
 ### Insights
 
-Use insights for things your team learned.
+Learnings about the customer experience.
+
+Use them to capture what the team believes, observed, or validated.
 
 Examples:
 
-- Users understand the value but not the setup
-- Teams invite others only after first value
-- Customers keep asking the same billing question
+- Users understand the promise but not the setup
+- Buyers care more about rollout clarity than feature depth
+- Failed payment emails create avoidable confusion
+
+See [Insights](/insights).
 
 ### Opportunities
 
-Use opportunities for problems or improvement areas worth acting on.
+Problems or leverage points worth acting on.
+
+Use them when the team is ready to frame where intervention could matter.
 
 Examples:
 
-- Reduce setup friction for non-technical users
-- Improve trial conversion before checkout
-- Shorten time to first useful result
+- Reduce setup friction for non-technical admins
+- Shorten time to first team value
+- Improve billing recovery confidence
+
+See [Opportunities](/opportunities).
 
 ### Solutions
 
-Use solutions for candidate fixes or committed improvements.
+Candidate or shipped responses to an opportunity.
+
+Use them for ideas, experiments, features, process changes, content, or service interventions.
 
 Examples:
 
-- Add a guided setup flow
-- Rewrite the empty state
-- Change the billing copy
+- Add a guided setup checklist
+- Rewrite failed-payment copy
+- Create a founder onboarding playbook
+
+See [Solutions](/solutions).
 
 ### Metrics
 
-Use metrics for numbers you need to watch over time.
+The numbers that tell you whether the problem matters and whether the response worked.
 
 Examples:
 
 - Activation rate
+- Median time to first integration
 - Trial-to-paid conversion
 - Refund volume
-- Time to first value
 
-## Item details
+See [Metrics](/metrics).
 
-Open an item to work with richer context.
+## How items work together
 
-Item details support:
+The item model is deliberately connected.
 
-- Files and attachments
-- Screenshots and image galleries
-- External links with titles and descriptions
-- Comments and discussion
-- Linked items
-- Linked external tasks
-- Item history
-- Pending AI-related activity where relevant
+The most common chain is:
+
+- A touchpoint reveals an insight
+- An insight leads to an opportunity
+- An opportunity is addressed by a solution
+- An opportunity or solution is judged by a metric
+
+See [Linking items](/item-linking).
 
 ## Item properties
 
-Depending on the item type, you can use properties such as:
+Each item group supports a different set of fields so the metadata stays relevant to the job:
 
-- Status
-- Owners
-- Priority
-- Impact
-- Effort
-- Confidence
-- Severity
-- Target date
-- Metric direction and values
+- Touchpoints: channel, actor
+- Insights: type, confidence, severity, affected segment
+- Opportunities: owner, impact, effort, priority, confidence
+- Solutions: owner, solution type, impact, effort, priority, target date
+- Metrics: owner, metric type, unit, baseline, current, target, direction
 
-These properties are what make filtering, prioritization, automations, and notifications useful later.
+See [Item fields and properties](/item-fields).
 
-## Linked tasks and sync
+## Rich item details
 
-Items can stay connected to work in external tools such as GitHub, Jira, Linear, and Notion.
+Open an item when you need the full working context.
 
-Custory keeps cached task titles and statuses more current so implementation progress stays visible in the journey after the task is created.
+Item details can include:
 
-## Comments and collaboration
+- Description
+- Files and attachments
+- Screenshots and image gallery
+- External links with titles and descriptions
+- Comments
+- Linked items
+- Linked external tasks
+- Item history
+- Pending AI-related activity
 
-Use comments when the team needs to ask questions, clarify assumptions, or record why something changed.
+See [Rich item details](/rich-item-details).
 
-Keeping comments on the item prevents the reasoning from disappearing into chat.
+## How smaller teams should use items
+
+For founder-led and product-led teams, the right goal is not "capture everything."
+
+The right goal is:
+
+- Capture the evidence that changes decisions
+- Add the fields that support prioritization and follow-through
+- Link the work so the reasoning stays visible
+
+If the item does not help the team decide, act, or learn faster, simplify it.
+
+## Related guides
+
+- [Search and filters](/search-and-filters)
+- [Linking items](/item-linking)
+- [Item fields and properties](/item-fields)
+- [Table view](/table-view)

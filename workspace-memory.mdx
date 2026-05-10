@@ -1,0 +1,128 @@
+---
+title: "Workspace memory"
+description: "Use workspace-scoped memory so Custory AI can retrieve relevant prior context without forcing the team to repeat the same explanation in every chat."
+icon: "database"
+---
+
+Workspace memory helps Custory AI carry useful context forward across the life of a workspace.
+
+Instead of every conversation starting from a blank page, the assistant can retrieve relevant prior knowledge from the same workspace and, when relevant, from the same journey.
+
+## What workspace memory is
+
+Custory uses workspace-scoped memory powered by Supermemory.
+
+That means memory belongs to the workspace it came from. It is not one shared global pool across everything your team does.
+
+This matters because each workspace has its own:
+
+- Journeys
+- language
+- priorities
+- decisions
+- follow-up patterns
+
+## What memory helps with
+
+Workspace memory is useful when the team wants AI to remember and reuse context such as:
+
+- Prior AI and chat context
+- Journey-related knowledge
+- Connected workspace context that has already been captured
+
+For lean teams, this reduces repeated explanation and makes AI more operational.
+
+## Journey-biased retrieval
+
+When the current AI conversation is tied to a journey, Custory can favor memory connected to that journey before falling back to broader workspace knowledge.
+
+That is important because it keeps the assistant closer to the local context of the work instead of surfacing unrelated information from elsewhere in the workspace.
+
+## Memory sources and ingestion
+
+Supported workspace context can be synced into memory with metadata such as:
+
+- Workspace
+- Journey
+- Source type
+- Source ID
+
+This creates more traceable retrieval than a vague "AI remembers something from before."
+
+## Memory status tracking
+
+Custory tracks memory source state rather than treating ingestion as invisible background magic.
+
+Memory sources can move through states such as:
+
+- Ready
+- Failed
+- Deleted
+
+This matters because teams need to know whether important context is available, unavailable, or intentionally removed.
+
+## Per-chat memory control
+
+Custory includes a memory toggle in AI chat.
+
+Use **memory on** when:
+
+- You want the assistant to draw from prior workspace knowledge
+- The question depends on earlier journey or workspace context
+- You want less repetition across sessions
+
+Use **memory off** when:
+
+- You want a narrow answer from only the current prompt
+- You are testing wording or reasoning in isolation
+- You do not want retrieval to influence the current chat
+
+The setting is useful because not every AI task benefits from broader context.
+
+## When workspace memory is most valuable
+
+### Repeated strategic reviews
+
+If the founder or PM reviews the same journey regularly, memory helps AI carry forward the team's evolving understanding.
+
+### Ongoing product discovery
+
+When the same themes return across chat, item edits, and follow-up work, memory helps reduce repetitive restating.
+
+### Cross-functional continuity
+
+Memory becomes especially useful when support, product, and delivery are all contributing context over time.
+
+## Best practices
+
+### Keep the workspace clean enough to deserve retrieval
+
+Memory is strongest when the underlying journeys and items are reasonably structured. Retrieval from noisy context produces noisier outputs.
+
+### Turn memory off when you want a constrained answer
+
+This is useful for focused drafting or when you want the assistant to reason only from what is visible right now.
+
+### Treat retrieved memory as support, not as authority
+
+Useful memory should help the assistant ground itself, but product judgment still belongs to the team.
+
+## Common mistakes
+
+### Expecting memory to fix weak source material
+
+If the workspace context is vague or stale, memory will not magically make it precise.
+
+### Leaving memory on for every task without thinking
+
+Sometimes a narrow prompt is better. Use the toggle intentionally.
+
+### Confusing continuity with certainty
+
+Memory helps the assistant remember. It does not mean every remembered statement is still correct. Keep validating important assumptions.
+
+## Related guides
+
+- [AI assistant](/ai-and-automations)
+- [AI as a workspace member](/ai-workspace-member)
+- [Automations](/automations)
