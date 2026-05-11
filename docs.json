@@ -13,8 +13,8 @@
   },
   "favicon": "/favicon.svg",
   "logo": {
-    "light": "/logo/dark.svg",
-    "dark": "/logo/light.svg"
+    "light": "/logo/light.svg",
+    "dark": "/logo/dark.svg"
   },
   "seo": {
     "indexing": "all",
@@ -185,12 +185,15 @@
     }
   },
   "background": {
-    "decoration": "windows"
+    "decoration": "windows",
+    "image": "/images/journe.png"
   },
   "interaction": {
     "drilldown": true
   },
   "fonts": {
-    "family": "Geist"
+    "family": "Geist",
+    "weight": 400,
+    "format": "woff2"
   }
 }
