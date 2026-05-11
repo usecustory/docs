@@ -5,8 +5,8 @@
   "description": "Documentation for Custory, the operating system for customer journeys.",
   "colors": {
     "primary": "#0e8d00",
-    "light": "#0e8d00",
-    "dark": "#0e8d00"
+    "light": "#8fff82",
+    "dark": "#063c00"
   },
   "appearance": {
     "default": "system"
@@ -186,5 +186,8 @@
   },
   "background": {
     "decoration": "grid"
+  },
+  "interaction": {
+    "drilldown": true
   }
 }
