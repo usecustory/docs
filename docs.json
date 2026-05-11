@@ -185,7 +185,7 @@
     }
   },
   "background": {
-    "decoration": "grid"
+    "decoration": "windows"
   },
   "interaction": {
     "drilldown": true
