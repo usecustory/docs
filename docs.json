@@ -14,7 +14,7 @@
   "favicon": "/favicon.svg",
   "logo": {
     "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "dark": "/logo/light.svg"
   },
   "seo": {
     "indexing": "all",
@@ -183,5 +183,8 @@
       "linkedin": "https://www.linkedin.com/company/usecustory",
       "github": "https://github.com/usecustory/docs"
     }
+  },
+  "background": {
+    "decoration": "grid"
   }
 }
