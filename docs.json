@@ -185,8 +185,7 @@
     }
   },
   "background": {
-    "decoration": "windows",
-    "image": "/images/journe.png"
+    "decoration": "windows"
   },
   "interaction": {
     "drilldown": true
@@ -195,5 +194,14 @@
     "family": "Geist",
     "weight": 400,
     "format": "woff2"
+  },
+  "integrations": {
+    "posthog": {
+      "apiKey": "phc_DqsudnxQJUTAJNGJOIjgjx4sdwNSQxAVLr5cYDPyAhX",
+      "apiHost": "https://p.usecustory.com"
+    }
+  },
+  "styling": {
+    "eyebrows": "breadcrumbs"
   }
 }
