@@ -53,76 +53,144 @@
       },
       {
         "tab": "Journey editor",
-        "icon": "route",
         "groups": [
           {
-            "group": "Journeys and context",
+            "group": "Journey editor",
+            "root": "journey-editor",
+            "directory": "accordion",
             "pages": [
-              "journeys",
-              "journey-templates",
-              "ai-journey-imports",
-              "nested-journeys",
-              "journey-editor",
-              "editor-controls",
-              "journey-settings",
-              "search-and-filters",
-              "items",
-              "item-fields",
-              "item-linking",
-              "touchpoints",
-              "insights",
-              "opportunities",
-              "solutions",
-              "metrics",
-              "rich-item-details",
-              "personas",
-              "persona-detail-editing",
-              "persona-linking",
-              "views-and-priorities",
-              "journey-view",
-              "table-view",
-              "impact-vs-effort-view",
-              "version-history",
-              "collaboration-and-history"
+              {
+                "group": "Journeys",
+                "expanded": true,
+                "pages": [
+                  "journeys",
+                  "journey-templates",
+                  "ai-journey-imports",
+                  "nested-journeys",
+                  "journey-settings"
+                ]
+              },
+              {
+                "group": "Editor basics",
+                "pages": [
+                  "editor-controls",
+                  "search-and-filters",
+                  "views-and-priorities",
+                  "journey-view",
+                  "table-view",
+                  "impact-vs-effort-view"
+                ]
+              },
+              {
+                "group": "Items and evidence",
+                "pages": [
+                  "items",
+                  "item-fields",
+                  "item-linking",
+                  "touchpoints",
+                  "insights",
+                  "opportunities",
+                  "solutions",
+                  "metrics",
+                  "rich-item-details"
+                ]
+              },
+              {
+                "group": "Personas",
+                "pages": [
+                  "personas",
+                  "persona-detail-editing",
+                  "persona-linking"
+                ]
+              },
+              {
+                "group": "Collaboration",
+                "pages": [
+                  "version-history",
+                  "collaboration-and-history"
+                ]
+              }
             ]
           }
         ]
       },
       {
         "tab": "AI & automations",
-        "icon": "sparkles",
         "groups": [
           {
-            "group": "AI workflows",
+            "group": "AI & automations",
+            "root": "ai-and-automations",
+            "directory": "accordion",
             "pages": [
-              "ai-and-automations",
-              "ai-workspace-member",
-              "workspace-memory",
-              "automations",
-              "automation-triggers",
-              "automation-filters",
-              "automation-actions",
-              "build-automations-with-ai",
-              "automation-templates",
-              "notifications",
-              "notification-delivery-setup"
+              {
+                "group": "AI basics",
+                "expanded": true,
+                "pages": [
+                  "ai-workspace-member",
+                  "workspace-memory"
+                ]
+              },
+              {
+                "group": "Automation setup",
+                "pages": [
+                  "automations",
+                  "automation-triggers",
+                  "automation-filters",
+                  "automation-actions"
+                ]
+              },
+              {
+                "group": "Build with AI",
+                "pages": [
+                  "build-automations-with-ai",
+                  "automation-templates"
+                ]
+              },
+              {
+                "group": "Notifications",
+                "pages": [
+                  "notifications",
+                  "notification-delivery-setup"
+                ]
+              }
             ]
           }
         ]
       },
       {
         "tab": "Integrations",
-        "icon": "plug",
         "groups": [
           {
-            "group": "Connected tools",
+            "group": "Integrations",
+            "root": "integrations",
+            "directory": "accordion",
             "pages": [
-              "integrations",
-              "github-integration",
-              "posthog-and-stripe",
-              "external-tasks",
-              "slack-discord-ai-threads",
-              "mcp-server"
+              {
+                "group": "Delivery and execution",
+                "expanded": true,
+                "pages": [
+                  "github-integration",
+                  "external-tasks"
+                ]
+              },
+              {
+                "group": "Analytics and revenue",
+                "pages": [
+                  "posthog-and-stripe"
+                ]
+              },
+              {
+                "group": "Communication and AI",
+                "pages": [
+                  "slack-discord-ai-threads"
+                ]
+              },
+              {
+                "group": "Developer access",
+                "pages": [
+                  "mcp-server"
+                ]
+              }
             ]
           }
         ]
