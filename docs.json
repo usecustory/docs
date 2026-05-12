@@ -53,6 +53,7 @@
       },
       {
         "tab": "Journey editor",
+        "icon": "route",
         "groups": [
           {
             "group": "Journey editor",
@@ -116,6 +117,7 @@
       },
       {
         "tab": "AI & automations",
+        "icon": "sparkles",
         "groups": [
           {
             "group": "AI & automations",
@@ -159,6 +161,7 @@
       },
       {
         "tab": "Integrations",
+        "icon": "plug",
         "groups": [
           {
             "group": "Integrations",
