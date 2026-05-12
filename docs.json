@@ -62,6 +62,7 @@
             "pages": [
               {
                 "group": "Journeys",
+                "icon": "route",
                 "expanded": true,
                 "pages": [
                   "journeys",
@@ -73,6 +74,7 @@
               },
               {
                 "group": "Editor basics",
+                "icon": "layout-panel-left",
                 "pages": [
                   "editor-controls",
                   "search-and-filters",
@@ -84,6 +86,7 @@
               },
               {
                 "group": "Items and evidence",
+                "icon": "list-check",
                 "pages": [
                   "items",
                   "item-fields",
@@ -98,6 +101,7 @@
               },
               {
                 "group": "Personas",
+                "icon": "users",
                 "pages": [
                   "personas",
                   "persona-detail-editing",
@@ -106,6 +110,7 @@
               },
               {
                 "group": "Collaboration",
+                "icon": "messages-square",
                 "pages": [
                   "version-history",
                   "collaboration-and-history"
@@ -126,6 +131,7 @@
             "pages": [
               {
                 "group": "AI basics",
+                "icon": "sparkles",
                 "expanded": true,
                 "pages": [
                   "ai-workspace-member",
@@ -134,6 +140,7 @@
               },
               {
                 "group": "Automation setup",
+                "icon": "bolt",
                 "pages": [
                   "automations",
                   "automation-triggers",
@@ -143,6 +150,7 @@
               },
               {
                 "group": "Build with AI",
+                "icon": "wand-magic-sparkles",
                 "pages": [
                   "build-automations-with-ai",
                   "automation-templates"
@@ -150,6 +158,7 @@
               },
               {
                 "group": "Notifications",
+                "icon": "bell",
                 "pages": [
                   "notifications",
                   "notification-delivery-setup"
@@ -170,6 +179,7 @@
             "pages": [
               {
                 "group": "Delivery and execution",
+                "icon": "github",
                 "expanded": true,
                 "pages": [
                   "github-integration",
@@ -178,18 +188,21 @@
               },
               {
                 "group": "Analytics and revenue",
+                "icon": "chart-column",
                 "pages": [
                   "posthog-and-stripe"
                 ]
               },
               {
                 "group": "Communication and AI",
+                "icon": "messages-square",
                 "pages": [
                   "slack-discord-ai-threads"
                 ]
               },
               {
                 "group": "Developer access",
+                "icon": "terminal",
                 "pages": [
                   "mcp-server"
                 ]
