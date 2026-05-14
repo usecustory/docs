@@ -35,18 +35,17 @@
             "group": "Start here",
             "pages": [
               "index",
+              "core-concepts",
               "quickstart",
               "workspace",
               "team-management",
-              "billing-and-usage",
-              "core-concepts"
+              "billing-and-usage"
             ]
           },
           {
             "group": "Reference",
             "pages": [
-              "faq",
-              "glossary"
+              "faq"
             ]
           }
         ]
