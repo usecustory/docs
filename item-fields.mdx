@@ -1,246 +1,100 @@
 ---
-title: "Item fields and properties"
-description: "Understand which fields exist for each item group, what they mean, and how to use them without turning the journey into admin overhead."
+title: "Item fields and linking"
+description: "Understand the fields each item type supports and how to connect items so the logic from evidence to action stays visible."
 ---
 
 Fields are how Custory turns a journey into something you can review, filter, prioritize, automate, and hand off.
 
-The goal is not to fill every property because the UI allows it. The goal is to make each item actionable enough that the team can trust it later.
+Links are how Custory keeps the reasoning visible instead of leaving the work as disconnected notes.
 
-## How fields work in Custory
+## What this is
 
-Each item group has its own allowed field set.
+This page covers two things:
 
-That matters because the right metadata for a touchpoint is not the same as the right metadata for a solution or a metric.
+- the fields and properties available on each item type
+- the relationship model for linking items together
 
-Every group starts with a shared core:
+## Why it matters
 
-- Description
-- Status
-- Owners where supported
+The goal is not to fill every property because the UI allows it.
 
-Then each group adds the properties that make sense for that type of work.
+The goal is to make each item actionable enough that the team can trust it later and trace how one piece of evidence led to a real decision.
 
 ## Core fields
 
-### Description
+Every item starts with shared basics such as:
 
-Use the description to capture the usable context, not just a longer title.
+- description
+- status
+- owner where supported
 
-Good description content:
+Use the description for:
 
-- What happened
-- Why it matters
-- What evidence supports it
-- What the team still does not know
-
-### Status
-
-Status is the quickest way to understand maturity.
-
-It should answer one question clearly: where is this item in its lifecycle right now?
-
-Each group has its own status set because "Validated" makes sense for an insight, while "Shipped" makes sense for a solution.
-
-### Owner
-
-Owner is supported where follow-through matters operationally.
-
-In practice, owners are most useful for:
-
-- Opportunities
-- Solutions
-- Metrics
-
-Use owners when someone should move the work forward, not just because a field is available.
+- what happened
+- why it matters
+- what evidence supports it
+- what the team still does not know
 
 ## Group-specific properties
 
-### Touchpoint properties
+### Touchpoints
 
-### Channel
+Key properties:
 
-Defines the surface or interaction channel.
+- channel
+- actor
 
-Available options:
+Use these to answer where the experience is happening and who is involved.
 
-- Website
-- App
-- Email
-- Sales call
-- Support
-- Docs
-- Store
-- Other
+### Insights
 
-Use channel to answer where the experience is happening.
+Key properties:
 
-### Actor
+- type
+- confidence
+- severity
+- affected segment
 
-Identifies the persona or personas involved in the touchpoint.
+Use these to separate what the team learned from how certain or painful it is.
 
-Use this when different people experience the same step differently, such as a buyer, admin, and end user.
+### Opportunities
 
-### Insight properties
+Key properties:
 
-### Type
+- owner
+- impact
+- effort
+- priority
+- confidence
 
-Available options:
+Use these to frame action and prioritization.
 
-- Pain
-- Need
-- Gain
+### Solutions
 
-Use:
+Key properties:
 
-- `Pain` for friction, confusion, or failure
-- `Need` for requirements, expectations, or missing capability
-- `Gain` for positive value, delight, or a successful pattern worth understanding
+- owner
+- solution type
+- impact
+- effort
+- priority
+- target date
 
-### Confidence
+Use these to compare candidate responses and manage follow-through.
 
-Available options:
+### Metrics
 
-- Low confidence
-- Medium confidence
-- High confidence
+Key properties:
 
-Confidence is about how sure you are the learning is true, not how important it feels.
+- owner
+- metric type
+- unit
+- baseline
+- current
+- target
+- direction
 
-### Severity
-
-Scale:
-
-- 1 to 5
-
-Use severity to describe how painful or consequential the issue is for the affected customer. Keep this separate from business priority.
-
-### Affected segment
-
-Use personas here when an insight affects a specific user type rather than everyone.
-
-### Opportunity properties
-
-### Impact
-
-Scale:
-
-- 1 to 5
-
-Impact estimates how much solving this problem could matter for the customer or the business.
-
-### Effort
-
-Scale:
-
-- 1 to 5
-
-Effort estimates the rough cost or complexity of acting on the opportunity.
-
-### Priority
-
-Available options:
-
-- High
-- Medium
-- Low
-
-Priority can be set directly, but it is most useful when it reflects real discussion rather than default enthusiasm.
-
-### Confidence
-
-Use confidence on opportunities when the problem framing is still developing and the team is not equally sure across the whole backlog.
-
-### Solution properties
-
-### Solution type
-
-Available options:
-
-- Idea
-- Experiment
-- Feature
-- Process
-- Content
-- Service
-
-Use this to distinguish what kind of response you are considering.
-
-### Impact
-
-Use impact on solutions to estimate likely upside if shipped successfully.
-
-### Effort
-
-Use effort on solutions to estimate delivery cost, complexity, or organizational burden.
-
-### Priority
-
-Use priority to decide sequencing among candidate solutions.
-
-### Target date
-
-Use target date when timing matters operationally. Do not add dates to every idea by default.
-
-### Metric properties
-
-### Metric type
-
-Available options:
-
-- Customer
-- Business
-- Operational
-
-Use these to distinguish outcome categories:
-
-- `Customer`: value experienced by the customer
-- `Business`: commercial or growth outcome
-- `Operational`: process or internal execution signal
-
-### Unit
-
-Available options:
-
-- %
-- Score
-- Count
-- Time
-- Currency
-- Other
-
-The unit keeps the metric readable without relying on teammates to guess.
-
-### Baseline
-
-The starting value before a change or before active tracking began.
-
-### Current
-
-The most recent known value.
-
-### Target
-
-The outcome you are trying to reach.
-
-### Direction
-
-Available options:
-
-- Higher is better
-- Lower is better
-
-This prevents common confusion around metrics like time-to-value, churn, refunds, or support volume.
-
-## Group-by-group field availability
-
-| Group | Core fields | Key additional properties |
-| --- | --- | --- |
-| Touchpoints | Description, Status | Channel, Actor |
-| Insights | Description, Status | Type, Confidence, Severity, Affected segment |
-| Opportunities | Description, Status, Owner | Impact, Effort, Priority, Confidence |
-| Solutions | Description, Status, Owner | Solution type, Impact, Effort, Priority, Target date |
-| Metrics | Description, Status, Owner | Metric type, Unit, Baseline, Current, Target, Direction |
+Use these to keep progress measurable.
 
 ## Property visibility
 
@@ -248,28 +102,85 @@ Custory lets you control which properties are visible in the editor.
 
 Use that intentionally:
 
-- Show fewer fields during collaborative mapping
-- Show more fields during prioritization and cleanup
-- Keep the visible properties aligned with the job of the current review
+- show fewer fields during collaborative mapping
+- show more fields during prioritization and cleanup
+- keep the visible properties aligned with the job of the current review
 
-This helps smaller teams avoid making the map feel heavier than it needs to be.
+## How item linking works
 
-## How to keep fields valuable
+Linking items is how you turn a journey from a collection of notes into a decision system.
 
-### Use just enough structure
+Allowed relationships:
 
-If a property never affects a decision, it will decay. Keep fields that support prioritization, ownership, review, or automation.
+- Touchpoint -> Insight
+- Insight -> Opportunity
+- Opportunity -> Solution
+- Opportunity -> Metric
+- Solution -> Metric
 
-### Separate customer truth from team intent
+This model is intentional. Custory is helping you preserve causality, not create an unrestricted graph.
 
-Insights describe what you learned. Opportunities describe what is worth doing. Solutions describe how you may respond. The fields are designed to preserve that distinction.
+## What each link means
 
-### Review stale fields during weekly maintenance
+### Touchpoint -> Insight
 
-Properties become valuable only if they stay current. [Table view](/table-view) is the fastest place to maintain them in bulk.
+Use this when a customer-facing moment revealed something worth learning.
 
-## Related guides
+### Insight -> Opportunity
 
-- [Linking items](/item-linking)
-- [Table view](/table-view)
-- [Rich item details](/rich-item-details)
+Use this when a learning becomes a problem worth prioritizing.
+
+### Opportunity -> Solution
+
+Use this when you are proposing or shipping a response to the problem.
+
+### Opportunity or Solution -> Metric
+
+Use this when a metric helps define whether the problem is real or whether the response worked.
+
+## Recommended linking pattern
+
+The cleanest pattern is:
+
+1. capture the touchpoint or insight first
+2. link the learning to the opportunity it creates
+3. link the opportunity to one or more possible solutions
+4. link the opportunity or solution to the metric that defines success
+
+Example:
+
+- Touchpoint: trial signup form
+- Insight: non-technical admins do not understand what data is required
+- Opportunity: reduce signup uncertainty
+- Solution: rewrite the form guidance
+- Metric: trial completion rate
+
+## Common mistakes
+
+### Using every available field
+
+Too much structure too early creates overhead.
+
+### Linking everything to everything
+
+If every item links to every other item, traceability becomes noise.
+
+### Treating opportunities like raw note buckets
+
+Keep learnings, problems, and responses separate enough to reason about them clearly.
+
+## What good looks like
+
+A good item structure lets the team see:
+
+- what kind of thing they are looking at
+- how mature it is
+- who owns it
+- what caused it
+- what should happen next
+
+## Next step
+
+- Read [Items](/items) for the overview of the item model.
+- Read [Journey editor](/journey-editor) to review and filter items in context.
+- Read [Metrics](/metrics) if you want help using measurement fields well.

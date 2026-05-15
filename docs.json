@@ -32,20 +32,23 @@
         "icon": "book-open",
         "groups": [
           {
-            "group": "Start here",
+            "group": "Understand",
             "pages": [
               "index",
-              "quickstart",
-              "workspace",
-              "team-management",
-              "billing-and-usage"
+              "what-is-a-customer-journey",
+              "how-custory-works",
+              "faq",
+              "security-and-privacy"
             ]
           },
           {
-            "group": "Reference",
+            "group": "Get started",
             "pages": [
-              "core-concepts",
-              "faq"
+              "quickstart",
+              "build-your-first-journey",
+              "workspace",
+              "team-management",
+              "billing-and-usage"
             ]
           }
         ]
@@ -73,12 +76,9 @@
                 "group": "Editor basics",
                 "icon": "pencil",
                 "pages": [
+                  "journey-editor",
                   "editor-controls",
-                  "search-and-filters",
-                  "views-and-priorities",
-                  "journey-view",
-                  "table-view",
-                  "impact-vs-effort-view"
+                  "search-and-filters"
                 ]
               },
               {
@@ -87,7 +87,6 @@
                 "pages": [
                   "items",
                   "item-fields",
-                  "item-linking",
                   "touchpoints",
                   "insights",
                   "opportunities",
@@ -100,17 +99,14 @@
                 "group": "Personas",
                 "icon": "users",
                 "pages": [
-                  "personas",
-                  "persona-detail-editing",
-                  "persona-linking"
+                  "personas"
                 ]
               },
               {
                 "group": "Collaboration",
                 "icon": "message-square",
                 "pages": [
-                  "version-history",
-                  "collaboration-and-history"
+                  "version-history"
                 ]
               }
             ]
@@ -138,9 +134,7 @@
                 "icon": "bolt",
                 "pages": [
                   "automations",
-                  "automation-triggers",
-                  "automation-filters",
-                  "automation-actions"
+                  "how-automations-work"
                 ]
               },
               {
@@ -155,8 +149,7 @@
                 "group": "Notifications",
                 "icon": "bell",
                 "pages": [
-                  "notifications",
-                  "notification-delivery-setup"
+                  "notifications"
                 ]
               }
             ]
@@ -245,14 +238,71 @@
   "contextual": {
     "options": [
       "copy",
-      "view",
-      "chatgpt",
-      "claude",
-      "perplexity",
-      "cursor",
-      "vscode"
+      "view"
     ]
   },
+  "redirects": [
+    {
+      "source": "/core-concepts",
+      "destination": "/how-custory-works"
+    },
+    {
+      "source": "/glossary",
+      "destination": "/how-custory-works"
+    },
+    {
+      "source": "/views-and-priorities",
+      "destination": "/journey-editor"
+    },
+    {
+      "source": "/journey-view",
+      "destination": "/journey-editor"
+    },
+    {
+      "source": "/table-view",
+      "destination": "/journey-editor"
+    },
+    {
+      "source": "/impact-vs-effort-view",
+      "destination": "/journey-editor"
+    },
+    {
+      "source": "/collaboration-and-history",
+      "destination": "/version-history"
+    },
+    {
+      "source": "/ai-and-automations",
+      "destination": "/ai-workspace-member"
+    },
+    {
+      "source": "/automation-triggers",
+      "destination": "/how-automations-work"
+    },
+    {
+      "source": "/automation-filters",
+      "destination": "/how-automations-work"
+    },
+    {
+      "source": "/automation-actions",
+      "destination": "/how-automations-work"
+    },
+    {
+      "source": "/persona-detail-editing",
+      "destination": "/personas"
+    },
+    {
+      "source": "/persona-linking",
+      "destination": "/personas"
+    },
+    {
+      "source": "/notification-delivery-setup",
+      "destination": "/notifications"
+    },
+    {
+      "source": "/item-linking",
+      "destination": "/item-fields"
+    }
+  ],
   "footer": {
     "socials": {
       "x": "https://x.com/usecustory",
@@ -265,7 +315,7 @@
     "decoration": "windows"
   },
   "interaction": {
-    "drilldown": true
+    "drilldown": false
   },
   "fonts": {
     "family": "Geist",

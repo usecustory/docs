@@ -1,92 +1,70 @@
 ---
 title: "Version history"
-description: "Review snapshots, label important versions, preview old states, and restore safely when the journey changes too far or too fast."
+description: "Review snapshots, collaborate safely, label important versions, and restore older journey states when needed."
 ---
 
 Version history gives you a timeline of saved journey states.
 
-This is one of the most valuable controls for smaller teams because customer-journey work often changes in bursts:
+It also supports safer collaboration because fast-moving journey work changes often and not every edit should feel irreversible.
 
-- A workshop restructures the map
-- A cleanup pass removes stale work
-- A release changes the underlying flow
+## What this is
+
+This page covers both snapshot history and the collaboration patterns around it.
+
+Use version history to:
+
+- inspect earlier states
+- preview before restoring
+- label meaningful checkpoints
+- recover from changes that moved too far or too fast
+
+## Why it matters
+
+This is especially valuable for smaller teams because customer-journey work often changes in bursts:
+
+- a workshop restructures the map
+- a cleanup pass removes stale work
+- a release changes the flow
 - AI or collaborative editing moves faster than expected
 
 Version history lets you inspect those changes without rebuilding the journey manually.
+
+## Collaboration in the editor
+
+Inside the journey editor, teams can work together with:
+
+- presence avatars
+- active editing cues
+- cursor activity where relevant
+- comments on items
+
+Comments are especially useful because they keep discussion attached to the actual customer issue instead of scattering it across chat tools.
 
 ## What version history captures
 
 Custory records snapshots from events such as:
 
-- Session start
-- Session end
-- Auto-save
-- Milestone saves
-- Manual saves
+- session start
+- session end
+- auto-save
+- milestone saves
+- manual saves
 
 These snapshots create a recoverable timeline instead of one fragile current state.
 
-## Open version history
-
-From the journey editor, open the menu and choose **Version history**.
-
-Custory opens a history panel where snapshots are grouped by date and shown with metadata such as:
-
-- Trigger type
-- Time created
-- Label, if one exists
-
-## Understand snapshot types
-
-Different snapshot triggers mean different things in practice.
-
-### Session started
-
-Useful when you want to see the state at the beginning of a working session.
-
-### Session ended
-
-Useful when you want to compare what changed during a focused work block.
-
-### Auto-saved
-
-Useful for general recovery and for tracing ongoing edits.
-
-### Milestone
-
-Useful when the journey reached a meaningful decision point or checkpoint.
-
-### Manual save
-
-Useful when someone intentionally preserved a state worth returning to.
-
-## Review before restoring
+## How to use it safely
 
 The safest workflow is:
 
-1. Open version history
-2. Select the snapshot you care about
-3. Preview that version
-4. Confirm it is the state you want
-5. Restore only if needed
+1. open version history
+2. select the snapshot you care about
+3. preview that version
+4. confirm it is the state you want
+5. restore only if needed
 
-Do not restore based on timestamp alone. Preview first whenever the change matters.
-
-## Preview a snapshot
-
-Preview mode lets you inspect an earlier state of the journey without immediately overwriting the current one.
-
-Use preview when:
-
-- You want to confirm whether a version contains the missing structure
-- You are comparing before-and-after states
-- You want to recover only after inspection
-
-This is especially helpful after large workshop edits or cleanup passes.
+Do not restore based on timestamp alone.
 
 ## Label important versions
-
-Snapshots can be labeled so the team can recognize meaningful states quickly.
 
 Use labels for moments such as:
 
@@ -95,43 +73,17 @@ Use labels for moments such as:
 - `After Q2 cleanup`
 - `Before restoring shipped flow`
 
-Labels matter because timestamps alone are easy to forget, especially in fast-moving startup workflows.
-
-## Restore a snapshot
-
-Restore when the safest move is to return the journey to an earlier state instead of manually reconstructing it.
-
-Restore is useful when:
-
-- A large edit went in the wrong direction
-- The structure was simplified too aggressively
-- Important context was removed
-- A workshop created more churn than clarity
-
-Restore should be a deliberate team action, not a reflex.
+Labels matter because timestamps alone are easy to forget in fast-moving workflows.
 
 ## When version history is most useful
 
 Version history is especially valuable for:
 
-- Weekly journey maintenance
-- Cross-functional workshops
+- weekly journey maintenance
+- cross-functional workshops
 - AI-assisted restructuring
-- Recovery after aggressive cleanup
-- Reconstructing decision context over time
-
-## Recommended habit for founder-led teams
-
-Use version history as a confidence tool, not only as a rescue tool.
-
-A practical habit:
-
-1. Do bigger structural work in focused sessions
-2. Label major checkpoints
-3. Preview old states before restoring
-4. Restore only when rework would be slower or riskier
-
-This helps the team move faster without fearing that every major edit is irreversible.
+- recovery after aggressive cleanup
+- reconstructing decision context over time
 
 ## Common mistakes
 
@@ -143,16 +95,21 @@ Important versions become hard to find later.
 
 You increase the chance of bringing back the wrong state.
 
-### Using history only after something breaks
+### Using comments outside the item or journey context
 
-History is also useful for understanding how the map evolved.
+If the reasoning stays off-item, the next person has to reconstruct it from memory.
 
-### Treating every snapshot as equally important
+## What good looks like
 
-Label and use milestone logic for the states the team may actually need again.
+A healthy collaboration setup gives the team confidence to:
 
-## Related guides
+- work in the same journey together
+- discuss changes where the work lives
+- recover earlier states when needed
+- move faster without fearing irreversible mistakes
 
-- [Editor controls](/editor-controls)
-- [Collaboration and history](/collaboration-and-history)
-- [Nested journeys](/nested-journeys)
+## Next step
+
+- Read [Editor and views](/journey-editor) to understand the main work surface.
+- Read [Items](/items) for item-level comments and context.
+- Read [Search and filters](/search-and-filters) if your next task is cleanup rather than recovery.
