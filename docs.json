@@ -103,7 +103,7 @@
               },
               {
                 "group": "Collaboration",
-                "icon": "users-round",
+                "icon": "users",
                 "pages": [
                   "real-time-collaboration",
                   "version-history"
