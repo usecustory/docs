@@ -1,0 +1,38 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Custory quickstart week one</title>
+  <desc id="desc">A 16:9 diagram showing the fast path from workspace setup to a useful first journey.</desc>
+  <rect width="1600" height="900" fill="#F8F7F4"/>
+  <text x="110" y="130" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">First week setup</text>
+  <text x="110" y="180" fill="#5D5A52" font-family="Inter, Arial, sans-serif" font-size="22">Keep the first workspace narrow enough that the team can maintain it.</text>
+  <g transform="translate(130 290)">
+    <rect width="280" height="320" rx="20" fill="#FFFFFF" stroke="#D9D5CA" stroke-width="2"/>
+    <text x="34" y="66" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">1. Workspace</text>
+    <text x="34" y="120" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">One team or product area</text>
+    <text x="34" y="164" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Clear owner</text>
+    <text x="34" y="208" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">No duplicate spaces</text>
+  </g>
+  <g transform="translate(480 290)">
+    <rect width="280" height="320" rx="20" fill="#FFFFFF" stroke="#D9D5CA" stroke-width="2"/>
+    <text x="34" y="66" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">2. Journey</text>
+    <text x="34" y="120" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Pick one urgent flow</text>
+    <text x="34" y="164" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">4 to 7 stages</text>
+    <text x="34" y="208" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Customer-language steps</text>
+  </g>
+  <g transform="translate(830 290)">
+    <rect width="280" height="320" rx="20" fill="#FFFFFF" stroke="#D9D5CA" stroke-width="2"/>
+    <text x="34" y="66" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">3. Evidence</text>
+    <text x="34" y="120" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Attach real examples</text>
+    <text x="34" y="164" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Add useful links</text>
+    <text x="34" y="208" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Capture open questions</text>
+  </g>
+  <g transform="translate(1180 290)">
+    <rect width="280" height="320" rx="20" fill="#FFFFFF" stroke="#D9D5CA" stroke-width="2"/>
+    <text x="34" y="66" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">4. Team</text>
+    <text x="34" y="120" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">2 to 5 editors</text>
+    <text x="34" y="164" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Viewers for visibility</text>
+    <text x="34" y="208" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">One review habit</text>
+  </g>
+  <path d="M410 450H480M760 450H830M1110 450H1180" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <rect x="420" y="705" width="760" height="74" rx="18" fill="#111827"/>
+  <text x="468" y="752" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24">Outcome: one focused journey the team can use this week.</text>
+</svg>

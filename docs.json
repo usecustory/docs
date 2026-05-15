@@ -37,8 +37,7 @@
               "index",
               "what-is-a-customer-journey",
               "how-custory-works",
-              "faq",
-              "security-and-privacy"
+              "faq"
             ]
           },
           {
@@ -61,7 +60,7 @@
             "group": "Journey editor",
             "pages": [
               {
-                "group": "Journeys",
+                "group": "Customer journeys",
                 "icon": "route",
                 "expanded": true,
                 "pages": [
@@ -104,8 +103,9 @@
               },
               {
                 "group": "Collaboration",
-                "icon": "message-square",
+                "icon": "users-round",
                 "pages": [
+                  "real-time-collaboration",
                   "version-history"
                 ]
               }
@@ -217,6 +217,15 @@
             "light": "#0E8D00",
             "dark": "#15D90B"
           }
+        },
+        {
+          "anchor": "Changelog",
+          "href": "https://usecustory.com/changelog",
+          "icon": "/icons/changelog.svg",
+          "color": {
+            "light": "#EBEBEB",
+            "dark": "#1D1D1D"
+          }
         }
       ]
     }
@@ -249,6 +258,10 @@
     {
       "source": "/glossary",
       "destination": "/how-custory-works"
+    },
+    {
+      "source": "/security-and-privacy",
+      "destination": "/faq"
     },
     {
       "source": "/views-and-priorities",

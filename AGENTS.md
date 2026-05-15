@@ -238,6 +238,23 @@ Use phrasing like:
 - `Add diagram showing Workspace -> Journey -> Stage -> Step -> Item`
 - `Add short walkthrough video for first-time setup`
 
+### Figma documentation diagrams
+
+When creating simple diagrams or visual explanations in Figma for the docs, use this system:
+
+- Create matching light and dark versions for every diagram.
+- Use a `16:9` frame for each version unless the user explicitly asks for another ratio.
+- Use `#f2f2f2` as the light theme background with black foreground text.
+- Use `#0d0d0d` as the dark theme background with white foreground text.
+- Keep the palette to black, white, and Custory green as the primary accent. Use only shades of black and white for secondary separation, borders, or muted nodes.
+- Use Custory green only for the main path, primary node, selected concept, or most important relationship.
+- Build graph-like structured layouts: nodes, blocks, edges, hierarchy, relationships, flows, and clusters with clear meaning.
+- Keep all visible text inside nodes or blocks.
+- Do not add standalone headings, subtitles, captions, labels, descriptions, footer notes, badges, or helper text outside the graph itself.
+- Do not add generic labels such as `Custory docs visual`.
+- Do not add usage notes such as where the image should be used in the docs.
+- Do not fabricate screenshots or product UI. These diagrams should be editable conceptual visuals, not fake captures.
+
 ## Content boundaries
 
 - Do not document features or workflows you cannot verify in the product or repo

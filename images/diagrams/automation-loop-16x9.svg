@@ -1,0 +1,30 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Custory automation loop</title>
+  <desc id="desc">A 16:9 diagram showing trigger, context, action, and review for automations.</desc>
+  <rect width="1600" height="900" fill="#F9FAFB"/>
+  <text x="120" y="130" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Automation loop</text>
+  <text x="120" y="180" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="22">Use automations when repeated work should happen from journey context.</text>
+  <circle cx="800" cy="460" r="260" fill="#FFFFFF" stroke="#D1D5DB" stroke-width="2"/>
+  <path d="M800 205C940 205 1055 319 1055 460" stroke="#14B8A6" stroke-width="16" stroke-linecap="round"/>
+  <path d="M1055 460C1055 600 940 715 800 715" stroke="#6366F1" stroke-width="16" stroke-linecap="round"/>
+  <path d="M800 715C660 715 545 600 545 460" stroke="#F59E0B" stroke-width="16" stroke-linecap="round"/>
+  <path d="M545 460C545 319 660 205 800 205" stroke="#EF4444" stroke-width="16" stroke-linecap="round"/>
+  <g transform="translate(675 170)">
+    <rect width="250" height="92" rx="18" fill="#ECFEFF" stroke="#99F6E4" stroke-width="2"/>
+    <text x="58" y="58" fill="#0F766E" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Trigger</text>
+  </g>
+  <g transform="translate(1015 414)">
+    <rect width="250" height="92" rx="18" fill="#EEF2FF" stroke="#C7D2FE" stroke-width="2"/>
+    <text x="62" y="58" fill="#4338CA" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Context</text>
+  </g>
+  <g transform="translate(675 658)">
+    <rect width="250" height="92" rx="18" fill="#FEF3C7" stroke="#FDE68A" stroke-width="2"/>
+    <text x="70" y="58" fill="#92400E" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Action</text>
+  </g>
+  <g transform="translate(335 414)">
+    <rect width="250" height="92" rx="18" fill="#FEF2F2" stroke="#FECACA" stroke-width="2"/>
+    <text x="72" y="58" fill="#B91C1C" font-family="Inter, Arial, sans-serif" font-size="26" font-weight="700">Review</text>
+  </g>
+  <text x="657" y="455" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Journey-aware work</text>
+  <text x="620" y="500" fill="#4B5563" font-family="Inter, Arial, sans-serif" font-size="20">Send updates, draft tasks, summarize evidence.</text>
+</svg>

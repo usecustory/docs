@@ -1,0 +1,45 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Trial-to-paid customer journey example</title>
+  <desc id="desc">A 16:9 diagram showing a lean SaaS trial-to-paid journey from discovery through decision.</desc>
+  <rect width="1600" height="900" fill="#F8FAFC"/>
+  <text x="100" y="126" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">Trial-to-paid journey</text>
+  <text x="100" y="174" fill="#526071" font-family="Inter, Arial, sans-serif" font-size="22">Map the moments that decide whether a new account reaches value and converts.</text>
+  <g transform="translate(100 280)">
+    <rect width="260" height="260" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="32" y="62" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Discovery</text>
+    <text x="32" y="112" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Peer referral</text>
+    <text x="32" y="150" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Website visit</text>
+    <circle cx="220" cy="218" r="18" fill="#14B8A6"/>
+  </g>
+  <g transform="translate(390 280)">
+    <rect width="260" height="260" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="32" y="62" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Evaluation</text>
+    <text x="32" y="112" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Pricing page</text>
+    <text x="32" y="150" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Plan question</text>
+    <circle cx="220" cy="218" r="18" fill="#F59E0B"/>
+  </g>
+  <g transform="translate(680 280)">
+    <rect width="260" height="260" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="32" y="62" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Setup</text>
+    <text x="32" y="112" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Create workspace</text>
+    <text x="32" y="150" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Connect Slack</text>
+    <circle cx="220" cy="218" r="18" fill="#EF4444"/>
+  </g>
+  <g transform="translate(970 280)">
+    <rect width="260" height="260" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="32" y="62" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">First value</text>
+    <text x="32" y="112" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Invite teammate</text>
+    <text x="32" y="150" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Share journey</text>
+    <circle cx="220" cy="218" r="18" fill="#14B8A6"/>
+  </g>
+  <g transform="translate(1260 280)">
+    <rect width="240" height="260" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="32" y="62" fill="#0F172A" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700">Decision</text>
+    <text x="32" y="112" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Review value</text>
+    <text x="32" y="150" fill="#475569" font-family="Inter, Arial, sans-serif" font-size="20">Choose plan</text>
+    <circle cx="200" cy="218" r="18" fill="#6366F1"/>
+  </g>
+  <path d="M360 410H390M650 410H680M940 410H970M1230 410H1260" stroke="#94A3B8" stroke-width="4" stroke-linecap="round"/>
+  <rect x="220" y="650" width="1160" height="92" rx="20" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="2"/>
+  <text x="260" y="706" fill="#334155" font-family="Inter, Arial, sans-serif" font-size="24">Attach insights, opportunities, solutions, and metrics where the team sees friction.</text>
+</svg>

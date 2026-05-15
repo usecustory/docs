@@ -24,22 +24,21 @@ Without journey-level defaults, the team has to keep choosing the same destinati
 
 Inside the journey editor, open the settings menu and choose **Journey settings**.
 
-From there, you can manage:
-
-- Journey name
-- Journey-level integration defaults
+<Steps>
+  <Step title="Open the journey settings panel">
+    Inside the journey editor, open the settings menu and choose **Journey settings**.
+  </Step>
+  <Step title="Rename the journey if needed">
+    Update the journey name when the current title no longer matches the customer flow you are mapping.
+  </Step>
+  <Step title="Set journey-level defaults">
+    Choose the connected repo, project, database, or design source this journey should use by default.
+  </Step>
+</Steps>
 
 ## Rename the journey
 
 The first section lets you update the journey name.
-
-Do this when the original title is:
-
-- Too generic
-- Too internal
-- No longer aligned with the product language
-
-Use names that clearly describe the customer flow, not the internal initiative.
 
 Better:
 
@@ -147,19 +146,23 @@ A good starting rule:
 - Set defaults for the 1 or 2 journeys the team uses every week
 - Leave the rest flexible until the workflow settles
 
+<Tip>
+  Set defaults only for journeys your team uses repeatedly. If the workflow is still changing, leave the defaults flexible.
+</Tip>
+
 ## Common mistakes
 
-### Setting defaults too early
-
-If the team still changes repos, projects, or teams often, wait until the pattern is stable.
-
-### Leaving defaults vague or mismatched
-
-If a journey points to the wrong repo or project, the team loses trust in the shortcut quickly.
-
-### Treating journey settings like workspace settings
-
-Journey settings should be specific to one journey. Shared configuration belongs at the workspace level.
+<AccordionGroup>
+  <Accordion title="Setting defaults too early">
+    If the team still changes repos, projects, or teams often, wait until the pattern is stable.
+  </Accordion>
+  <Accordion title="Leaving defaults vague or mismatched">
+    If a journey points to the wrong repo or project, the team loses trust in the shortcut quickly.
+  </Accordion>
+  <Accordion title="Treating journey settings like workspace settings">
+    Journey settings should be specific to one journey. Shared configuration belongs at the workspace level.
+  </Accordion>
+</AccordionGroup>
 
 ## Next step
 

@@ -14,7 +14,13 @@ This page explains the core objects in Custory and how they fit together:
 
 If you understand that model, the rest of the product becomes much easier to use well.
 
-> Add diagram showing `Workspace -> Journey -> Stage -> Step -> Item`.
+```mermaid
+flowchart LR
+    A["Workspace<br/>One team, product, or product area"] --> B["Journey<br/>One customer flow"]
+    B --> C["Stage<br/>A major phase in the flow"]
+    C --> D["Step<br/>A specific customer moment"]
+    D --> E["Item<br/>The evidence, decisions, and follow-up"]
+```
 
 ## Why it matters
 
@@ -98,21 +104,21 @@ This is where the journey stops being just a diagram and becomes useful for deci
 
 The item model helps teams move from evidence to action.
 
-A common chain looks like this:
+### What each item type does
 
-1. A touchpoint reveals something important
-2. An insight captures what the team learned
-3. An opportunity frames the problem worth solving
-4. A solution captures the proposed or shipped response
-5. A metric tells you whether the response worked
+- A touchpoint shows where something happens in the journey.
+- An insight explains what the team learned.
+- An opportunity frames the problem worth solving.
+- A solution captures the proposed or shipped response.
+- A metric tells you whether the response worked.
 
-Example:
+### Examples
 
-- Touchpoint: pricing page
-- Insight: founders are unsure which plan fits their team
-- Opportunity: reduce pricing confusion before trial signup
-- Solution: rewrite the comparison section
-- Metric: trial signup conversion rate
+- A touchpoint shows where something happens in the journey. Example: a user reads the docs, starts onboarding, hits a paywall, contacts support, receives an email, or completes setup.
+- An insight explains what the team learned. Example: users are confused by setup, customers do not understand pricing, or activation drops after the first integration step.
+- An opportunity frames the problem worth solving. Example: make onboarding clearer, reduce billing confusion, improve the docs, or help customers reach value faster.
+- A solution captures the proposed or shipped response. Example: rewrite the onboarding checklist, add an empty state, simplify pricing copy, create a help article, or change the product flow.
+- A metric tells you whether the response worked. Example: activation rate, trial conversion, time to first value, support ticket volume, onboarding completion, retention, churn, or feature adoption.
 
 ## Other important objects
 
@@ -147,17 +153,17 @@ Use Custory this way:
 
 ## Common mistakes
 
-### Treating the hierarchy like bureaucracy
-
-The model exists to create clarity, not overhead.
-
-### Writing abstract step names
-
-Customer-language steps are easier to review, search, and improve.
-
-### Creating structure without evidence
-
-A journey becomes valuable when items, comments, and follow-up work are attached to the right moments.
+<AccordionGroup>
+  <Accordion title="Treating the hierarchy like bureaucracy">
+    The model exists to create clarity, not overhead.
+  </Accordion>
+  <Accordion title="Writing abstract step names">
+    Customer-language steps are easier to review, search, and improve.
+  </Accordion>
+  <Accordion title="Creating structure without evidence">
+    A journey becomes valuable when items, comments, and follow-up work are attached to the right moments.
+  </Accordion>
+</AccordionGroup>
 
 ## What good looks like
 

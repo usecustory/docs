@@ -1,0 +1,37 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Custory product hierarchy</title>
+  <desc id="desc">A clean 16:9 diagram showing Workspace to Journey to Stage to Step to Item.</desc>
+  <rect width="1600" height="900" fill="#F7F6F2"/>
+  <rect x="80" y="72" width="1440" height="756" rx="28" fill="#FFFFFF" stroke="#D9D5CA" stroke-width="2"/>
+  <text x="140" y="154" fill="#151515" font-family="Inter, Arial, sans-serif" font-size="42" font-weight="700">How Custory organizes customer context</text>
+  <text x="140" y="204" fill="#5D5A52" font-family="Inter, Arial, sans-serif" font-size="22">Start broad, then attach useful evidence at the exact customer moment.</text>
+  <g transform="translate(140 330)">
+    <rect width="230" height="180" rx="18" fill="#111827"/>
+    <text x="36" y="76" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Workspace</text>
+    <text x="36" y="118" fill="#D1D5DB" font-family="Inter, Arial, sans-serif" font-size="18">One shared home</text>
+  </g>
+  <path d="M405 420H500" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M490 405L510 420L490 435" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(530 330)">
+    <rect width="230" height="180" rx="18" fill="#0F766E"/>
+    <text x="36" y="76" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Journey</text>
+    <text x="36" y="118" fill="#CCFBF1" font-family="Inter, Arial, sans-serif" font-size="18">A customer flow</text>
+  </g>
+  <path d="M795 420H890" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M880 405L900 420L880 435" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(920 330)">
+    <rect width="230" height="180" rx="18" fill="#B45309"/>
+    <text x="36" y="76" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="30" font-weight="700">Stage</text>
+    <text x="36" y="118" fill="#FEF3C7" font-family="Inter, Arial, sans-serif" font-size="18">A major phase</text>
+  </g>
+  <path d="M1185 420H1280" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round"/>
+  <path d="M1270 405L1290 420L1270 435" stroke="#9CA3AF" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <g transform="translate(1310 330)">
+    <rect width="150" height="78" rx="16" fill="#374151"/>
+    <text x="34" y="49" fill="#FFFFFF" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Step</text>
+    <rect y="102" width="150" height="78" rx="16" fill="#E5E7EB" stroke="#CBD5E1" stroke-width="2"/>
+    <text x="36" y="151" fill="#111827" font-family="Inter, Arial, sans-serif" font-size="24" font-weight="700">Item</text>
+  </g>
+  <rect x="365" y="618" width="870" height="80" rx="18" fill="#F3F4F6" stroke="#E5E7EB" stroke-width="2"/>
+  <text x="400" y="667" fill="#374151" font-family="Inter, Arial, sans-serif" font-size="24">Example: Workspace contains a trial-to-paid journey, with setup stages, invite steps, and evidence items.</text>
+</svg>

@@ -1,0 +1,35 @@
+<svg width="1600" height="900" viewBox="0 0 1600 900" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Evidence to action item chain</title>
+  <desc id="desc">A 16:9 diagram showing touchpoints leading to insights, opportunities, solutions, and metrics.</desc>
+  <rect width="1600" height="900" fill="#FAFAF9"/>
+  <text x="100" y="130" fill="#18181B" font-family="Inter, Arial, sans-serif" font-size="44" font-weight="700">From evidence to action</text>
+  <text x="100" y="180" fill="#57534E" font-family="Inter, Arial, sans-serif" font-size="22">Items keep customer evidence, decisions, and outcomes connected to the same journey.</text>
+  <g transform="translate(130 330)">
+    <rect width="240" height="170" rx="18" fill="#ECFEFF" stroke="#67E8F9" stroke-width="2"/>
+    <text x="30" y="68" fill="#164E63" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">Touchpoint</text>
+    <text x="30" y="112" fill="#155E75" font-family="Inter, Arial, sans-serif" font-size="18">Pricing page</text>
+  </g>
+  <g transform="translate(420 330)">
+    <rect width="240" height="170" rx="18" fill="#F0FDF4" stroke="#86EFAC" stroke-width="2"/>
+    <text x="30" y="68" fill="#14532D" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">Insight</text>
+    <text x="30" y="112" fill="#166534" font-family="Inter, Arial, sans-serif" font-size="18">Plan choice feels risky</text>
+  </g>
+  <g transform="translate(710 330)">
+    <rect width="240" height="170" rx="18" fill="#FEF3C7" stroke="#FBBF24" stroke-width="2"/>
+    <text x="30" y="68" fill="#78350F" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">Opportunity</text>
+    <text x="30" y="112" fill="#92400E" font-family="Inter, Arial, sans-serif" font-size="18">Reduce pricing doubt</text>
+  </g>
+  <g transform="translate(1000 330)">
+    <rect width="240" height="170" rx="18" fill="#EEF2FF" stroke="#A5B4FC" stroke-width="2"/>
+    <text x="30" y="68" fill="#312E81" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">Solution</text>
+    <text x="30" y="112" fill="#3730A3" font-family="Inter, Arial, sans-serif" font-size="18">Rewrite comparison</text>
+  </g>
+  <g transform="translate(1290 330)">
+    <rect width="210" height="170" rx="18" fill="#FDF2F8" stroke="#F9A8D4" stroke-width="2"/>
+    <text x="30" y="68" fill="#831843" font-family="Inter, Arial, sans-serif" font-size="27" font-weight="700">Metric</text>
+    <text x="30" y="112" fill="#9D174D" font-family="Inter, Arial, sans-serif" font-size="18">Trial signup rate</text>
+  </g>
+  <path d="M375 415H415M665 415H705M955 415H995M1245 415H1285" stroke="#A8A29E" stroke-width="4" stroke-linecap="round"/>
+  <rect x="250" y="640" width="1100" height="86" rx="18" fill="#FFFFFF" stroke="#D6D3D1" stroke-width="2"/>
+  <text x="292" y="694" fill="#44403C" font-family="Inter, Arial, sans-serif" font-size="24">The team can see what happened, what it means, what to do next, and how to measure it.</text>
+</svg>
