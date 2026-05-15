@@ -87,17 +87,17 @@ For most founder-led teams:
 
 ## Common mistakes
 
-### Reusing one token everywhere
-
-Per-client keys are easier to audit and safer to revoke.
-
-### Forgetting the copy-once rule
-
-If the token is not stored when created, the practical recovery path is to create a new key.
-
-### Leaving old clients active
-
-Revoke keys you no longer trust or use.
+<AccordionGroup>
+  <Accordion title="Reusing one token everywhere">
+    Per-client keys are easier to audit and safer to revoke. Give each machine or client its own credential so cleanup is simple later.
+  </Accordion>
+  <Accordion title="Forgetting the copy-once rule">
+    If the token is not stored when created, the practical recovery path is to create a new key. Treat creation as the one moment where secure storage has to happen correctly.
+  </Accordion>
+  <Accordion title="Leaving old clients active">
+    Revoke keys you no longer trust or use. Small credential cleanup habits matter more than perfect policy language in day-to-day operations.
+  </Accordion>
+</AccordionGroup>
 
 ## Next step
 

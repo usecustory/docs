@@ -44,7 +44,9 @@ Key properties:
 - channel
 - actor
 
-Use these to answer where the experience is happening and who is involved.
+<Tip>
+  Use these to answer where the experience is happening and who is involved. If the same step feels different for a buyer, admin, and end user, the `actor` field is what keeps that distinction visible.
+</Tip>
 
 ### Insights
 
@@ -96,16 +98,6 @@ Key properties:
 
 Use these to keep progress measurable.
 
-## Property visibility
-
-Custory lets you control which properties are visible in the editor.
-
-Use that intentionally:
-
-- show fewer fields during collaborative mapping
-- show more fields during prioritization and cleanup
-- keep the visible properties aligned with the job of the current review
-
 ## How item linking works
 
 Linking items is how you turn a journey from a collection of notes into a decision system.
@@ -119,6 +111,15 @@ Allowed relationships:
 - Solution -> Metric
 
 This model is intentional. Custory is helping you preserve causality, not create an unrestricted graph.
+
+```mermaid
+flowchart LR
+    T["Touchpoint<br/>Where the moment happens"] --> I["Insight<br/>What the team learned"]
+    I --> O["Opportunity<br/>What is worth solving"]
+    O --> S["Solution<br/>What you might change"]
+    O --> M["Metric<br/>How you measure the problem or outcome"]
+    S --> M
+```
 
 ## What each link means
 
@@ -157,17 +158,17 @@ Example:
 
 ## Common mistakes
 
-### Using every available field
-
-Too much structure too early creates overhead.
-
-### Linking everything to everything
-
-If every item links to every other item, traceability becomes noise.
-
-### Treating opportunities like raw note buckets
-
-Keep learnings, problems, and responses separate enough to reason about them clearly.
+<AccordionGroup>
+  <Accordion title="Using every available field">
+    Too much structure too early creates overhead. Start with the fields your team will actually review, sort, or act on, then add more only when they improve real workflows such as prioritization or handoff.
+  </Accordion>
+  <Accordion title="Linking everything to everything">
+    If every item links to every other item, traceability becomes noise. Create links only when the relationship changes a decision, clarifies the reasoning, or makes a later review meaningfully easier.
+  </Accordion>
+  <Accordion title="Treating opportunities like raw note buckets">
+    Keep learnings, problems, and responses separate enough to reason about them clearly. If the team learned something, write an insight. If the team wants to act on it, frame the opportunity separately so the logic stays readable.
+  </Accordion>
+</AccordionGroup>
 
 ## What good looks like
 

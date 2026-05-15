@@ -94,31 +94,31 @@ Memory becomes especially useful when support, product, and delivery are all con
 
 ## Best practices
 
-### Keep the workspace clean enough to deserve retrieval
-
-Memory is strongest when the underlying journeys and items are reasonably structured. Retrieval from noisy context produces noisier outputs.
-
-### Turn memory off when you want a constrained answer
-
-This is useful for focused drafting or when you want the assistant to reason only from what is visible right now.
-
-### Treat retrieved memory as support, not as authority
-
-Useful memory should help the assistant ground itself, but product judgment still belongs to the team.
+<AccordionGroup>
+  <Accordion title="Keep the workspace clean enough to deserve retrieval">
+    Memory is strongest when the underlying journeys and items are reasonably structured. Retrieval from noisy context produces noisier outputs, so better workspace hygiene leads to better AI help.
+  </Accordion>
+  <Accordion title="Turn memory off when you want a constrained answer">
+    This is useful for focused drafting or when you want the assistant to reason only from what is visible right now. Use the toggle intentionally instead of leaving it on by habit.
+  </Accordion>
+  <Accordion title="Treat retrieved memory as support, not as authority">
+    Useful memory should help the assistant ground itself, but product judgment still belongs to the team. Retrieved context is a prompt aid, not a guarantee that the remembered statement is still true.
+  </Accordion>
+</AccordionGroup>
 
 ## Common mistakes
 
-### Expecting memory to fix weak source material
-
-If the workspace context is vague or stale, memory will not magically make it precise.
-
-### Leaving memory on for every task without thinking
-
-Sometimes a narrow prompt is better. Use the toggle intentionally.
-
-### Confusing continuity with certainty
-
-Memory helps the assistant remember. It does not mean every remembered statement is still correct. Keep validating important assumptions.
+<AccordionGroup>
+  <Accordion title="Expecting memory to fix weak source material">
+    If the workspace context is vague or stale, memory will not magically make it precise. Clean up the source context first, then use retrieval to reduce repetition.
+  </Accordion>
+  <Accordion title="Leaving memory on for every task without thinking">
+    Sometimes a narrow prompt is better. Use the toggle intentionally so the assistant has the right amount of context for the job.
+  </Accordion>
+  <Accordion title="Confusing continuity with certainty">
+    Memory helps the assistant remember. It does not mean every remembered statement is still correct, so keep validating important assumptions against the current workspace state.
+  </Accordion>
+</AccordionGroup>
 
 ## Next step
 
