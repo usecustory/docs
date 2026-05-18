@@ -1,0 +1,141 @@
+---
+title: "Troubleshooting"
+description: "Work through the most common setup, collaboration, integration, and workflow issues without losing momentum."
+icon: "wrench"
+---
+
+Use this page when something in Custory is not behaving the way your team expects and you want the fastest path back to a usable workflow.
+
+This guide focuses on common issues that are already reflected in the current product model and docs.
+
+## Start with the layer that is actually failing
+
+Most problems fall into one of five buckets:
+
+1. workspace setup
+2. journey structure
+3. notifications or identity linking
+4. integrations or automation setup
+5. AI or context scope
+
+If you identify the failing layer first, the fix usually becomes much simpler.
+
+## I created the wrong workspace or duplicated one
+
+This usually happens when someone was invited to an existing workspace but creates a new one instead.
+
+What to do:
+
+1. check whether the team already has the correct [workspace](/workspace)
+2. use the existing invitation or ask an owner to resend it
+3. move ongoing work into the intended workspace instead of maintaining two sources of truth
+
+See [Invited to a workspace](/invited-to-a-workspace).
+
+## The journey feels too broad to maintain
+
+If the map becomes hard to review, the scope is usually too large.
+
+Signs:
+
+- too many stages for one decision
+- step names are internal team labels instead of customer moments
+- the team cannot tell what to review this week
+
+What to do:
+
+1. narrow the journey to one meaningful flow
+2. rewrite steps from the customer's point of view
+3. keep only the evidence that changes a decision
+
+See [Quickstart](/quickstart) and [Your first journey (step by step)](/build-your-first-journey).
+
+## Slack or Discord direct messages are not arriving
+
+This is usually a two-layer setup issue.
+
+Both conditions must be true:
+
+1. the workspace Slack or Discord [integration](/integrations) is connected
+2. the individual user has linked their own identity for DM delivery
+
+If one layer is missing, DM delivery will not work reliably.
+
+See [Notifications](/notifications).
+
+## An automation is noisy, inactive, or not doing the right job
+
+Common causes:
+
+- the journey data is still messy
+- the wrong integration is connected
+- the trigger is too broad
+- the AI instructions are unclear
+
+What to do:
+
+1. clean up the underlying [items](/items), ownership, and statuses
+2. confirm the needed integration is connected
+3. narrow the scope or filter conditions
+4. start from a proven [automation template](/automation-templates) instead of rebuilding from zero
+
+See [Automations](/automations), [How automations work](/how-automations-work), and [Build automations with AI chat](/build-automations-with-ai).
+
+## AI cannot edit an automation the way I expect
+
+Automation chat works against a saved automation record.
+
+If the automation has not been saved yet, save it first, then reopen the AI workflow.
+
+See [Build automations with AI chat](/build-automations-with-ai).
+
+## AI or search is returning the wrong context
+
+This often means the workspace or journey scope is too broad, or the underlying items are not specific enough.
+
+What to do:
+
+1. confirm you are in the correct workspace and journey
+2. tighten vague step names and item wording
+3. link evidence to the right customer moment
+4. use [search and filters](/search-and-filters) before reviewing a large map
+
+See [How Custory works](/how-custory-works), [Items](/items), and [Workspace memory](/workspace-memory).
+
+## The team is not trusting the journey
+
+That is usually a workflow problem, not a UI problem.
+
+The common causes are:
+
+- the map is outdated
+- evidence lives outside the linked items
+- shipped work is not connected back to the journey
+- too many people edit without clear ownership
+
+What to do:
+
+1. run a short weekly review
+2. reconnect the evidence-to-action chain
+3. keep the editor group small
+4. link shipped work back to the relevant opportunity or solution
+
+See [Weekly workflows](/weekly-workflows) and [From mapping to shipping](/from-mapping-to-shipping).
+
+## When to ask for help
+
+If the problem is not explained by the workflow above, gather:
+
+- the workspace or journey involved
+- the step where the issue appears
+- the connected integration or channel involved
+- the exact behavior you expected versus what happened
+
+That makes support or internal debugging much faster than a generic "it doesn't work."
+
+## Next step
+
+- Read [Quickstart](/quickstart) if the issue is really an early setup problem.
+- Read [Notifications](/notifications) for Slack, Discord, email, and in-app delivery issues.
+- Read [Integrations](/integrations) if the problem involves connected tools.
+- Read [Weekly workflows](/weekly-workflows) if the issue is more about team habits than product setup.

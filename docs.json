@@ -40,6 +40,8 @@
               "how-custory-works",
               "signals",
               "glossary",
+              "security-and-privacy",
+              "troubleshooting",
               "faq"
             ]
           },
@@ -53,6 +55,7 @@
               "weekly-workflows",
               "workspace",
               "team-management",
+              "invited-to-a-workspace",
               "billing-and-usage"
             ]
           }

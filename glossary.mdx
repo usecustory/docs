@@ -8,39 +8,137 @@ Use this page when you hit a term in the docs and want a fast answer before read
 
 ## Core structure
 
-- [Workspace](/workspace): The shared home for one team, product, or product area in Custory.
-- [Journey](/journeys): A map of one customer flow, such as onboarding, activation, or trial to paid.
-- Stage: A major phase inside a journey, such as discovery, setup, or first value.
-- Step: A specific customer moment inside a stage, such as `Customer connects Slack` or `Customer invites teammate`.
-- [Item](/items): A structured record attached to the journey that holds evidence, decisions, follow-up, or measurement.
+### [Workspace](/workspace)
+
+The shared home for one team, product, or product area in Custory.
+
+Example: `Custory product team`
+
+### [Journey](/journeys)
+
+A map of one customer flow, such as onboarding, activation, or trial to paid.
+
+Example: `Trial to paid`
+
+### Stage
+
+A major phase inside a journey.
+
+Example: `Setup`
+
+### Step
+
+A specific customer moment inside a stage.
+
+Example: `Customer connects Slack`
+
+### [Item](/items)
+
+A structured record attached to the journey that holds evidence, decisions, follow-up, or measurement.
+
+Example: an insight about why users stall during setup
 
 ## Item types
 
-- [Touchpoint](/touchpoints): A customer-facing moment, surface, or interaction where the experience happens.
-- [Insight](/insights): A learning about the customer experience that explains what the team noticed or discovered.
-- [Opportunity](/opportunities): A problem or leverage point the team may want to act on.
-- [Solution](/solutions): A proposed or shipped response to an opportunity.
-- [Metric](/metrics): A number that tells you whether a problem matters or whether a response worked.
+### [Touchpoint](/touchpoints)
+
+A customer-facing moment, surface, or interaction where the experience happens.
+
+Example: `Invite email`
+
+### [Insight](/insights)
+
+A learning about the customer experience that explains what the team noticed or discovered.
+
+Example: `Solo admins hesitate to invite teammates too early`
+
+### [Opportunity](/opportunities)
+
+A problem or leverage point the team may want to act on.
+
+Example: `Reduce pressure at the teammate invite step`
+
+### [Solution](/solutions)
+
+A proposed or shipped response to an opportunity.
+
+Example: `Add a skip-and-return-later path`
+
+### [Metric](/metrics)
+
+A number that tells you whether a problem matters or whether a response worked.
+
+Example: `Invite completion rate within 3 days`
 
 ## Supporting context
 
-- [Persona](/personas): A reusable customer profile that helps the team interpret the journey from the right point of view.
-- [Signal](/signals): Raw customer evidence from analytics, support, billing, feedback, or delivery work that can become structured journey context.
-- [Automation](/automations): A repeatable workflow in Custory that handles routine follow-up, updates, or orchestration work.
-- [Integration](/integrations): A connection between Custory and another tool your team already uses, such as Slack, GitHub, or PostHog.
-- [AI workspace member](/ai-workspace-member): AI working from the same workspace context as your team instead of from a one-off prompt.
+### [Persona](/personas)
+
+A reusable customer profile that helps the team interpret the journey from the right point of view.
+
+Example: `Founder-led admin at a small SaaS team`
+
+### [Signal](/signals)
+
+Raw customer evidence from analytics, support, billing, feedback, or delivery work that can become structured journey context.
+
+Example: a drop in setup completion after a product change
+
+### [Automation](/automations)
+
+A repeatable workflow in Custory that handles routine follow-up, updates, or orchestration work.
+
+Example: a weekly journey summary posted to Slack
+
+### [Integration](/integrations)
+
+A connection between Custory and another tool your team already uses, such as Slack, GitHub, or PostHog.
+
+Example: linking GitHub so shipped work can stay attached to the journey
+
+### [AI workspace member](/ai-workspace-member)
+
+AI working from the same workspace context as your team instead of from a one-off prompt.
+
+Example: asking AI to summarize the latest evidence on an opportunity
 
 ## Working views and actions
 
-- [Journey editor](/journey-editor): The main workspace where you view the map, review items, compare priorities, and make updates.
-- [Search and filters](/search-and-filters): The controls that help you narrow the journey to the items, steps, or patterns you need to review.
-- [External task](/external-tasks): Linked delivery work in another system that stays attached to the customer context in Custory.
-- [Version history](/version-history): The record of saved journey changes that helps teams review edits and recover safely.
+### [Journey editor](/journey-editor)
+
+The main workspace where you view the map, review items, compare priorities, and make updates.
+
+### [Search and filters](/search-and-filters)
+
+The controls that help you narrow the journey to the items, steps, or patterns you need to review.
+
+### [External task](/external-tasks)
+
+Linked delivery work in another system that stays attached to the customer context in Custory.
+
+### [Version history](/version-history)
+
+The record of saved journey changes that helps teams review edits and recover safely.
 
 ## How the chain works
 
-- Evidence-to-action chain: The working flow from touchpoint to insight to opportunity to solution to metric.
-- Structured context: Customer evidence that has been attached to the journey, clarified with items, and made usable for decisions.
+### Evidence-to-action chain
+
+The working flow from touchpoint to insight to opportunity to solution to metric.
+
+Example:
+
+- touchpoint: `Customer reaches the invite step`
+- insight: `They are not ready to bring teammates in yet`
+- opportunity: `Reduce pressure at the invite step`
+- solution: `Add a skip path`
+- metric: `Invite completion rate`
+
+### Structured context
+
+Customer evidence that has been attached to the journey, clarified with items, and made usable for decisions.
+
+In plain English: not just "we heard something," but "we know where it belongs, what it means, and what to do next."
 
 ## Next step
 
