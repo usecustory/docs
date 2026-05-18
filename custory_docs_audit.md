@@ -423,19 +423,7 @@ Two pages covering similar ground. "Automations" is the overview; "How automatio
 
 ---
 
-### H2. Add reading time estimates to page openers
-
-**Issue:** No indication of how long a page takes to read.
-
-**Why it matters:** Busy users want to know if they're committing to 2 minutes or 15 minutes.
-
-**What should change:** Add "(X min read)" next to the page description or in the card links on the index page.
-
-**Effort:** Low
-
----
-
-### H3. Cross-link more aggressively between related pages
+### H2. Cross-link more aggressively between related pages
 
 **Issue:** Pages often mention concepts without linking to the relevant page. For example, the Automations page mentions integrations but doesn't link to specific integration pages.
 

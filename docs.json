@@ -39,6 +39,7 @@
               "what-custory-does",
               "how-custory-works",
               "signals",
+              "glossary",
               "faq"
             ]
           },
@@ -46,8 +47,9 @@
             "group": "Get started",
             "pages": [
               "quickstart",
-              "ai-journey-imports",
               "build-your-first-journey",
+              "ai-journey-imports",
+              "from-mapping-to-shipping",
               "weekly-workflows",
               "workspace",
               "team-management",
@@ -258,10 +260,6 @@
   "redirects": [
     {
       "source": "/core-concepts",
-      "destination": "/how-custory-works"
-    },
-    {
-      "source": "/glossary",
       "destination": "/how-custory-works"
     },
     {

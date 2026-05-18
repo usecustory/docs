@@ -113,22 +113,41 @@ A common flow looks like this:
 4. The linked items make the reasoning visible
 5. Prioritization and delivery happen from that shared context
 
-### What each item type does
+## How items connect from moment to measurement
 
-- A touchpoint shows where something happens in the journey.
-- An insight explains what the team learned.
-- An opportunity frames the problem worth solving.
-- A solution captures the proposed or shipped response.
-- A metric tells you whether the response worked.
+This chain is the core operating logic of Custory:
 
-### Example chain
+- a [touchpoint](/touchpoints) captures the moment in the customer experience
+- an [insight](/insights) captures what your team learned from that moment
+- an [opportunity](/opportunities) frames the problem worth solving
+- a [solution](/solutions) captures the response you want to test or ship
+- a [metric](/metrics) tells you whether the problem mattered and whether the response worked
 
-- Signal: setup completion drops after the Slack connection step
-- Touchpoint: customer connects Slack
-- Insight: non-technical admins hesitate at the permissions prompt
-- Opportunity: reduce setup friction after Slack connection
-- Solution: add clearer guidance and a retry path
-- Metric: setup completion rate after Slack connection
+Without that chain, teams usually collect notes without a clear path to action.
+
+With that chain, the journey becomes a system your team can trust during prioritization, delivery, and review.
+
+```mermaid
+flowchart LR
+    T["Touchpoint<br/>Where the customer hits the moment"] --> I["Insight<br/>What the team learned"]
+    I --> O["Opportunity<br/>What is worth improving"]
+    O --> S["Solution<br/>What you will change"]
+    O --> M["Metric<br/>How you judge the problem or outcome"]
+    S --> M
+```
+
+### Worked example
+
+One customer problem can move through the full chain like this:
+
+- Signal: setup completion drops after the setup wizard asks for existing data
+- Touchpoint: customer reaches the third step of the setup wizard
+- Insight: new teams do not have the data the wizard expects yet
+- Opportunity: reduce setup friction for teams starting from scratch
+- Solution: add a skip-and-come-back-later option with clearer guidance
+- Metric: setup completion rate for new workspaces
+
+That is the difference between "we noticed a problem" and "we can explain the problem, act on it, and verify whether the fix helped."
 
 ## Other parts of the system
 
