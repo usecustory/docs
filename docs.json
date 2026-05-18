@@ -32,17 +32,12 @@
         "icon": "book-open",
         "groups": [
           {
-            "group": "Understand",
+            "group": "Learn",
             "pages": [
-              "index",
               "what-is-a-customer-journey",
               "what-custory-does",
               "how-custory-works",
-              "signals",
-              "glossary",
-              "security-and-privacy",
-              "troubleshooting",
-              "faq"
+              "glossary"
             ]
           },
           {
@@ -52,157 +47,63 @@
               "build-your-first-journey",
               "ai-journey-imports",
               "from-mapping-to-shipping",
-              "weekly-workflows",
+              "weekly-workflows"
+            ]
+          },
+          {
+            "group": "Core concepts",
+            "pages": [
+              "items",
+              "touchpoints",
+              "insights",
+              "opportunities",
+              "solutions",
+              "metrics",
+              "signals",
+              "personas"
+            ]
+          },
+          {
+            "group": "Product guide",
+            "pages": [
+              "journey-editor",
+              "editor-controls",
+              "search-and-filters",
+              "nested-journeys",
+              "version-history",
+              "real-time-collaboration",
+              "item-fields"
+            ]
+          },
+          {
+            "group": "Team & workspace",
+            "pages": [
               "workspace",
               "team-management",
               "invited-to-a-workspace",
               "billing-and-usage"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "Journey editor",
-        "icon": "route",
-        "groups": [
+          },
           {
-            "group": "Journey editor",
+            "group": "AI & automation",
             "pages": [
-              {
-                "group": "Customer journeys",
-                "icon": "route",
-                "expanded": true,
-                "pages": [
-                  "journeys",
-                  "journey-templates",
-                  "nested-journeys",
-                  "journey-settings"
-                ]
-              },
-              {
-                "group": "Editor basics",
-                "icon": "pencil",
-                "pages": [
-                  "journey-editor",
-                  "editor-controls",
-                  "search-and-filters"
-                ]
-              },
-              {
-                "group": "Items and evidence",
-                "icon": "list-check",
-                "pages": [
-                  "items",
-                  "touchpoints",
-                  "insights",
-                  "opportunities",
-                  "prioritize-with-customer-context",
-                  "solutions",
-                  "metrics",
-                  "item-fields",
-                  "rich-item-details"
-                ]
-              },
-              {
-                "group": "Personas",
-                "icon": "users",
-                "pages": [
-                  "personas"
-                ]
-              },
-              {
-                "group": "Collaboration",
-                "icon": "users",
-                "pages": [
-                  "real-time-collaboration",
-                  "version-history"
-                ]
-              }
+              "ai-workspace-member",
+              "automations",
+              "how-automations-work",
+              "automation-templates",
+              "build-automations-with-ai",
+              "slack-discord-ai-threads",
+              "mcp-server"
             ]
-          }
-        ]
-      },
-      {
-        "tab": "AI & automations",
-        "icon": "sparkles",
-        "groups": [
-          {
-            "group": "AI & automations",
-            "pages": [
-              {
-                "group": "AI basics",
-                "icon": "sparkles",
-                "expanded": true,
-                "pages": [
-                  "ai-workspace-member",
-                  "workspace-memory"
-                ]
-              },
-              {
-                "group": "Automation setup",
-                "icon": "bolt",
-                "pages": [
-                  "automations",
-                  "how-automations-work"
-                ]
-              },
-              {
-                "group": "Build with AI",
-                "icon": "wand-magic-sparkles",
-                "pages": [
-                  "build-automations-with-ai",
-                  "automation-templates"
-                ]
-              },
-              {
-                "group": "Notifications",
-                "icon": "bell",
-                "pages": [
-                  "notifications"
-                ]
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Integrations",
-        "icon": "plug",
-        "groups": [
+          },
           {
             "group": "Integrations",
             "pages": [
               "integrations",
-              {
-                "group": "Delivery and execution",
-                "icon": "github",
-                "expanded": true,
-                "pages": [
-                  "github-integration",
-                  "external-tasks"
-                ]
-              },
-              {
-                "group": "Analytics and revenue",
-                "icon": "chart-column",
-                "pages": [
-                  "posthog-and-stripe"
-                ]
-              },
-              {
-                "group": "Communication and AI",
-                "icon": "message-square",
-                "pages": [
-                  "slack-discord-ai-threads"
-                ]
-              },
-              {
-                "group": "Developer access",
-                "icon": "terminal",
-                "pages": [
-                  "mcp-server"
-                ]
-              }
+              "github-integration",
+              "posthog-and-stripe",
+              "external-tasks",
+              "notifications"
             ]
           }
         ]
@@ -267,6 +168,10 @@
     },
     {
       "source": "/security-and-privacy",
+      "destination": "/faq"
+    },
+    {
+      "source": "/troubleshooting",
       "destination": "/faq"
     },
     {

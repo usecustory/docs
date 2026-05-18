@@ -4,17 +4,16 @@ description: "Go from signup to a first useful journey without overbuilding your
 icon: "rocket"
 ---
 
-Use this guide when you want to go from signup to a first journey draft the team can refine this week instead of spending that week structuring from zero.
+Use this guide when you want to make the right early decisions, set up the workspace cleanly, and reach a ready-to-build starting point without overcomplicating week one.
 
 The fastest path is usually:
 
 - create one clean [workspace](/workspace)
-- import the first journey draft with [AI](/ai-journey-imports)
-- refine the draft into a working map
-- invite the right people once the draft is usable
+- choose whether to start with [AI import](/ai-journey-imports), a [template](/journey-templates), or a blank journey
+- invite the right people once the setup is clear
 - connect only the [tools that remove real friction](/integrations)
 
-Most teams do not fail because they cannot draw a journey. They fail because they start too broad, invite too many editors, import too much material, and end up with a map nobody maintains. This guide keeps the first week narrow so Custory becomes useful fast.
+Most teams do not fail because they cannot draw a journey. They fail because they start too broad, invite too many editors, connect too many tools, and create a setup nobody wants to maintain. This guide keeps the first week narrow so Custory becomes useful fast.
 
 ## Before you start
 
@@ -23,6 +22,7 @@ Have these decisions ready:
 - The first journey you want to map
 - The people who should edit it
 - The source material you already have
+- Whether you are joining an existing workspace or creating a new one
 
 Good first journeys for smaller teams:
 
@@ -37,12 +37,13 @@ Avoid starting with "the full customer lifecycle." That scope is too broad for a
 ```mermaid
 flowchart LR
     A["Week 1 start<br/>One focused journey"] --> B["Create workspace<br/>Keep scope narrow"]
-    B --> C["AI import<br/>Start from real source material"]
-    C --> D["Refine draft<br/>Rename stages and steps"]
-    D --> E["Add evidence<br/>Touchpoints to metrics"]
-    E --> F["Invite small editor group<br/>2 to 5 people"]
-    F --> G["Connect first tools<br/>One communication tool<br/>One delivery tool"]
+    B --> C["Choose starting path<br/>AI import, template,<br/>or blank journey"]
+    C --> D["Invite small editor group<br/>2 to 5 people"]
+    D --> E["Connect first tools<br/>One communication tool<br/>One delivery tool"]
+    E --> F["Move into build guide<br/>Shape the first journey"]
 ```
+
+`Add screenshot of workspace creation and first-start options here`
 
 ## Set up your first week in this order
 
@@ -53,20 +54,17 @@ flowchart LR
   <Step title="Create your first workspace">
     Your workspace is the shared home for one product, one product area, or one operating team. Use separate workspaces only when you need real separation such as different products, clients, or business units.
   </Step>
-  <Step title="Import your first journey with AI">
-    From the dashboard, start with [AI journey imports](/ai-journey-imports). For most new teams, this is the default starting path because it gives you a draft from your website, repo, doc, or design file instead of a blank canvas.
-  </Step>
-  <Step title="Refine the draft into a working journey">
-    Rename vague stages, rewrite steps from the customer's point of view, remove anything that does not belong, and attach the first useful evidence so the draft becomes operational.
-  </Step>
-  <Step title="Turn the draft into your first working journey">
-    Use [Your first journey (step by step)](/build-your-first-journey) to shape the draft into a map the team can review and use for real decisions.
+  <Step title="Choose the right starting path">
+    From the dashboard, decide whether the first journey should start from [AI import](/ai-journey-imports), a [template](/journey-templates), or a blank journey. For most new teams, AI import is the default because it gives you a draft from your website, repo, doc, or design file instead of a blank canvas.
   </Step>
   <Step title="Invite a small editor group">
-    Invite teammates after the journey is clear enough that they can understand the scope, the key steps, and the first evidence without a long explanation.
+    Invite teammates after the workspace structure and starting path are clear enough that people will land in the right place instead of guessing where to work.
   </Step>
   <Step title="Connect only the tools that reduce real friction">
     Add the systems your team already checks every day instead of trying to connect everything in week one.
+  </Step>
+  <Step title="Move into the hands-on build">
+    Once the workspace exists and the starting path is chosen, use [Your first journey (step by step)](/build-your-first-journey) for the actual building work inside the editor.
   </Step>
 </Steps>
 
@@ -74,37 +72,15 @@ flowchart LR
   If someone invited you to an existing workspace, use that route instead of creating a duplicate workspace. Read [Invited to a workspace](/invited-to-a-workspace) if you want the clean join path.
 </Warning>
 
-## Refine the imported draft in the right order
+## Make three setup decisions before you build
 
-Do not start by adding too many items or by inviting the whole team into an untouched draft.
+Do not start by editing the journey immediately. Decide these three things first:
 
-Start in this sequence:
+1. Which journey matters enough to review this week
+2. Which people actually need edit access
+3. Which starting path gives you the least manual setup work
 
-1. Confirm the journey scope
-2. Rename the major stages if needed
-3. Rewrite the steps inside each stage
-4. Attach the first useful evidence
-5. Link the right persona if one matters
-
-For smaller teams, a strong first journey usually has:
-
-- 4 to 7 stages
-- clear customer-language step names
-- enough detail to support decisions without becoming heavy to maintain
-
-Better step names:
-
-- Customer connects Slack
-- Customer invites teammate
-- Customer asks for help
-
-Worse step names:
-
-- Activation workstream
-- PMF onboarding
-- Support workflow layer
-
-If you chose a manual start instead of AI import, use the same order. The goal is still to reach a focused, readable map quickly.
+If those decisions are fuzzy, the build usually gets fuzzy too.
 
 ## Prefer to start from scratch?
 
@@ -116,45 +92,9 @@ Choose [Blank](/journeys) or [Template](/journey-templates) when:
 - the journey is still hypothetical
 - no single source tells the story well enough for AI import
 
-Even then, follow the same sequence: set the scope, add stages, write customer-language steps, and attach the first evidence.
+Even then, keep the scope narrow and move into [Your first journey (step by step)](/build-your-first-journey) as soon as the workspace is ready.
 
-## Add evidence, not decoration
-
-The real value starts when you attach context to the journey.
-
-Use items to capture:
-
-- [Touchpoints](/touchpoints)
-- [Insights](/insights)
-- [Opportunities](/opportunities)
-- [Solutions](/solutions)
-- [Metrics](/metrics)
-
-Open each item and add the material that helps the team act. See [Rich item details](/rich-item-details) if you want the full breakdown of what can live inside an item:
-
-- description
-- files or screenshots
-- external links
-- comments
-- owners where relevant
-- status and prioritization fields
-
-If the journey only has boxes and labels, it will look organized without actually helping the team.
-
-## When to invite your team
-
-Invite your team after the first journey is built enough to be legible and useful.
-
-Before you send invites, make sure a teammate can open the journey and understand:
-
-- what flow this map covers
-- which steps matter most
-- where the first evidence already exists
-- what kind of decisions the team can use it for
-
-Once that is true, invite a small editor group first. If you need role details or invitation steps, read [Manage your team](/team-management).
-
-## Invite a small editor group first
+## Decide who should edit first
 
 Most founder-led teams get the best results when they start with 2 to 5 editors, not the whole company.
 
@@ -165,7 +105,7 @@ Good early editors:
 - one engineering lead or product engineer
 - one design or research owner if relevant
 
-Use viewers for people who need visibility without changing the source of truth.
+Use viewers for people who need visibility without changing the source of truth. If you need role details or invitation steps, read [Manage your team](/team-management).
 
 ## Connect only the tools that reduce real friction
 
@@ -181,15 +121,14 @@ For a small team, one communication tool plus one delivery tool is often enough 
 
 ## Use AI where it saves real time
 
-Custory AI is most useful when it helps you get through messy early work faster.
+Custory AI is most useful when it helps you get through messy setup work faster.
 
 Use it to:
 
 - [draft a first journey from source material](/ai-journey-imports)
-- tighten stage and step wording
-- summarize evidence
-- draft follow-up tasks or updates
-- review the journey for gaps
+- suggest a usable first structure
+- summarize source material before import
+- reduce manual setup from docs, websites, repos, or design files
 
 ## First-week mistakes to avoid
 
@@ -208,20 +147,21 @@ Use it to:
   </Accordion>
 </AccordionGroup>
 
-## What a strong first week looks like
+## What a strong first-week setup looks like
 
 By the end of week one, you should have:
 
 - one workspace
-- one focused journey
+- one clearly chosen first journey
+- one chosen starting path
 - a small editor group
-- real evidence attached to the map
-- at least one review habit the team will actually keep
+- only the first useful integrations connected
+- a clear handoff into the hands-on build
 
 ## Next step
 
 - Read [AI journey imports](/ai-journey-imports) if you want the default starting path in more detail.
-- Read [Your first journey (step by step)](/build-your-first-journey) for the main walkthrough after the draft exists.
+- Read [Your first journey (step by step)](/build-your-first-journey) for the hands-on building walkthrough.
 - Read [Invited to a workspace](/invited-to-a-workspace) if you are joining an existing team setup instead of creating your own.
 - Read [How Custory works](/how-custory-works) if you want the full product model.
 - Read [Integrations](/integrations) when you are ready to connect the tools your team already uses.
