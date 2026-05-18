@@ -7,9 +7,7 @@ Automations keep your [journey](/journeys) current without manual follow-up ever
 
 They help your team pull [signals](/signals), create work, notify the right people, and refresh context on a schedule or in response to real events.
 
-This page is the overview: what automations are for, where they help first, and when they are worth using. Read [How automations work](/how-automations-work) for the build model of triggers, filters, actions, and AI behavior.
-
-## What automations are good at
+## Where automations help first
 
 Use this page to understand:
 
@@ -17,7 +15,7 @@ Use this page to understand:
 - which workflows make sense to automate first
 - where AI and integrations fit
 
-For lean teams, automations reduce coordination overhead in the moments that happen constantly:
+For small teams, automations reduce coordination overhead in the moments that happen constantly:
 
 - an item becomes important
 - a signal moves in analytics
@@ -45,7 +43,7 @@ Most founder-led teams should start with one of these:
 
 Each solves a real coordination problem without requiring a large automation program.
 
-## The core automation model
+## The automation model
 
 Every automation has three main parts:
 
@@ -62,13 +60,11 @@ flowchart LR
     I["Integrations<br/>Slack, GitHub, Jira, Linear, PostHog"] --> A
 ```
 
-Read [How automations work](/how-automations-work) for the detailed model.
-
 ## Start with templates
 
 Custory includes templates for common automation patterns so you do not need to build from zero every time.
 
-See [Automation templates](/automation-templates).
+See [Templates](/automation-templates).
 
 ## Where AI helps most
 
@@ -79,6 +75,128 @@ Examples:
 - writing a useful weekly journey summary
 - drafting a clearer issue from real journey context
 - updating the journey after a GitHub merge or analytics change
+
+## How an automation is put together
+
+Every automation has three main layers:
+
+1. a trigger
+2. optional filters or scope
+3. one or more actions
+
+Those layers can also use [AI](/ai-workspace-member) and [integrations](/integrations) where the workflow needs them.
+
+If you understand those layers, you can build smaller, clearer workflows.
+
+That usually leads to better results than trying to automate an entire operating system in one step.
+
+<div>
+  <img
+    src="/images/diagrams/automationsLIGHT.webp"
+    alt="Custory automation builder in light mode"
+    className="block dark:hidden rounded-xl border border-gray-200"
+  />
+  <img
+    src="/images/diagrams/automationsDARK.webp"
+    alt="Custory automation builder in dark mode"
+    className="hidden dark:block rounded-xl border border-gray-800"
+  />
+</div>
+
+## Trigger types
+
+Custory supports both scheduled and event-based triggers.
+
+### Scheduled triggers
+
+Use scheduled triggers for recurring review and reporting rhythms:
+
+- hourly
+- daily
+- weekly
+
+### Event-based triggers
+
+Use event-based triggers when the workflow should react the moment something important changes.
+
+Supported examples include:
+
+- item created
+- item updated
+- item status changed
+- impact threshold crossed
+- effort threshold crossed
+- priority threshold crossed
+- [GitHub PR](/github-integration) opened
+- [GitHub PR](/github-integration) merged
+
+## Filters and scope
+
+Filters keep automations useful by narrowing where they apply.
+
+Common controls include:
+
+- [journey](/journeys)
+- item group
+- status
+- impact
+- effort
+- changed fields
+- repository
+- base branch
+
+Good automation design usually starts with tighter scope than you think you need.
+
+## Actions
+
+Actions are what the automation does after the trigger and filters match.
+
+Common actions include:
+
+- create a GitHub, Jira, or Linear issue
+- send a Slack or Discord update
+- update the journey
+- fetch or refresh external context
+
+Choose actions based on the real handoff you want to reduce.
+
+## AI-drafted actions
+
+AI is useful when an action needs better writing instead of a static template.
+
+That helps with:
+
+- cleaner issue titles and descriptions
+- more useful Slack or Discord summaries
+- context-aware journey updates
+
+## Lifecycle and control
+
+Automations move through statuses such as:
+
+- draft
+- active
+- paused
+- invalid when setup requirements are not met
+
+Custory also supports:
+
+- validation before activation
+- manual runs for scheduled automations
+- run-history review
+- pausing and reactivating
+
+## Start with one workflow the team will trust
+
+Start with the smallest useful workflow.
+
+Example:
+
+- Trigger: high-priority opportunity created
+- Filter: only in the onboarding journey
+- Action: create a Linear issue and send a Slack update
+
+That is easier to trust, test, and improve than a large multi-step automation from day one.
 
 ## Mistakes that create noise
 
@@ -92,9 +210,18 @@ Examples:
   <Accordion title="Automating a habit the team has not proven yet">
     If the workflow is not recurring, you may not need automation yet. Build the habit manually once or twice, then automate the parts that clearly repeat.
   </Accordion>
+  <Accordion title="Using a broad trigger with weak filters">
+    That usually creates noise. Start narrower than you think you need, then widen the scope only after the workflow proves useful and trustworthy.
+  </Accordion>
+  <Accordion title="Choosing actions before the outcome is clear">
+    Start from the operational job, then map the action. If the team cannot explain what the automation should improve, the action layer will usually become arbitrary.
+  </Accordion>
+  <Accordion title="Expecting AI to fix a vague workflow">
+    AI improves a clear workflow. It does not rescue an unclear one. Define the trigger, scope, and expected output first, then use AI to make the result stronger.
+  </Accordion>
 </AccordionGroup>
 
-## A strong first automation setup
+## What good automation design looks like
 
 A good automation setup:
 
@@ -105,7 +232,6 @@ A good automation setup:
 
 ## Next step
 
-- Read [How automations work](/how-automations-work) for triggers, filters, and actions.
-- Read [Automation templates](/automation-templates) for faster starting points.
-- Read [Build automations with AI chat](/build-automations-with-ai) if you want help configuring workflows from plain-language goals.
-- Read [Integrations](/integrations) if the workflow depends on Slack, Discord, GitHub, Jira, Linear, or analytics connections.
+- Read [Templates](/automation-templates) for faster starting points.
+- Read [Build with AI](/build-automations-with-ai) if you want help configuring workflows from plain-language goals.
+- Read [Overview](/integrations) if the workflow depends on Slack, Discord, GitHub, Jira, Linear, or analytics connections.

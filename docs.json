@@ -89,7 +89,6 @@
             "pages": [
               "ai-workspace-member",
               "automations",
-              "how-automations-work",
               "automation-templates",
               "build-automations-with-ai",
               "slack-discord-ai-threads",
@@ -199,16 +198,20 @@
       "destination": "/ai-workspace-member"
     },
     {
+      "source": "/how-automations-work",
+      "destination": "/automations"
+    },
+    {
       "source": "/automation-triggers",
-      "destination": "/how-automations-work"
+      "destination": "/automations"
     },
     {
       "source": "/automation-filters",
-      "destination": "/how-automations-work"
+      "destination": "/automations"
     },
     {
       "source": "/automation-actions",
-      "destination": "/how-automations-work"
+      "destination": "/automations"
     },
     {
       "source": "/persona-detail-editing",
