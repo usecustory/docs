@@ -1,0 +1,111 @@
+---
+title: "Signals"
+description: "Learn what signals are in Custory, where they come from, and how raw customer evidence becomes structured journey context your team can act on."
+icon: "activity"
+---
+
+Signals are the raw inputs that tell your team something changed, happened, or deserves attention in the customer experience.
+
+In Custory, a signal is not the final answer. It is the starting material your team turns into structured context.
+
+## What signals mean in Custory
+
+A signal can come from anywhere your team learns about customers:
+
+- product analytics events
+- support conversations
+- billing changes
+- feedback threads
+- shipped product work
+- research notes
+
+Signals are often messy, incomplete, or spread across tools. Custory helps your team bring them into one place, attach them to the right moment in the journey, and decide what they mean.
+
+## Why signals matter
+
+Without signals, a journey becomes a static map.
+
+With signals, the journey stays current enough to support real decisions:
+
+- what changed this week
+- where customers are getting stuck
+- which problems deserve attention
+- whether a shipped fix actually helped
+
+This is one of the main differences between Custory and a whiteboard. The map is not just drawn once. It keeps learning from the evidence flowing into it.
+
+## Common signal sources
+
+Custory can work from signals such as:
+
+- [PostHog and Stripe](/posthog-and-stripe) for usage, conversion, billing, and churn movement
+- [Slack and Discord threads](/slack-discord-ai-threads) for conversations where customer problems first surface
+- [GitHub integration](/github-integration) for shipped work that should update the journey
+- [Notion, Figma, and other connected tools](/integrations) when context already lives elsewhere
+- manual notes, links, and attachments your team adds directly in the workspace
+
+Different tools produce different kinds of signals. Analytics may show that completion dropped. Support may explain why. Delivery tools may show what changed right before the drop.
+
+## How signals become structured work
+
+Signals become useful when your team gives them a clear job inside the journey.
+
+The usual flow looks like this:
+
+1. A signal appears
+2. Your team places it on the relevant stage or step
+3. You turn it into one or more [items](/items)
+4. The linked items show what happened, why it matters, what to do next, and how to measure the result
+
+In practice, that often means:
+
+- a signal from a support thread becomes a [touchpoint](/touchpoints) and then an [insight](/insights)
+- a change in activation rate becomes a [metric](/metrics)
+- repeated evidence across several signals becomes an [opportunity](/opportunities)
+- the chosen response becomes a [solution](/solutions)
+
+## Signals versus items
+
+Signals and items are related, but they are not the same thing.
+
+- A signal is raw input
+- An item is structured context inside Custory
+
+Example:
+
+- Signal: PostHog shows fewer users are completing setup after the Slack connection step
+- Touchpoint: `Customer connects Slack`
+- Insight: `Users stall when the workspace permissions prompt appears`
+- Opportunity: `Reduce setup friction after the Slack connection step`
+- Solution: `Add clearer permission guidance and a retry path`
+- Metric: `Setup completion rate after Slack connection`
+
+The signal starts the investigation. The items make the reasoning visible and reusable.
+
+## When to capture a signal
+
+Capture a signal when it changes a decision, strengthens a pattern, or explains customer behavior in a way the team will need again.
+
+Good examples:
+
+- a clear drop in conversion
+- repeated customer confusion in support
+- a billing failure pattern that affects retention
+- a shipped change that should refresh the journey
+
+You do not need to capture every small observation. Focus on signals the team will actually review, prioritize, or act on.
+
+## What good signal handling looks like
+
+A lean team is handling signals well when:
+
+- the important ones do not die in dashboards or chat threads
+- the journey shows where the signal belongs
+- the linked items explain what the signal means
+- follow-up work stays tied to the original customer context
+
+## Next step
+
+- Read [How Custory works](/how-custory-works) to see how signals fit into the living system model.
+- Read [Items](/items) to understand how signals become structured evidence and action.
+- Read [Integrations](/integrations) if you want to connect the main signal sources your team already uses.

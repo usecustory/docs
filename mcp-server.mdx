@@ -3,17 +3,17 @@ title: "MCP server"
 description: "Connect external AI clients to Custory with workspace-scoped MCP keys, ready-made config templates, and auditable key management."
 ---
 
-Custory includes an MCP server so external AI clients can work directly with workspace context.
+Custory MCP access lets your team bring workspace context into external AI clients without copying the same background into every tool by hand.
 
-## What this is
+## What the MCP server lets you do
 
 Use MCP when your team already works from Cursor, Claude, or another MCP-compatible environment and wants Custory to become part of that workflow instead of staying isolated inside the app.
 
-## Why it matters
+## Why workspace-scoped MCP access matters
 
 This gives external AI tools a workspace-scoped way to read and update Custory context without using a broad account-level credential.
 
-## How it works
+## How key setup works
 
 Custory MCP access uses workspace-scoped API keys.
 
@@ -36,7 +36,7 @@ Good key names describe the client and machine clearly:
 - `Claude Code on CI VM`
 - `Agent for support triage`
 
-## Copy-once token behavior
+## The copy-once token rule
 
 When a key is created, Custory shows the full token only once.
 
@@ -65,7 +65,7 @@ Example Cursor-style config:
 
 Replace the URL and token with the exact values shown in your Custory MCP setup panel.
 
-## Test with curl
+## Test the connection first
 
 Custory includes a copyable `curl` command so you can verify the connection before relying on it in a real agent workflow.
 
@@ -75,7 +75,7 @@ This is the fastest way to confirm:
 - the token works
 - the external client should be able to connect
 
-## Recommended setup pattern
+## A practical setup pattern
 
 For most founder-led teams:
 

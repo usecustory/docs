@@ -4,11 +4,11 @@ description: "Understand the Custory mental model so your team can go from custo
 icon: "book-open"
 ---
 
-Custory works best when your team shares the same model of how customer context is stored, discussed, and moved forward.
+Custory is a living system for customer journeys.
 
-## What this is
+It stays current because [signals](/signals) flow in, the team turns those signals into structured [items](/items), [automations](/automations) keep repeated work moving, AI helps maintain the workspace, and shipped work can connect back to the same map.
 
-This page explains the core objects in Custory and how they fit together:
+Underneath that living layer is a simple structure:
 
 **Workspace -> Journey -> Stage -> Step -> Item**
 
@@ -22,21 +22,22 @@ flowchart LR
     D --> E["Item<br/>The evidence, decisions, and follow-up"]
 ```
 
-## Why it matters
+## Why Custory works like a living system
 
-Custory is not just a place to draw a flow.
+A whiteboard, doc, or static diagram usually goes stale because the customer story changes faster than the artifact does.
 
-It gives your team one shared system for:
+Custory is designed to avoid that drift:
 
-- mapping the customer experience
-- attaching evidence to the right moment
-- framing problems worth solving
-- linking follow-up work
-- using AI and automations from real context
+- [signals](/signals) bring in raw customer evidence from analytics, support, billing, and other tools
+- [items](/items) turn that evidence into structured context the team can review
+- [integrations](/integrations) connect the journey to the rest of your stack
+- [automations](/automations) keep recurring updates and follow-up work moving
+- [AI as a workspace member](/ai-workspace-member) helps the team summarize, maintain, and extend the journey from real context
+- linked delivery work keeps shipped changes tied to the customer moment they were meant to improve
 
-The model matters because it keeps the customer story readable even as the workspace grows.
+This is what "operating system for customer journeys" means in practice. The journey is not just where you map the experience. It is where evidence, prioritization, follow-through, and learning stay connected over time.
 
-## The core model
+## The core model: workspace to item
 
 ### Workspace
 
@@ -100,9 +101,17 @@ Custory supports five main item groups:
 
 This is where the journey stops being just a diagram and becomes useful for decisions.
 
-## How the item model works
+## How signals become structured action
 
-The item model helps teams move from evidence to action.
+The item model helps teams move from raw input to follow-through.
+
+A common flow looks like this:
+
+1. A signal appears in analytics, support, billing, research, or delivery work
+2. The signal gets attached to the right step in the journey
+3. The team turns it into structured items
+4. The linked items make the reasoning visible
+5. Prioritization and delivery happen from that shared context
 
 ### What each item type does
 
@@ -112,15 +121,16 @@ The item model helps teams move from evidence to action.
 - A solution captures the proposed or shipped response.
 - A metric tells you whether the response worked.
 
-### Examples
+### Example chain
 
-- Touchpoint: a user reads the docs, starts onboarding, hits a paywall, contacts support, receives an email, or completes setup.
-- Insight: users are confused by setup, customers do not understand pricing, or activation drops after the first integration step.
-- Opportunity: make onboarding clearer, reduce billing confusion, improve the docs, or help customers reach value faster.
-- Solution: rewrite the onboarding checklist, add an empty state, simplify pricing copy, create a help article, or change the product flow.
-- Metric: activation rate, trial conversion, time to first value, support ticket volume, onboarding completion, retention, churn, or feature adoption.
+- Signal: setup completion drops after the Slack connection step
+- Touchpoint: customer connects Slack
+- Insight: non-technical admins hesitate at the permissions prompt
+- Opportunity: reduce setup friction after Slack connection
+- Solution: add clearer guidance and a retry path
+- Metric: setup completion rate after Slack connection
 
-## Other important objects
+## Other parts of the system
 
 ### Personas
 
@@ -140,12 +150,13 @@ They help the team ask who the journey is really for and whether a problem affec
 
 [AI as a workspace member](/ai-workspace-member) means AI works from the same context as the team instead of from isolated prompts.
 
-## When to use which surface
+## Where each part helps most
 
 Use Custory this way:
 
 - use journeys to map the customer flow
 - use items to attach evidence and decisions
+- use signals when you need to understand where fresh customer input is coming from
 - use personas when the customer type changes how you interpret the flow
 - use integrations when context or follow-up lives in another tool
 - use automations when the same work keeps happening
@@ -165,7 +176,7 @@ Use Custory this way:
   </Accordion>
 </AccordionGroup>
 
-## What good looks like
+## What a healthy Custory system looks like
 
 Your team should be able to answer:
 
@@ -178,5 +189,6 @@ Your team should be able to answer:
 ## Next step
 
 - Read [Quickstart](/quickstart) if you are setting up the workspace now.
+- Read [Signals](/signals) if you want the clearest explanation of where customer input comes from and how it becomes structured work.
 - Read [Journey editor](/journey-editor) to see how the main work surface is organized.
 - Read [Items](/items) to understand how evidence, problems, and solutions connect.

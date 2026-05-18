@@ -37,6 +37,7 @@
               "index",
               "what-is-a-customer-journey",
               "how-custory-works",
+              "signals",
               "faq"
             ]
           },
@@ -44,7 +45,9 @@
             "group": "Get started",
             "pages": [
               "quickstart",
+              "ai-journey-imports",
               "build-your-first-journey",
+              "weekly-workflows",
               "workspace",
               "team-management",
               "billing-and-usage"
@@ -66,7 +69,6 @@
                 "pages": [
                   "journeys",
                   "journey-templates",
-                  "ai-journey-imports",
                   "nested-journeys",
                   "journey-settings"
                 ]
@@ -89,6 +91,7 @@
                   "touchpoints",
                   "insights",
                   "opportunities",
+                  "prioritize-with-customer-context",
                   "solutions",
                   "metrics",
                   "rich-item-details"
@@ -163,6 +166,7 @@
           {
             "group": "Integrations",
             "pages": [
+              "integrations",
               {
                 "group": "Delivery and execution",
                 "icon": "github",

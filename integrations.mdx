@@ -3,21 +3,22 @@ title: "Integrations"
 description: "Connect the tools your team already uses so Custory can stay tied to delivery, communication, knowledge, and AI-assisted operating workflows."
 ---
 
-Custory integrations exist to reduce context drift.
+Custory integrations connect the flow of work around the journey.
 
-The goal is not to connect everything. The goal is to connect the systems that already hold meaningful work so your team can move between journey context and execution without rebuilding the same explanation in every tool.
+Signals come in from tools like analytics, billing systems, docs, and chat. The journey becomes the decision layer where your team interprets those inputs. Work and updates then flow back out to delivery tools, communication channels, and AI clients.
 
-## Integration categories
+The goal is not to connect everything. The goal is to connect the few systems that already shape how your team learns, decides, and ships.
 
-Custory currently supports these broad groups:
+## The connected stack in practice
 
-- Product management: Jira, Linear
-- Knowledge base: Notion, Google Drive
-- Analytics and revenue: PostHog, Stripe
-- Communication: Slack, Discord
-- Developer tools: GitHub, MCP server
-- Customer feedback: Intercom
-- Collaborative editors: Figma, Miro
+Think about integrations in four roles:
+
+1. signal sources
+2. the journey as the decision layer
+3. execution targets
+4. communication channels and AI clients
+
+This framing keeps each integration tied to a job instead of turning the page into a feature list.
 
 ## What to connect first
 
@@ -35,27 +36,29 @@ That usually means something like:
 - Notion or Figma
 - PostHog or Stripe
 
-## Communication integrations
+## Signal sources
 
-### Slack
+Signal-source integrations bring raw customer evidence into the system.
 
-Use Slack to:
+### PostHog and Stripe
 
-- Send automation updates to channels
-- Link personal identities for direct-message notifications
-- Work with Custory AI from collaboration threads
+Use [PostHog and Stripe](/posthog-and-stripe) when product usage, conversion, billing, churn, or recovery movement should shape how the team interprets the journey.
 
-### Discord
+### Notion and Google Drive
 
-Use Discord to:
+Use these when research notes, docs, or structured background material already hold the best version of the customer story.
 
-- Send updates into channels and threads
-- Link personal identities for direct-message notifications
-- Work with Custory AI in conversation-heavy workflows
+### Figma and Miro
 
-See [Slack and Discord AI threads](/slack-discord-ai-threads).
+Use these when visual flow context, prototypes, or collaborative workshop material should help shape the journey.
 
-## Delivery integrations
+### Intercom and customer feedback surfaces
+
+Use feedback sources when recurring customer pain, objections, or questions need to survive beyond the original conversation.
+
+## Execution targets
+
+Execution-target integrations help your team move from a prioritized opportunity to real delivery work.
 
 ### GitHub
 
@@ -73,38 +76,54 @@ Notion can also support lighter-weight operational follow-up where a full engine
 
 See [External tasks and issues](/external-tasks).
 
-## Knowledge and design integrations
+## Communication channels
 
-### Notion and Google Drive
+Communication integrations keep the journey visible without forcing the team to live in Custory all day.
 
-Use these when research notes, docs, or structured background material should inform journey work or AI prompts.
+### Slack
 
-### Figma and Miro
+Use Slack to:
 
-Use these when visual flow context or collaborative board material should stay connected to the journey.
+- send automation updates to channels
+- link personal identities for direct-message notifications
+- work with Custory AI from collaboration threads
 
-## Analytics and revenue integrations
+### Discord
 
-### PostHog
+Use Discord to:
 
-Use PostHog when product usage changes should influence journey updates, insights, or automations.
+- send updates into channels and threads
+- link personal identities for direct-message notifications
+- work with Custory AI in conversation-heavy workflows
 
-### Stripe
+See [Slack and Discord AI threads](/slack-discord-ai-threads).
 
-Use Stripe when billing, payment failure, churn, or refund signals are important to the journey and should feed team awareness or automation logic.
+## AI clients and developer access
 
-See [PostHog and Stripe](/posthog-and-stripe).
+AI-related integrations matter because they let outside tools work from the same journey context instead of from isolated prompts.
 
-## AI-related workflows
+### MCP server
 
-Integrations matter to AI because they expand the context Custory can work from.
+Use the [MCP server](/mcp-server) when external AI clients or developer workflows should read from Custory context safely.
 
-That is useful when:
+That is useful for:
 
 - Building a journey from existing source material
 - Generating follow-up tasks from real workspace context
 - Running Slack or Discord collaboration threads
 - Using automation templates that rely on PostHog, GitHub, Jira, or Linear
+
+## How the journey fits in the middle
+
+Integrations are most useful when the journey stays in the center:
+
+- signals come in
+- the team interprets them in journey context
+- priorities become opportunities and solutions
+- work flows out to the right systems
+- shipped changes and new signals come back in
+
+That loop is what makes the stack connected instead of fragmented.
 
 ## Integration management
 
@@ -132,6 +151,7 @@ The integration is most valuable when it keeps the reason for the work visible, 
 
 ## Next step
 
+- Read [Signals](/signals) if you want the clearest explanation of what flows into Custory from the rest of the stack.
 - Read [GitHub integration](/github-integration) if delivery handoff is your next use case.
 - Read [Notifications](/notifications) if you want Slack or Discord delivery set up cleanly.
 - Read [MCP server](/mcp-server) if your team wants external AI clients to use Custory context.

@@ -3,196 +3,268 @@ title: "Automation templates"
 description: "Start automations from proven patterns so a small team can operationalize journey work quickly without building every workflow from scratch."
 ---
 
-Automation templates are the fastest way to get useful automation running in Custory.
+Automation templates give your team a named, proven starting point so you can launch a useful workflow in minutes instead of designing one from scratch.
 
-Instead of starting with a blank workflow, you begin with a pattern that already reflects a common product-ops use case and then adjust the destination, scope, and wording for your team.
+Each template already has a clear trigger pattern, action flow, and AI prompt shape. You still choose the workspace scope, destination, and wording that fit your team.
 
-## Why templates matter
-
-Most smaller teams do not fail at automation because they lack ideas. They fail because setting up the first good workflow takes too much attention.
-
-Templates reduce that setup tax.
-
-They help you start from:
-
-- A useful trigger
-- A sensible action sequence
-- Strong default AI instructions
-- A clear platform combination
-
-## How templates work
+## How to use a template well
 
 When you choose a template, Custory creates an automation draft.
 
 That draft still needs your decisions:
 
-- Which workspace integration to use
-- Which journey or journeys to scope
-- Which channel, repo, project, or team to target
-- Whether the AI instructions need adjustment
+- which workspace integration to use
+- which journey or journeys to scope
+- which channel, repo, project, or team to target
+- whether the AI instructions need adjustment
 
-Think of a template as a high-quality starting point, not a fully finished workflow.
+Think of a template as a strong starting point, not a finished workflow.
 
-## Template categories in Custory
+## Templates you can start from
 
-Custory currently includes template families across four practical themes.
+### Active team member for Slack
 
-### Team updates
+An AI teammate reviews a scoped journey on a recurring cadence and posts the most important changes into Slack.
 
-These templates help teams keep journey work visible in Slack or Discord.
+Use it when you want a lightweight accountability loop without opening the journey in every meeting.
 
-Examples include:
+What it does:
 
-- Active team member for Slack
-- Active team member for Discord
-- Weekly journey pulse for Slack
-- Weekly journey pulse for Discord
-- Daily focus check for Slack
-- Daily focus check for Discord
+- reviews the chosen journey on a schedule
+- highlights what changed
+- points out stale areas
+- suggests the next actions
 
-Use them when the problem is not lack of insight, but lack of consistent visibility and follow-through.
+### Active team member for Discord
 
-### Journey freshness
+The same workflow as Slack, but delivered into Discord for teams that coordinate there.
 
-These templates bring external signals back into the journey and then notify the team.
+Use it when Discord is your daily operating channel.
 
-Examples include:
+What it does:
 
-- PostHog event drift to Slack
-- PostHog event drift to Discord
-- PostHog top events discovery to Slack
-- PostHog top events discovery to Discord
+- reviews the chosen journey on a schedule
+- highlights what changed
+- points out stale areas
+- suggests the next actions
 
-These are strong for product-led teams that want behavior signals to refresh the journey continuously instead of living only in analytics dashboards.
+### Weekly journey pulse for Slack
 
-### Focus sequences
+A weekly summary of the journey that keeps the team aligned on what changed and what needs attention.
 
-These templates combine task creation with communication.
+Use it when the problem is visibility, not lack of insight.
 
-Examples include:
+What it does:
 
-- Priority focus: Slack + Linear
-- Priority focus: Slack + Jira
-- Priority focus: Discord + Linear
-- Priority focus: Discord + Jira
-- Quick wins: Slack + Linear
-- Quick wins: Slack + Jira
-- Quick wins: Discord + Linear
-- Quick wins: Discord + Jira
+- summarizes new items and status changes
+- flags blocked work and stale assumptions
+- posts a weekly recap into Slack
 
-These are useful when the team wants one change in Custory to trigger both:
+### Weekly journey pulse for Discord
 
-- A concrete execution artifact
-- A visible team prompt
+The same weekly journey summary, routed to Discord instead of Slack.
 
-### Shipping signals
+Use it when your product or support team runs weekly reviews in Discord.
 
-These templates connect delivery events back to journey maintenance.
+What it does:
 
-Examples include:
+- summarizes new items and status changes
+- flags blocked work and stale assumptions
+- posts a weekly recap into Discord
 
-- GitHub merged PR journey refresh to Slack
-- GitHub merged PR journey refresh to Discord
+### Daily focus check for Slack
 
-These are particularly useful for smaller product teams that ship quickly and want the journey to stay current without manual review after every merge.
+A short daily check that surfaces the items most likely to deserve attention today.
 
-## Template details
+Use it when your team needs a fast morning focus prompt without a full planning ritual.
 
-### Active team member
+What it does:
 
-Purpose:
+- inspects high-priority and high-impact items
+- highlights what looks urgent today
+- posts the shortlist into Slack
 
-- Review a scoped journey regularly
-- Surface what changed
-- Highlight stale areas
-- Suggest the next actions
+### Daily focus check for Discord
 
-Best for:
+The same daily focus workflow, delivered into Discord.
 
-- Founder-led review rhythms
-- Weekly product check-ins
-- Teams that need a lightweight accountability loop
+Use it when the team operates day to day in Discord and wants a quick direction-setting prompt.
 
-### Weekly journey pulse
+What it does:
 
-Purpose:
+- inspects high-priority and high-impact items
+- highlights what looks urgent today
+- posts the shortlist into Discord
 
-- Summarize new items, status changes, stale assumptions, and blocked work
+### PostHog event drift to Slack
 
-Best for:
+This template watches a key PostHog signal, updates the journey when it moves, and tells the team what changed.
 
-- Weekly product or support review
-- Team-wide visibility without opening the journey in every meeting
+Use it when analytics changes should refresh the journey instead of staying trapped in dashboards.
 
-### Daily focus check
+What it does:
 
-Purpose:
+- monitors a chosen PostHog event or metric
+- updates the journey with the new signal
+- posts the interpretation into Slack
 
-- Inspect high-priority and high-impact items
-- Suggest what deserves attention today
+### PostHog event drift to Discord
 
-Best for:
+The same event-drift workflow, routed through Discord.
 
-- Small teams that need quick alignment without running full planning rituals every morning
+Use it when Discord is where the team reacts to behavioral changes.
 
-### PostHog event drift
+What it does:
 
-Purpose:
+- monitors a chosen PostHog event or metric
+- updates the journey with the new signal
+- posts the interpretation into Discord
 
-- Detect movement in a key event
-- Update the journey with the new signal
-- Notify the team with a useful interpretation
+### PostHog top events discovery to Slack
 
-Best for:
+This template looks for notable product-usage patterns and turns them into candidate journey insights.
 
-- Activation
-- Retention
-- Conversion
-- Feature adoption reviews
+Use it when you want analytics to feed discovery work more actively.
 
-### PostHog top events discovery
+What it does:
 
-Purpose:
+- reviews top PostHog event movement
+- identifies surprising usage patterns
+- posts candidate insights into Slack
 
-- Turn surprising product usage patterns into candidate journey insights
+### PostHog top events discovery to Discord
 
-Best for:
+The same discovery workflow, routed to Discord.
 
-- Teams that want analytics to influence discovery work, not just dashboard review
+Use it when product discovery conversations already happen in Discord.
 
-### Priority focus
+What it does:
 
-Purpose:
+- reviews top PostHog event movement
+- identifies surprising usage patterns
+- posts candidate insights into Discord
 
-- Turn a newly high-priority opportunity or solution into an issue and a team prompt
+### Priority focus: Slack + Linear
 
-Best for:
+This template turns a newly important opportunity or solution into a Linear issue and a Slack prompt for the team.
 
-- Teams that want faster movement from prioritization into execution
+Use it when priorities are getting set in Custory but not moving into execution fast enough.
 
-### Quick wins
+What it does:
 
-Purpose:
+- watches for high-priority work
+- creates a Linear issue
+- sends a Slack update with the customer context
 
-- Route high-impact, low-effort items into action before they go stale
+### Priority focus: Slack + Jira
 
-Best for:
+The same prioritization-to-execution pattern, but for teams shipping from Jira.
 
-- Lean teams that need obvious wins to move quickly without a heavy planning cycle
+Use it when Jira is the system of record for delivery.
 
-### GitHub merged PR journey refresh
+What it does:
 
-Purpose:
+- watches for high-priority work
+- creates a Jira issue
+- sends a Slack update with the customer context
 
-- Use merged PR context to update the journey
-- Surface what changed
-- Prompt for customer validation where needed
+### Priority focus: Discord + Linear
 
-Best for:
+This template connects high-priority work to Linear while keeping the team loop in Discord.
 
-- Fast-moving product teams where shipped changes outpace manual journey maintenance
+Use it when the team coordinates in Discord but executes in Linear.
 
-## How to choose the right template
+What it does:
+
+- watches for high-priority work
+- creates a Linear issue
+- sends a Discord update with the customer context
+
+### Priority focus: Discord + Jira
+
+The same pattern for teams that coordinate in Discord and execute in Jira.
+
+Use it when you need prioritization, task creation, and team visibility to happen together.
+
+What it does:
+
+- watches for high-priority work
+- creates a Jira issue
+- sends a Discord update with the customer context
+
+### Quick wins: Slack + Linear
+
+This template routes high-impact, low-effort work into Linear and makes the opportunity visible in Slack before it goes stale.
+
+Use it when your team wants obvious wins to move quickly.
+
+What it does:
+
+- looks for high-impact, low-effort items
+- creates a Linear issue
+- posts the follow-up into Slack
+
+### Quick wins: Slack + Jira
+
+The same quick-win workflow, but for Jira-based teams.
+
+Use it when Jira is the delivery target and Slack is the discussion layer.
+
+What it does:
+
+- looks for high-impact, low-effort items
+- creates a Jira issue
+- posts the follow-up into Slack
+
+### Quick wins: Discord + Linear
+
+This template pushes clear quick wins into Linear while alerting the team in Discord.
+
+Use it when Discord is where the team notices and reacts to action prompts.
+
+What it does:
+
+- looks for high-impact, low-effort items
+- creates a Linear issue
+- posts the follow-up into Discord
+
+### Quick wins: Discord + Jira
+
+The same quick-win routing pattern for Jira plus Discord teams.
+
+Use it when you want low-friction follow-through on obvious improvements.
+
+What it does:
+
+- looks for high-impact, low-effort items
+- creates a Jira issue
+- posts the follow-up into Discord
+
+### GitHub merged PR journey refresh to Slack
+
+This template uses merged PR context to refresh the journey and notify the team what changed.
+
+Use it when shipping is happening faster than manual journey maintenance.
+
+What it does:
+
+- watches for merged pull requests
+- updates the relevant journey context
+- posts a Slack summary with validation prompts where useful
+
+### GitHub merged PR journey refresh to Discord
+
+The same shipping-to-journey refresh pattern, routed to Discord.
+
+Use it when your team wants journey maintenance to stay close to delivery without another manual review step.
+
+What it does:
+
+- watches for merged pull requests
+- updates the relevant journey context
+- posts a Discord summary with validation prompts where useful
+
+## How to choose the right first template
 
 Start with the smallest workflow that closes a real gap.
 
@@ -203,17 +275,17 @@ Good first choices:
 - `GitHub merged PR journey refresh` if the problem is journey drift after shipping
 - `PostHog event drift` if the problem is analytics staying disconnected from prioritization
 
-## What to customize after selecting a template
+## What to customize after selecting one
 
 Always review:
 
-- Scope
-- Trigger cadence or threshold
-- Channel or task destination
-- Journey update instructions
+- scope
+- trigger cadence or threshold
+- channel or task destination
+- journey update instructions
 - AI-written wording
 
-Templates are strong defaults, but your team still needs to decide what "good enough automation" looks like.
+Templates are strong defaults, but your team still needs to decide what "useful enough to trust" looks like.
 
 ## Common mistakes
 
