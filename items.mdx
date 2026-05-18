@@ -45,18 +45,15 @@ A journey with strong items becomes a working system the team can use for:
 
 This is also where [signals](/signals) become usable. A raw signal from analytics, support, billing, or feedback only becomes reusable team context after it is turned into linked items.
 
-<div>
-  <img
-    src="/images/diagrams/itemdetailsLIGHT.webp"
-    alt="Custory item details with links and comments in light mode"
-    className="block dark:hidden rounded-xl border border-gray-200"
-  />
-  <img
-    src="/images/diagrams/itemdetailsDARK.webp"
-    alt="Custory item details with links and comments in dark mode"
-    className="hidden dark:block rounded-xl border border-gray-800"
-  />
-</div>
+```mermaid
+flowchart LR
+    S["Signal<br/>Raw customer evidence"] --> T["Touchpoint<br/>Where it happened"]
+    T --> I["Insight<br/>What the team learned"]
+    I --> O["Opportunity<br/>What is worth improving"]
+    O --> U["Solution<br/>What you will change"]
+    O --> M["Metric<br/>How you measure progress"]
+    U --> M
+```
 
 ## The five item groups
 

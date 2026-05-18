@@ -38,18 +38,15 @@ Use this walkthrough if:
 - trial conversion or activation feels unclear
 - you want one concrete example before mapping other journeys
 
-<div>
-  <img
-    src="/images/diagrams/templatesLIGHT.webp"
-    alt="Custory template picker in light mode"
-    className="block dark:hidden rounded-xl border border-gray-200"
-  />
-  <img
-    src="/images/diagrams/templatesDARK.webp"
-    alt="Custory template picker in dark mode"
-    className="hidden dark:block rounded-xl border border-gray-800"
-  />
-</div>
+```mermaid
+flowchart LR
+    A["Trial to paid<br/>Journey goal"] --> B["Discovery"]
+    B --> C["Evaluation"]
+    C --> D["Trial signup"]
+    D --> E["Setup"]
+    E --> F["First value"]
+    F --> G["Upgrade decision"]
+```
 
 ## Build the journey step by step
 
@@ -171,18 +168,14 @@ Add a few high-signal items:
 
 You do not need to fill the whole map. Add enough evidence to support a real conversation.
 
-<div>
-  <img
-    src="/images/diagrams/journeyLIGHT.webp"
-    alt="Custory journey with stages, steps, and linked items in light mode"
-    className="block dark:hidden rounded-xl border border-gray-200"
-  />
-  <img
-    src="/images/diagrams/journeyDARK.webp"
-    alt="Custory journey with stages, steps, and linked items in dark mode"
-    className="hidden dark:block rounded-xl border border-gray-800"
-  />
-</div>
+```mermaid
+flowchart LR
+    P["Pricing page<br/>Touchpoint"] --> I["Value is clear<br/>But next step is not<br/>Insight"]
+    I --> O["Reduce uncertainty<br/>Before signup<br/>Opportunity"]
+    O --> S["Rewrite pricing guidance<br/>Solution"]
+    O --> M["Trial signup conversion<br/>Metric"]
+    S --> M
+```
 
 ## Step 6: link the evidence
 

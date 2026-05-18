@@ -53,6 +53,15 @@ Every automation has three main parts:
 - optional filters or scope
 - one or more actions
 
+```mermaid
+flowchart LR
+    T["Trigger<br/>Schedule or event"] --> F["Filters and scope<br/>Journey, item type, status, priority"]
+    F --> A["Actions<br/>Update journey, create task, send message"]
+    A --> R["Team result<br/>Less manual follow-up"]
+    X["AI support<br/>Useful summaries and cleaner task drafts"] --> A
+    I["Integrations<br/>Slack, GitHub, Jira, Linear, PostHog"] --> A
+```
+
 Read [How automations work](/how-automations-work) for the detailed model.
 
 ## Start with templates

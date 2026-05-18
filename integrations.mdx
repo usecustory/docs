@@ -20,6 +20,19 @@ Think about integrations in four roles:
 
 This framing keeps each integration tied to a job instead of turning the page into a feature list.
 
+```mermaid
+flowchart LR
+    S1["Signal sources<br/>Analytics, billing, chat, docs"] --> J["Journey in Custory<br/>Shared decision layer"]
+    S2["Knowledge sources<br/>Notion, Figma, research"] --> J
+    J --> E1["Execution targets<br/>GitHub, Jira, Linear, Notion"]
+    J --> E2["Communication<br/>Slack, Discord, notifications"]
+    J --> E3["AI clients<br/>MCP and workspace AI"]
+    E1 --> R["Shipped changes and new context"]
+    E2 --> R
+    E3 --> R
+    R --> J
+```
+
 ## What to connect first
 
 For most founder-led and product-led teams, the best order is:

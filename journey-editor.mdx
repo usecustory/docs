@@ -22,18 +22,17 @@ Different kinds of work need different views.
 
 Your team should not have to choose between the customer story and the operational details. The editor lets you move between both.
 
-<div>
-  <img
-    src="/images/diagrams/journeyLIGHT.webp"
-    alt="Custory journey editor in light mode"
-    className="block dark:hidden rounded-xl border border-gray-200"
-  />
-  <img
-    src="/images/diagrams/journeyDARK.webp"
-    alt="Custory journey editor in dark mode"
-    className="hidden dark:block rounded-xl border border-gray-800"
-  />
-</div>
+```mermaid
+flowchart LR
+    J["One journey<br/>Same underlying work"] --> V1["Journey view<br/>Story and flow"]
+    J --> V2["Table view<br/>Audit and cleanup"]
+    J --> V3["Impact vs effort<br/>Prioritization"]
+    J --> V4["Search and filters<br/>Narrow the surface"]
+    V1 --> I["Items and comments<br/>Evidence in context"]
+    V2 --> P["Properties and status<br/>Operational detail"]
+    V3 --> O["Opportunities and solutions<br/>Tradeoff discussion"]
+    V4 --> F["Focus by owner, stage, or type<br/>Less noise"]
+```
 
 <Info>
   These views all work on the same underlying journey. You are changing the lens, not creating separate copies of the work.
