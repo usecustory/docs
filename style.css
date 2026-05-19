@@ -135,6 +135,9 @@
     transform 200ms;
 }
 
+
+#sidebar-title{font-weight: 600;}
+
 .custory-resource-card:hover {
   background: color-mix(in srgb, currentColor 3%, transparent);
   border-color: color-mix(in srgb, currentColor 24%, transparent);
