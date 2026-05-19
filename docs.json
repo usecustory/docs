@@ -35,22 +35,22 @@
             "group": "Introduction",
             "pages": [
               "index",
-              "migrating-to-custory",
-              "glossary"
-            ]
-          },
-          {
-            "group": "Concepts",
-            "pages": [
-              "what-is-a-customer-journey",
-              "items",
-              "touchpoints",
-              "insights",
-              "opportunities",
-              "solutions",
-              "metrics",
-              "personas",
-              "signals"
+              {
+                "group": "Concepts",
+                "expanded": false,
+                "pages": [
+                  "what-is-a-customer-journey",
+                  "items",
+                  "touchpoints",
+                  "insights",
+                  "opportunities",
+                  "solutions",
+                  "metrics",
+                  "personas",
+                  "signals"
+                ]
+              },
+              "migrating-to-custory"
             ]
           },
           {
@@ -60,7 +60,8 @@
               "build-your-first-journey",
               "ai-journey-imports",
               "from-mapping-to-shipping",
-              "weekly-workflows"
+              "weekly-workflows",
+              "glossary"
             ]
           }
         ]
