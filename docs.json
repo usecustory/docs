@@ -28,20 +28,33 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Documentation",
         "icon": "book-open",
         "groups": [
           {
-            "group": "Learn",
+            "group": "Introduction",
             "pages": [
-              "what-is-a-customer-journey",
-              "what-custory-does",
-              "how-custory-works",
+              "index",
+              "migrating-to-custory",
               "glossary"
             ]
           },
           {
-            "group": "Get started",
+            "group": "Concepts",
+            "pages": [
+              "what-is-a-customer-journey",
+              "items",
+              "touchpoints",
+              "insights",
+              "opportunities",
+              "solutions",
+              "metrics",
+              "personas",
+              "signals"
+            ]
+          },
+          {
+            "group": "Getting started",
             "pages": [
               "quickstart",
               "build-your-first-journey",
@@ -49,56 +62,77 @@
               "from-mapping-to-shipping",
               "weekly-workflows"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Journeys guide",
+        "icon": "route",
+        "groups": [
           {
-            "group": "Core concepts",
+            "group": "Core workflow",
             "pages": [
-              "items",
-              "touchpoints",
-              "insights",
-              "opportunities",
-              "solutions",
-              "metrics",
-              "signals",
-              "personas"
-            ]
-          },
-          {
-            "group": "Product guide",
-            "pages": [
+              "journeys",
               "journey-editor",
               "editor-controls",
               "search-and-filters",
+              "journey-templates",
               "nested-journeys",
-              "version-history",
-              "real-time-collaboration",
-              "item-fields"
+              "item-fields",
+              "rich-item-details",
+              "prioritize-with-customer-context",
+              "journey-settings"
             ]
           },
           {
-            "group": "Team & workspace",
+            "group": "Team and workspace",
             "pages": [
               "workspace",
               "team-management",
               "invited-to-a-workspace",
+              "real-time-collaboration",
+              "version-history",
               "billing-and-usage"
             ]
-          },
+          }
+        ]
+      },
+      {
+        "tab": "Journey automations & AI",
+        "icon": "sparkles",
+        "groups": [
           {
-            "group": "AI & automation",
+            "group": "AI",
             "pages": [
               "ai-workspace-member",
-              "automations",
-              "automation-templates",
-              "build-automations-with-ai",
+              "workspace-memory",
               "slack-discord-ai-threads",
               "mcp-server"
             ]
           },
           {
-            "group": "Integrations",
+            "group": "Automations",
             "pages": [
-              "integrations",
+              "automations",
+              "automation-templates",
+              "build-automations-with-ai"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Integrations",
+        "icon": "plug",
+        "groups": [
+          {
+            "group": "Overview",
+            "pages": [
+              "integrations"
+            ]
+          },
+          {
+            "group": "Connected tools",
+            "pages": [
               "github-integration",
               "posthog-and-stripe",
               "external-tasks",
@@ -164,6 +198,14 @@
     {
       "source": "/core-concepts",
       "destination": "/how-custory-works"
+    },
+    {
+      "source": "/introduction",
+      "destination": "/"
+    },
+    {
+      "source": "/migrating",
+      "destination": "/migrating-to-custory"
     },
     {
       "source": "/security-and-privacy",
